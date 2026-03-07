@@ -1,0 +1,490 @@
+{
+  "statutes": [
+    {
+      "title": "Pakistan Penal Code",
+      "short_title": "PPC",
+      "act_number": "Act XLV of 1860",
+      "year": 1860,
+      "category": "criminal",
+      "summary_en": "The principal criminal law of Pakistan defining offenses and their punishments including offenses against the state, public tranquility, human body, property, and reputation.",
+      "summary_ur": "پاکستان کا بنیادی فوجداری قانون جو جرائم اور ان کی سزاؤں کی وضاحت کرتا ہے۔"
+    },
+    {
+      "title": "Code of Criminal Procedure",
+      "short_title": "CrPC",
+      "act_number": "Act V of 1898",
+      "year": 1898,
+      "category": "criminal",
+      "summary_en": "Procedural law governing the mechanism for investigation, inquiry, and trial of criminal offenses including provisions for arrest, bail, search, seizure, and appeals.",
+      "summary_ur": "طریقہ کار کا قانون جو فوجداری جرائم کی تفتیش، تحقیقات اور مقدمے کی کارروائی کو منظم کرتا ہے۔"
+    },
+    {
+      "title": "Constitution of Pakistan 1973",
+      "short_title": "Constitution",
+      "act_number": "The Constitution",
+      "year": 1973,
+      "category": "constitutional",
+      "summary_en": "The supreme law of Pakistan establishing the framework of government, fundamental rights, principles of policy, and distribution of powers between federation and provinces.",
+      "summary_ur": "پاکستان کا سپریم قانون جو حکومت کا ڈھانچہ، بنیادی حقوق اور اختیارات کی تقسیم قائم کرتا ہے۔"
+    },
+    {
+      "title": "Muslim Family Laws Ordinance",
+      "short_title": "MFLO",
+      "act_number": "Ordinance VIII of 1961",
+      "year": 1961,
+      "category": "family",
+      "summary_en": "Law governing marriage, divorce, maintenance, and inheritance among Muslims in Pakistan. Covers registration of marriages, procedures for talaq, khula, and maintenance rights.",
+      "summary_ur": "پاکستان میں مسلمانوں کے نکاح، طلاق، نفقہ اور وراثت کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Guardian and Wards Act",
+      "short_title": "GWA",
+      "act_number": "Act VIII of 1890",
+      "year": 1890,
+      "category": "family",
+      "summary_en": "Law governing guardianship and custody of minors. Defines the rights and responsibilities of guardians, welfare of the child as paramount consideration, and procedures for custody disputes.",
+      "summary_ur": "نابالغوں کی سرپرستی اور حضانت کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Transfer of Property Act",
+      "short_title": "TPA",
+      "act_number": "Act IV of 1882",
+      "year": 1882,
+      "category": "property",
+      "summary_en": "Law governing the transfer of property between living persons including sale, mortgage, lease, exchange, and gift of immovable property.",
+      "summary_ur": "زندہ افراد کے درمیان جائیداد کی منتقلی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Prevention of Electronic Crimes Act",
+      "short_title": "PECA",
+      "act_number": "Act XL of 2016",
+      "year": 2016,
+      "category": "cyber",
+      "summary_en": "Law addressing cyber crimes in Pakistan including unauthorized access, data damage, electronic fraud, cyber terrorism, stalking, spamming, and online harassment.",
+      "summary_ur": "پاکستان میں سائبر جرائم سے نمٹنے والا قانون۔"
+    },
+    {
+      "title": "Dissolution of Muslim Marriages Act",
+      "short_title": "DMMA",
+      "act_number": "Act VIII of 1939",
+      "year": 1939,
+      "category": "family",
+      "summary_en": "Law providing grounds on which a Muslim woman may obtain dissolution of marriage including cruelty, desertion, failure to maintain, impotence, and insanity.",
+      "summary_ur": "قانون جو مسلمان عورت کو نکاح ختم کرنے کی بنیادیں فراہم کرتا ہے۔"
+    },
+    {
+      "title": "Income Tax Ordinance",
+      "short_title": "ITO",
+      "act_number": "Ordinance XLIX of 2001",
+      "year": 2001,
+      "category": "taxation",
+      "summary_en": "Principal taxation law of Pakistan governing income tax on individuals, companies, and associations of persons. Covers tax computation, returns, assessments, appeals, and penalties.",
+      "summary_ur": "پاکستان کا بنیادی ٹیکس قانون جو انکم ٹیکس کو منظم کرتا ہے۔"
+    },
+    {
+      "title": "Qanun-e-Shahadat Order",
+      "short_title": "QSO",
+      "act_number": "Order X of 1984",
+      "year": 1984,
+      "category": "criminal",
+      "summary_en": "The law of evidence in Pakistan governing admissibility, relevance, and weight of evidence in civil and criminal proceedings.",
+      "summary_ur": "پاکستان کا شہادت کا قانون جو شواہد کی قابلیت اور اہمیت کو منظم کرتا ہے۔"
+    },
+    {
+      "title": "Code of Civil Procedure",
+      "short_title": "CPC",
+      "act_number": "Act V of 1908",
+      "year": 1908,
+      "category": "civil",
+      "summary_en": "Procedural law for adjudication of civil disputes. Governs the procedure for filing suits, service of summons, hearings, evidence, judgment, decree, appeals, and execution of decrees.",
+      "summary_ur": "دیوانی تنازعات کے فیصلے کے لیے طریقہ کار کا قانون۔"
+    },
+    {
+      "title": "Specific Relief Act",
+      "short_title": "SRA",
+      "act_number": "Act I of 1877",
+      "year": 1877,
+      "category": "civil",
+      "summary_en": "Law providing specific reliefs including recovery of possession of property, specific performance of contracts, rectification and cancellation of instruments, and declaratory decrees.",
+      "summary_ur": "قانون جو مخصوص ریلیف فراہم کرتا ہے جیسے جائیداد کی بازیابی اور معاہدوں کی مخصوص تعمیل۔"
+    },
+    {
+      "title": "Limitation Act",
+      "short_title": "LA",
+      "act_number": "Act IX of 1908",
+      "year": 1908,
+      "category": "civil",
+      "summary_en": "Law prescribing the time period within which legal proceedings must be initiated. Specifies limitation periods for different types of suits, appeals, and applications.",
+      "summary_ur": "قانون جو قانونی کارروائی شروع کرنے کی مدت مقرر کرتا ہے۔"
+    },
+    {
+      "title": "Contract Act",
+      "short_title": "CA",
+      "act_number": "Act IX of 1872",
+      "year": 1872,
+      "category": "civil",
+      "summary_en": "Law governing contracts in Pakistan including formation, performance, breach, and remedies. Covers offer, acceptance, consideration, capacity, free consent, void agreements, and quasi-contracts.",
+      "summary_ur": "پاکستان میں معاہدوں کو منظم کرنے والا قانون جس میں تشکیل، تعمیل اور خلاف ورزی شامل ہے۔"
+    },
+    {
+      "title": "West Pakistan Family Courts Act",
+      "short_title": "WPFCA",
+      "act_number": "Act XXXV of 1964",
+      "year": 1964,
+      "category": "family",
+      "summary_en": "Law establishing Family Courts with exclusive jurisdiction over matrimonial disputes including dissolution of marriage, dower, maintenance, custody, guardianship, and personal property rights.",
+      "summary_ur": "فیملی کورٹس قائم کرنے والا قانون جنہیں ازدواجی تنازعات پر خصوصی اختیار حاصل ہے۔"
+    },
+    {
+      "title": "Companies Act",
+      "short_title": "CA 2017",
+      "act_number": "Act XIX of 2017",
+      "year": 2017,
+      "category": "corporate",
+      "summary_en": "Principal corporate law governing incorporation, management, and winding up of companies in Pakistan. Covers directors' duties, shareholders' rights, meetings, accounts, audit, and corporate governance.",
+      "summary_ur": "پاکستان میں کمپنیوں کی تشکیل، انتظام اور ختم کرنے کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Partnership Act",
+      "short_title": "PA",
+      "act_number": "Act IX of 1932",
+      "year": 1932,
+      "category": "corporate",
+      "summary_en": "Law defining and governing partnerships in Pakistan including formation, rights and duties of partners, dissolution, and settlement of accounts.",
+      "summary_ur": "پاکستان میں شراکت داری کی تعریف اور نظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Securities and Exchange Commission of Pakistan Act",
+      "short_title": "SECP Act",
+      "act_number": "Act XLII of 1997",
+      "year": 1997,
+      "category": "corporate",
+      "summary_en": "Law establishing the SECP as the regulatory authority for corporate sector and capital markets. Governs regulation of securities market, insurance, non-banking finance companies, and private pensions.",
+      "summary_ur": "ایس ای سی پی کو کارپوریٹ سیکٹر اور کیپیٹل مارکیٹ کے ریگولیٹری اتھارٹی کے طور پر قائم کرنے والا قانون۔"
+    },
+    {
+      "title": "Punjab Pre-emption Act",
+      "short_title": "PPA",
+      "act_number": "Act I of 1913",
+      "year": 1913,
+      "category": "property",
+      "summary_en": "Law providing the right of pre-emption (Shuf'a) to co-sharers, neighbors, and adjacent property owners when immovable property is sold.",
+      "summary_ur": "قانون جو حق شفعہ فراہم کرتا ہے۔"
+    },
+    {
+      "title": "Registration Act",
+      "short_title": "RA",
+      "act_number": "Act XVI of 1908",
+      "year": 1908,
+      "category": "property",
+      "summary_en": "Law governing registration of documents relating to immovable property. Makes registration compulsory for certain transactions and prescribes the procedure for registration.",
+      "summary_ur": "غیر منقولہ جائیداد سے متعلق دستاویزات کی رجسٹریشن کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Stamp Act",
+      "short_title": "SA",
+      "act_number": "Act II of 1899",
+      "year": 1899,
+      "category": "property",
+      "summary_en": "Law governing stamp duty on documents and instruments. Prescribes rates of stamp duty payable on various types of instruments including conveyance, mortgage, lease, and power of attorney.",
+      "summary_ur": "دستاویزات اور آلات پر سٹیمپ ڈیوٹی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Land Revenue Act",
+      "short_title": "LRA",
+      "act_number": "Act XVII of 1967",
+      "year": 1967,
+      "category": "property",
+      "summary_en": "Law governing land revenue administration, maintenance of land records, mutation of property ownership, and resolution of revenue disputes in Punjab.",
+      "summary_ur": "زمین کی آمدنی، زمینی ریکارڈ اور مالکانہ حق کی منتقلی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Negotiable Instruments Act",
+      "short_title": "NIA",
+      "act_number": "Act XXVI of 1881",
+      "year": 1881,
+      "category": "banking",
+      "summary_en": "Law governing promissory notes, bills of exchange, and cheques. Covers negotiation, endorsement, discharge, and dishonour of negotiable instruments.",
+      "summary_ur": "بیعانہ نوٹ، حوالہ اور چیک کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Financial Institutions (Recovery of Finances) Ordinance",
+      "short_title": "FIO",
+      "act_number": "Ordinance XLVI of 2001",
+      "year": 2001,
+      "category": "banking",
+      "summary_en": "Law establishing Banking Courts for expeditious recovery of finances owed to financial institutions. Provides special procedures for recovery suits and execution proceedings.",
+      "summary_ur": "مالیاتی اداروں کے قرضوں کی فوری وصولی کے لیے بینکنگ کورٹس قائم کرنے والا قانون۔"
+    },
+    {
+      "title": "State Bank of Pakistan Act",
+      "short_title": "SBP Act",
+      "act_number": "Act XXXIII of 1956",
+      "year": 1956,
+      "category": "banking",
+      "summary_en": "Law establishing the State Bank of Pakistan as the central bank with powers to regulate monetary and credit system, issue currency, and supervise banking sector.",
+      "summary_ur": "اسٹیٹ بینک آف پاکستان کو مرکزی بینک کے طور پر قائم کرنے والا قانون۔"
+    },
+    {
+      "title": "Anti-Terrorism Act",
+      "short_title": "ATA",
+      "act_number": "Act XXVII of 1997",
+      "year": 1997,
+      "category": "criminal",
+      "summary_en": "Law for prevention of terrorism, sectarian violence, and other heinous offenses. Establishes Anti-Terrorism Courts with special procedures for speedy trial of terrorism-related cases.",
+      "summary_ur": "دہشت گردی، فرقہ وارانہ تشدد اور سنگین جرائم کی روک تھام کا قانون۔"
+    },
+    {
+      "title": "National Accountability Ordinance",
+      "short_title": "NAO",
+      "act_number": "Ordinance XVIII of 1999",
+      "year": 1999,
+      "category": "criminal",
+      "summary_en": "Law establishing the National Accountability Bureau (NAB) for investigation and prosecution of corruption, corrupt practices, and recovery of looted national wealth.",
+      "summary_ur": "نیب کو کرپشن کی تحقیقات اور مقدمات چلانے کے لیے قائم کرنے والا قانون۔"
+    },
+    {
+      "title": "Control of Narcotic Substances Act",
+      "short_title": "CNSA",
+      "act_number": "Act XXV of 1997",
+      "year": 1997,
+      "category": "criminal",
+      "summary_en": "Law controlling narcotic drugs and psychotropic substances. Defines offenses related to possession, trafficking, and manufacture of narcotics with severe penalties.",
+      "summary_ur": "نشہ آور اشیاء اور نفسیاتی مادوں کو کنٹرول کرنے والا قانون۔"
+    },
+    {
+      "title": "Pakistan Environmental Protection Act",
+      "short_title": "PEPA",
+      "act_number": "Act XXXIV of 1997",
+      "year": 1997,
+      "category": "environmental",
+      "summary_en": "Law for protection, conservation, rehabilitation, and improvement of the environment. Establishes the Pakistan Environmental Protection Agency and Environmental Tribunals.",
+      "summary_ur": "ماحول کے تحفظ، بحالی اور بہتری کے لیے قانون۔"
+    },
+    {
+      "title": "Industrial Relations Act",
+      "short_title": "IRA",
+      "act_number": "Act X of 2012",
+      "year": 2012,
+      "category": "labor",
+      "summary_en": "Law governing employer-employee relations, trade unions, collective bargaining, and settlement of industrial disputes. Provides for workers' right to organize and participate in trade union activities.",
+      "summary_ur": "آجر اور ملازم کے تعلقات، ٹریڈ یونینز اور صنعتی تنازعات کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Factories Act",
+      "short_title": "FA",
+      "act_number": "Act XXV of 1934",
+      "year": 1934,
+      "category": "labor",
+      "summary_en": "Law regulating labor in factories covering working conditions, health, safety, working hours, employment of women and children, annual leave, and overtime.",
+      "summary_ur": "فیکٹریوں میں محنت کشوں کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Payment of Wages Act",
+      "short_title": "PWA",
+      "act_number": "Act IV of 1936",
+      "year": 1936,
+      "category": "labor",
+      "summary_en": "Law regulating payment of wages to workers employed in factories and industrial establishments. Covers frequency of payment, permissible deductions, and remedies for delayed or unpaid wages.",
+      "summary_ur": "فیکٹریوں میں ملازمین کو اجرت کی ادائیگی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Workmen's Compensation Act",
+      "short_title": "WCA",
+      "act_number": "Act VIII of 1923",
+      "year": 1923,
+      "category": "labor",
+      "summary_en": "Law providing compensation to workmen for injuries suffered during employment. Covers occupational diseases, permanent and temporary disablement, and death compensation.",
+      "summary_ur": "ملازمت کے دوران زخمی ہونے والے مزدوروں کو معاوضہ فراہم کرنے والا قانون۔"
+    },
+    {
+      "title": "Sales Tax Act",
+      "short_title": "STA",
+      "act_number": "Act VII of 1990",
+      "year": 1990,
+      "category": "taxation",
+      "summary_en": "Law imposing sales tax on supply of goods and services. Covers registration, returns, input tax credits, refunds, and penalties for evasion.",
+      "summary_ur": "اشیاء اور خدمات کی فراہمی پر سیلز ٹیکس عائد کرنے والا قانون۔"
+    },
+    {
+      "title": "Customs Act",
+      "short_title": "CA 1969",
+      "act_number": "Act IV of 1969",
+      "year": 1969,
+      "category": "taxation",
+      "summary_en": "Law governing import and export of goods, levy of customs duties, prohibitions, smuggling offenses, and customs procedures.",
+      "summary_ur": "اشیاء کی درآمد و برآمد اور کسٹمز ڈیوٹی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Federal Excise Act",
+      "short_title": "FEA",
+      "act_number": "Act VIII of 2005",
+      "year": 2005,
+      "category": "taxation",
+      "summary_en": "Law levying federal excise duty on specified goods produced or manufactured in Pakistan and on services provided or rendered.",
+      "summary_ur": "پاکستان میں تیار کردہ مخصوص اشیاء پر فیڈرل ایکسائز ڈیوٹی لگانے والا قانون۔"
+    },
+    {
+      "title": "Muslim Personal Law (Shariat) Application Act",
+      "short_title": "MPLAA",
+      "act_number": "Act XXVI of 1962",
+      "year": 1962,
+      "category": "islamic",
+      "summary_en": "Law directing application of Muslim Personal Law (Shariat) in matters of inheritance, succession, wills, marriage, dissolution of marriage, dower, maintenance, and guardianship.",
+      "summary_ur": "وراثت، نکاح، طلاق، مہر اور نفقہ کے معاملات میں مسلم پرسنل لا (شریعت) کے اطلاق کا قانون۔"
+    },
+    {
+      "title": "Prevention of Anti-Women Practices Act",
+      "short_title": "PAWPA",
+      "act_number": "Act of 2011",
+      "year": 2011,
+      "category": "human_rights",
+      "summary_en": "Law criminalizing practices used against women including depriving women of inheritance, forced marriages, marriages with the Holy Quran, and exchange marriages (watta satta).",
+      "summary_ur": "خواتین کے خلاف رسوم و روایات کو جرم قرار دینے والا قانون۔"
+    },
+    {
+      "title": "Protection of Women (Criminal Laws Amendment) Act",
+      "short_title": "PWCLA",
+      "act_number": "Act of 2006",
+      "year": 2006,
+      "category": "human_rights",
+      "summary_en": "Law amending the Hudood Ordinances to provide better protection to women in cases of rape, adultery, and fornication. Separates hadd and tazir offenses.",
+      "summary_ur": "خواتین کو حدود آرڈیننس میں بہتر تحفظ فراہم کرنے والا قانون۔"
+    },
+    {
+      "title": "Domestic Violence (Prevention and Protection) Act",
+      "short_title": "DVPPA",
+      "act_number": "Act of 2012",
+      "year": 2012,
+      "category": "human_rights",
+      "summary_en": "Law providing protection to women from domestic violence. Defines domestic violence to include physical, sexual, emotional, and economic abuse. Provides for protection orders and residence orders.",
+      "summary_ur": "خواتین کو گھریلو تشدد سے تحفظ فراہم کرنے والا قانون۔"
+    },
+    {
+      "title": "Right of Access to Information Act",
+      "short_title": "RAIA",
+      "act_number": "Act of 2017",
+      "year": 2017,
+      "category": "constitutional",
+      "summary_en": "Law providing citizens the right to access information held by public bodies. Establishes the Pakistan Information Commission and procedures for requesting and providing information.",
+      "summary_ur": "شہریوں کو سرکاری اداروں کی معلومات تک رسائی کا حق دینے والا قانون۔"
+    },
+    {
+      "title": "Juvenile Justice System Act",
+      "short_title": "JJSA",
+      "act_number": "Act XXII of 2018",
+      "year": 2018,
+      "category": "criminal",
+      "summary_en": "Law providing a separate criminal justice system for juveniles (persons under 18). Covers juvenile courts, diversion, rehabilitation, and reintegration. Prohibits death penalty for juvenile offenders.",
+      "summary_ur": "نوعمروں کے لیے علیحدہ فوجداری نظام انصاف فراہم کرنے والا قانون۔"
+    },
+    {
+      "title": "Arbitration Act",
+      "short_title": "AA",
+      "act_number": "Act X of 1940",
+      "year": 1940,
+      "category": "civil",
+      "summary_en": "Law governing domestic arbitration in Pakistan. Provides procedures for arbitration agreements, appointment of arbitrators, conduct of proceedings, making of awards, and enforcement.",
+      "summary_ur": "پاکستان میں ملکی ثالثی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Recognition and Enforcement (Arbitration Agreements and Foreign Arbitral Awards) Act",
+      "short_title": "REAA",
+      "act_number": "Act XX of 2011",
+      "year": 2011,
+      "category": "civil",
+      "summary_en": "Law giving effect to the New York Convention on Recognition and Enforcement of Foreign Arbitral Awards in Pakistan.",
+      "summary_ur": "پاکستان میں غیر ملکی ثالثی فیصلوں کی شناخت اور نفاذ کا قانون۔"
+    },
+    {
+      "title": "Intellectual Property Organization of Pakistan Act",
+      "short_title": "IPO Act",
+      "act_number": "Act XXIII of 2012",
+      "year": 2012,
+      "category": "intellectual_property",
+      "summary_en": "Law establishing the Intellectual Property Organization of Pakistan for administration and enforcement of intellectual property rights including patents, trademarks, copyrights, and industrial designs.",
+      "summary_ur": "دانشورانہ املاک کی انتظامیہ اور نفاذ کے لیے آئی پی او قائم کرنے والا قانون۔"
+    },
+    {
+      "title": "Copyright Ordinance",
+      "short_title": "CO",
+      "act_number": "Ordinance XXXIV of 1962",
+      "year": 1962,
+      "category": "intellectual_property",
+      "summary_en": "Law protecting copyright in literary, dramatic, musical, and artistic works, cinematograph films, and sound recordings. Covers ownership, duration, infringement, and remedies.",
+      "summary_ur": "ادبی، ڈرامائی، موسیقی اور فنی تخلیقات کے کاپی رائٹ کا تحفظ کرنے والا قانون۔"
+    },
+    {
+      "title": "Trade Marks Ordinance",
+      "short_title": "TMO",
+      "act_number": "Ordinance XIX of 2001",
+      "year": 2001,
+      "category": "intellectual_property",
+      "summary_en": "Law governing registration and protection of trademarks in Pakistan. Covers application, examination, opposition, registration, infringement, and passing off.",
+      "summary_ur": "پاکستان میں ٹریڈ مارکس کی رجسٹریشن اور تحفظ کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Patents Ordinance",
+      "short_title": "PO",
+      "act_number": "Ordinance LXI of 2000",
+      "year": 2000,
+      "category": "intellectual_property",
+      "summary_en": "Law governing the grant and protection of patents for inventions in Pakistan. Covers patentability criteria, application procedure, examination, opposition, and compulsory licensing.",
+      "summary_ur": "پاکستان میں ایجادات کے لیے پیٹنٹ کی منظوری اور تحفظ کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Consumer Protection Act",
+      "short_title": "CPA",
+      "act_number": "Act of 2005",
+      "year": 2005,
+      "category": "civil",
+      "summary_en": "Law protecting consumer rights against defective goods and deficient services. Establishes consumer courts and provides remedies for unfair trade practices and misleading advertisements.",
+      "summary_ur": "صارفین کے حقوق کا تحفظ کرنے والا قانون۔"
+    },
+    {
+      "title": "Competition Act",
+      "short_title": "CompA",
+      "act_number": "Act XIX of 2010",
+      "year": 2010,
+      "category": "corporate",
+      "summary_en": "Law promoting free competition and preventing anti-competitive agreements, abuse of dominant position, and deceptive marketing practices. Establishes the Competition Commission of Pakistan.",
+      "summary_ur": "آزاد مقابلے کو فروغ دینے اور اجارہ داری کو روکنے والا قانون۔"
+    },
+    {
+      "title": "Sindh Rented Premises Ordinance",
+      "short_title": "SRPO",
+      "act_number": "Ordinance of 1979",
+      "year": 1979,
+      "category": "property",
+      "summary_en": "Law controlling rents and regulating eviction of tenants from rented premises in Sindh. Provides for Rent Controller to adjudicate disputes between landlords and tenants.",
+      "summary_ur": "سندھ میں کرایوں کو کنٹرول کرنے اور کرایہ داروں کی بے دخلی کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Punjab Rented Premises Act",
+      "short_title": "PRPA",
+      "act_number": "Act VII of 2009",
+      "year": 2009,
+      "category": "property",
+      "summary_en": "Law governing tenancy agreements and providing protection to tenants and landlords in Punjab. Establishes Rent Tribunals for adjudication of rent disputes.",
+      "summary_ur": "پنجاب میں کرایہ داری کے معاہدوں کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Cooperative Societies Act",
+      "short_title": "CSA",
+      "act_number": "Act VII of 1925",
+      "year": 1925,
+      "category": "corporate",
+      "summary_en": "Law governing the formation, registration, management, and winding up of cooperative societies for mutual benefit of members.",
+      "summary_ur": "تعاونی معاشروں کی تشکیل اور نظم کو منظم کرنے والا قانون۔"
+    },
+    {
+      "title": "Benami Transactions (Prohibition) Act",
+      "short_title": "BTPA",
+      "act_number": "Act V of 2017",
+      "year": 2017,
+      "category": "property",
+      "summary_en": "Law prohibiting benami transactions (property held in fictitious names). Provides for confiscation of benami property and penalties for entering into benami transactions.",
+      "summary_ur": "بے نامی لین دین (فرضی ناموں پر جائیداد) پر پابندی لگانے والا قانون۔"
+    }
+  ]
+}

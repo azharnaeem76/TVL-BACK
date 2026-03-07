@@ -1,0 +1,194 @@
+"""
+Interactive Chat API.
+
+Users can have ongoing conversations about legal scenarios.
+The system maintains context and provides follow-up citations.
+"""
+
+import json
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
+from app.core.database import get_db
+from app.core.security import get_current_user
+from app.models.user import User
+from app.models.legal import ChatSession, ChatMessage, CaseLaw
+from app.schemas.legal import ChatRequest, ChatResponse, ChatMessageResponse, CaseLawResponse
+from app.services.language_service import detect_language, normalize_to_english
+from app.services.embedding_service import generate_embedding
+from app.services.llm_service import generate_response
+from app.services.search_service import _vector_search_cases
+from app.core.config import get_settings
+
+settings = get_settings()
+router = APIRouter(prefix="/chat", tags=["Interactive Chat"])
+
+
+@router.post(
+    "/message",
+    response_model=ChatResponse,
+    summary="Send a chat message",
+    response_description="AI response with cited case laws",
+)
+async def send_message(
+    request: ChatRequest,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    Send a message in a chat session. Creates a new session if session_id is not provided.
+
+    The chat supports:
+    - Follow-up questions about previous results
+    - Multilingual conversations (English, Urdu, Roman Urdu)
+    - Automatic citation of relevant case laws
+    """
+    # Get or create session
+    if request.session_id:
+        result = await db.execute(
+            select(ChatSession).where(
+                ChatSession.id == request.session_id,
+                ChatSession.user_id == current_user.id,
+            )
+        )
+        session = result.scalar_one_or_none()
+        if not session:
+            raise HTTPException(status_code=404, detail="Chat session not found")
+    else:
+        session = ChatSession(
+            user_id=current_user.id,
+            title=request.message[:100],
+        )
+        db.add(session)
+        await db.flush()
+
+    # Detect language
+    language = detect_language(request.message)
+
+    # Save user message
+    user_msg = ChatMessage(
+        session_id=session.id,
+        role="user",
+        content=request.message,
+        language=language,
+    )
+    db.add(user_msg)
+
+    # Get chat history
+    history_result = await db.execute(
+        select(ChatMessage)
+        .where(ChatMessage.session_id == session.id)
+        .order_by(ChatMessage.created_at)
+    )
+    history_rows = history_result.scalars().all()
+    chat_history = [{"role": msg.role, "content": msg.content} for msg in history_rows[-10:]]
+
+    # Search for relevant case laws
+    normalized = normalize_to_english(request.message, language)
+    query_embedding = generate_embedding(normalized)
+    relevant_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
+
+    # Build context from case laws
+    context_parts = []
+    cited_ids = []
+    for cl in relevant_cases:
+        cited_ids.append(cl.id)
+        context_parts.append(
+            f"- {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
+            f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
+        )
+    context = "\n".join(context_parts) if context_parts else ""
+
+    # Generate AI response
+    ai_response = await generate_response(
+        user_message=request.message,
+        context=context,
+        language=language,
+        chat_history=chat_history,
+    )
+
+    # Save assistant message
+    assistant_msg = ChatMessage(
+        session_id=session.id,
+        role="assistant",
+        content=ai_response,
+        language=language,
+        cited_case_ids=json.dumps(cited_ids) if cited_ids else None,
+    )
+    db.add(assistant_msg)
+    await db.flush()
+
+    # Build cited cases response
+    cited_cases = [
+        CaseLawResponse(
+            id=cl.id,
+            citation=cl.citation,
+            title=cl.title,
+            court=cl.court,
+            category=cl.category,
+            year=cl.year,
+            judge_name=cl.judge_name,
+            summary_en=cl.summary_en,
+            summary_ur=cl.summary_ur,
+            headnotes=cl.headnotes,
+            relevant_statutes=cl.relevant_statutes,
+            sections_applied=cl.sections_applied,
+        )
+        for cl in relevant_cases
+    ]
+
+    return ChatResponse(
+        session_id=session.id,
+        message=ChatMessageResponse.model_validate(assistant_msg),
+        cited_cases=cited_cases,
+    )
+
+
+@router.get(
+    "/sessions",
+    summary="List chat sessions",
+    description="Get all chat sessions for the current user, ordered by most recent.",
+)
+async def get_sessions(
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    result = await db.execute(
+        select(ChatSession)
+        .where(ChatSession.user_id == current_user.id)
+        .order_by(ChatSession.updated_at.desc())
+    )
+    sessions = result.scalars().all()
+    return [
+        {"id": s.id, "title": s.title, "created_at": str(s.created_at), "updated_at": str(s.updated_at)}
+        for s in sessions
+    ]
+
+
+@router.get(
+    "/sessions/{session_id}/messages",
+    summary="Get session messages",
+    description="Retrieve full message history of a specific chat session.",
+)
+async def get_session_messages(
+    session_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    # Verify session belongs to user
+    result = await db.execute(
+        select(ChatSession).where(
+            ChatSession.id == session_id,
+            ChatSession.user_id == current_user.id,
+        )
+    )
+    if not result.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    messages_result = await db.execute(
+        select(ChatMessage)
+        .where(ChatMessage.session_id == session_id)
+        .order_by(ChatMessage.created_at)
+    )
+    messages = messages_result.scalars().all()
+    return [ChatMessageResponse.model_validate(msg) for msg in messages]
