@@ -27,6 +27,7 @@ class UserResponse(BaseModel):
     email: str
     full_name: str
     role: UserRole
+    plan: str = "free"
     phone: Optional[str] = None
     city: Optional[str] = None
     specialization: Optional[str] = None

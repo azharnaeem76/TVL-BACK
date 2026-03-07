@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from contextlib import asynccontextmanager
-from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court
+from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support
 from app.core.database import engine, Base, async_session
 from app.api.routes.features import seed_features
 import socketio as socketio_lib
@@ -19,6 +19,7 @@ async def lifespan(app: FastAPI):
     import app.models.features  # noqa
     import app.models.documents  # noqa
     import app.models.messaging  # noqa
+    import app.models.support  # noqa
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     # Seed feature flags
@@ -73,6 +74,8 @@ All endpoints (except guest search) require a Bearer JWT token. Get one via `/ap
         {"name": "Consultations", "description": "Book and manage legal consultations"},
         {"name": "Audit Logs", "description": "Track admin and user actions"},
         {"name": "Student Tools", "description": "Moot Court Simulator and Exam Preparation"},
+        {"name": "Subscriptions", "description": "Plan management and limits"},
+        {"name": "Support", "description": "Help desk and support tickets"},
     ],
 )
 
@@ -102,6 +105,8 @@ app.include_router(messaging.router, prefix="/api/v1")
 app.include_router(consultation.router, prefix="/api/v1")
 app.include_router(audit.router, prefix="/api/v1")
 app.include_router(moot_court.router, prefix="/api/v1")
+app.include_router(subscriptions.router, prefix="/api/v1")
+app.include_router(support.router, prefix="/api/v1")
 
 
 @app.get("/")

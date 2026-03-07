@@ -11,6 +11,13 @@ class UserRole(str, enum.Enum):
     LAW_STUDENT = "law_student"
     CLIENT = "client"
     ADMIN = "admin"
+    SUPPORT = "support"
+
+
+class SubscriptionPlan(str, enum.Enum):
+    FREE = "free"
+    PRO = "pro"
+    FIRM = "firm"
 
 
 class User(Base):
@@ -21,6 +28,8 @@ class User(Base):
     full_name = Column(String(255), nullable=False)
     hashed_password = Column(String(255), nullable=False)
     role = Column(Enum(UserRole), default=UserRole.CLIENT, nullable=False)
+    plan = Column(Enum(SubscriptionPlan), default=SubscriptionPlan.FREE, nullable=False)
+    plan_expires_at = Column(DateTime, nullable=True)
     phone = Column(String(20), nullable=True)
     city = Column(String(100), nullable=True)
     bar_number = Column(String(50), nullable=True)  # For lawyers
