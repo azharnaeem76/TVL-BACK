@@ -127,6 +127,23 @@ async def _emit_after_send(db: AsyncSession, conv: Conversation, msg: Message, c
 # Routes
 # ---------------------------------------------------------------------------
 
+@router.get("/contacts", summary="List all users available to message")
+async def list_contacts(
+    search: str = Query("", max_length=100),
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    query = select(User).where(User.id != current_user.id, User.is_active == True)
+    if search.strip():
+        query = query.where(User.full_name.ilike(f"%{search.strip()}%"))
+    query = query.order_by(User.full_name).limit(30)
+    result = await db.execute(query)
+    users = result.scalars().all()
+    return [
+        {"id": u.id, "full_name": u.full_name, "role": u.role.value if u.role else "", "city": getattr(u, 'city', None)}
+        for u in users
+    ]
+
 @router.get("/conversations", summary="List user conversations")
 async def list_conversations(
     db: AsyncSession = Depends(get_db),
@@ -280,13 +297,13 @@ async def send_file_message(
 async def serve_file(filename: str):
     from fastapi.responses import FileResponse
 
+    # Security: prevent directory traversal - must be checked first
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+
     file_path = os.path.join(UPLOAD_DIR, filename)
     if not os.path.exists(file_path):
         raise HTTPException(status_code=404, detail="File not found")
-
-    # Security: prevent directory traversal
-    if ".." in filename or "/" in filename or "\\" in filename:
-        raise HTTPException(status_code=400, detail="Invalid filename")
 
     return FileResponse(file_path)
 
@@ -318,6 +335,8 @@ async def get_messages(
     )).scalars().all()
     for m in unread_msgs:
         m.is_read = True
+    if unread_msgs:
+        await db.commit()
 
     result = await db.execute(
         select(Message).where(Message.conversation_id == conversation_id)

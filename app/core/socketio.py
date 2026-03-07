@@ -111,12 +111,12 @@ async def emit_message(conversation_id: int, message: dict, exclude_user_id: int
     if exclude_user_id and exclude_user_id in user_sids:
         exclude_sids = list(user_sids[exclude_user_id])
 
-    # Emit to conversation room
-    await sio.emit("new_message", message, room=f"conv_{conversation_id}")
+    # Emit to conversation room, excluding sender's sids
+    await sio.emit("new_message", message, room=f"conv_{conversation_id}", skip_sid=exclude_sids)
 
     # Also emit unread update to the recipient (via their personal room)
     # The sender already has the message from the API response
-    await sio.emit("unread_update", {"conversation_id": conversation_id}, room=f"conv_{conversation_id}")
+    await sio.emit("unread_update", {"conversation_id": conversation_id}, room=f"conv_{conversation_id}", skip_sid=exclude_sids)
 
 
 async def emit_unread_count(user_id: int, count: int):

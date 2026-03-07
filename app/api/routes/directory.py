@@ -13,6 +13,7 @@ router = APIRouter(prefix="/directory", tags=["Lawyer Directory"])
 class LawyerProfile(BaseModel):
     id: int
     full_name: str
+    email: str
     role: UserRole
     city: Optional[str] = None
     specialization: Optional[str] = None
