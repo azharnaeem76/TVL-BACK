@@ -132,6 +132,21 @@ DEFAULT_FEATURES = [
     {"key": "email_notifications", "name": "Email Notifications", "description": "Send email alerts for hearings, updates", "category": "notifications", "enabled": True},
     {"key": "push_notifications", "name": "Push Notifications", "description": "Browser push notifications", "category": "notifications", "enabled": False},
     {"key": "audit_logs", "name": "Audit Logs", "description": "Track all admin and user actions", "category": "notifications", "enabled": True},
+
+    # Community
+    {"key": "forum", "name": "Community Forum", "description": "Public discussion forum for legal topics", "category": "collaboration", "enabled": True},
+
+    # Granular Service Controls (use config JSON for limits)
+    {"key": "case_law_downloads", "name": "Case Law Downloads", "description": "Allow users to download case law PDFs", "category": "core", "enabled": True, "config": {"daily_limit": 50, "roles": ["lawyer", "judge", "admin"]}},
+    {"key": "case_law_views", "name": "Case Law View Limit", "description": "Limit case law views per day for free users", "category": "core", "enabled": True, "config": {"free_daily_limit": 20, "pro_daily_limit": 100, "firm_daily_limit": -1}},
+    {"key": "ai_daily_limit", "name": "AI Usage Limit", "description": "Daily limit for AI tool usage", "category": "ai", "enabled": True, "config": {"free_daily_limit": 5, "pro_daily_limit": 50, "firm_daily_limit": -1}},
+    {"key": "document_upload_limit", "name": "Document Upload Limit", "description": "Max documents per user per day", "category": "core", "enabled": True, "config": {"free_daily_limit": 3, "pro_daily_limit": 20, "firm_daily_limit": -1, "max_file_mb": 25}},
+    {"key": "messaging_limit", "name": "Messaging Limit", "description": "Daily message send limit", "category": "collaboration", "enabled": False, "config": {"free_daily_limit": 20, "pro_daily_limit": 100, "firm_daily_limit": -1}},
+    {"key": "forum_post_limit", "name": "Forum Post Limit", "description": "Daily forum post limit", "category": "collaboration", "enabled": True, "config": {"free_daily_limit": 5, "pro_daily_limit": 20, "firm_daily_limit": -1}},
+    {"key": "search_limit", "name": "Search Limit", "description": "Daily search query limit", "category": "core", "enabled": True, "config": {"free_daily_limit": 10, "pro_daily_limit": 50, "firm_daily_limit": -1}},
+    {"key": "export_results", "name": "Export Search Results", "description": "Allow exporting search results to PDF/CSV", "category": "core", "enabled": False, "config": {"roles": ["lawyer", "judge", "admin", "paralegal"]}},
+    {"key": "bulk_download", "name": "Bulk Download", "description": "Download multiple case laws at once", "category": "core", "enabled": False, "config": {"max_items": 10, "roles": ["lawyer", "judge", "admin"]}},
+    {"key": "content_moderation", "name": "Content Moderation", "description": "Auto-filter abusive content in messages and forum", "category": "notifications", "enabled": True},
 ]
 
 
@@ -148,5 +163,6 @@ async def seed_features(db: AsyncSession):
                 description=feat["description"],
                 category=FeatureCategory(feat["category"]),
                 enabled=feat["enabled"],
+                config=feat.get("config"),
             ))
     await db.flush()
