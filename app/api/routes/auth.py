@@ -1,6 +1,8 @@
+import os
+import uuid
 import httpx
 import logging
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from pydantic import BaseModel
@@ -13,6 +15,9 @@ from app.models.features import Notification, NotificationType
 import secrets
 from app.schemas.user import UserCreate, UserLogin, UserResponse, TokenResponse, ALLOWED_REGISTRATION_ROLES
 from app.services.email_service import send_welcome_email
+
+AVATAR_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "uploads", "avatars")
+os.makedirs(AVATAR_DIR, exist_ok=True)
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -247,6 +252,47 @@ async def update_me(
     await db.refresh(current_user)
     # Update localStorage user data on next request
     return UserResponse.model_validate(current_user)
+
+
+# ---------------------------------------------------------------------------
+# Profile Picture Upload
+# ---------------------------------------------------------------------------
+
+@router.post(
+    "/me/avatar",
+    response_model=UserResponse,
+    summary="Upload profile picture",
+)
+async def upload_avatar(
+    file: UploadFile = File(...),
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    allowed = {"image/jpeg", "image/png", "image/gif", "image/webp"}
+    if file.content_type not in allowed:
+        raise HTTPException(status_code=400, detail="Only JPEG, PNG, GIF, WebP images are allowed")
+    data = await file.read()
+    if len(data) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Image too large. Max 5MB")
+    ext = os.path.splitext(file.filename or "avatar.jpg")[1] or ".jpg"
+    unique_name = f"{uuid.uuid4().hex}{ext}"
+    with open(os.path.join(AVATAR_DIR, unique_name), "wb") as f:
+        f.write(data)
+    current_user.profile_picture = f"/api/v1/auth/avatars/{unique_name}"
+    await db.flush()
+    await db.refresh(current_user)
+    return UserResponse.model_validate(current_user)
+
+
+@router.get("/avatars/{filename}", summary="Serve avatar image")
+async def serve_avatar(filename: str):
+    from fastapi.responses import FileResponse
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+    path = os.path.join(AVATAR_DIR, filename)
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="Not found")
+    return FileResponse(path)
 
 
 # ---------------------------------------------------------------------------

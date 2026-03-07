@@ -77,7 +77,7 @@ async def mark_all_read(
             Notification.user_id == user.id, Notification.is_read == False
         ).values(is_read=True)
     )
-    await db.flush()
+    await db.commit()
     return {"ok": True}
 
 
@@ -94,7 +94,7 @@ async def mark_as_read(
     if not notif:
         raise HTTPException(status_code=404, detail="Notification not found")
     notif.is_read = True
-    await db.flush()
+    await db.commit()
     return {"ok": True}
 
 

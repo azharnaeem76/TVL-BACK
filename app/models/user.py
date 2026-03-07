@@ -35,6 +35,7 @@ class User(Base):
     bar_number = Column(String(50), nullable=True)  # For lawyers
     specialization = Column(String(255), nullable=True)
     bio = Column(Text, nullable=True)
+    profile_picture = Column(String(500), nullable=True)  # URL to profile picture
     is_active = Column(Boolean, default=True)
     is_suspended = Column(Boolean, default=False)
     suspension_reason = Column(Text, nullable=True)

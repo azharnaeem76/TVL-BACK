@@ -31,6 +31,9 @@ class UserResponse(BaseModel):
     phone: Optional[str] = None
     city: Optional[str] = None
     specialization: Optional[str] = None
+    bar_number: Optional[str] = None
+    bio: Optional[str] = None
+    profile_picture: Optional[str] = None
     preferred_language: str = "en"
     is_active: bool = True
 

@@ -1,7 +1,14 @@
 """Messaging models for internal lawyer-client communication."""
+import enum
 from datetime import datetime
-from sqlalchemy import Column, Integer, String, DateTime, Boolean, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, Text, ForeignKey, Enum
 from app.core.database import Base
+
+
+class MessageStatus(str, enum.Enum):
+    SENT = "sent"
+    DELIVERED = "delivered"
+    SEEN = "seen"
 
 
 class Conversation(Base):
@@ -27,4 +34,5 @@ class Message(Base):
     file_size = Column(Integer, nullable=True)
     duration = Column(Integer, nullable=True)  # voice/video duration in seconds
     is_read = Column(Boolean, default=False)
+    status = Column(Enum(MessageStatus), default=MessageStatus.SENT, nullable=False, server_default="sent")
     created_at = Column(DateTime, default=datetime.utcnow)

@@ -10,9 +10,10 @@ from pydantic import BaseModel, Field
 from app.core.database import get_db
 from app.core.security import get_current_user
 from app.models.user import User
-from app.models.messaging import Message, Conversation
+from app.models.messaging import Message, Conversation, MessageStatus
 from app.core.socketio import emit_message, emit_unread_count
 from app.api.routes.notifications import create_and_emit_notification
+from app.services.content_moderation import check_content
 
 router = APIRouter(prefix="/messaging", tags=["Messaging"])
 
@@ -49,6 +50,7 @@ class MessageResponse(BaseModel):
     file_size: Optional[int] = None
     duration: Optional[int] = None
     is_read: bool
+    status: str = "sent"
     created_at: datetime
 
     class Config:
@@ -63,6 +65,11 @@ class ReplyRequest(BaseModel):
 
 
 def _msg_to_dict(msg: Message, sender_name: str) -> dict:
+    status = "sent"
+    if hasattr(msg, 'status') and msg.status:
+        status = msg.status.value if hasattr(msg.status, 'value') else str(msg.status)
+    elif msg.is_read:
+        status = "seen"
     return {
         "id": msg.id,
         "conversation_id": msg.conversation_id,
@@ -75,6 +82,7 @@ def _msg_to_dict(msg: Message, sender_name: str) -> dict:
         "file_size": msg.file_size,
         "duration": msg.duration,
         "is_read": msg.is_read,
+        "status": status,
         "created_at": str(msg.created_at),
     }
 
@@ -213,6 +221,11 @@ async def send_message(
     if request.recipient_id == current_user.id:
         raise HTTPException(status_code=400, detail="Cannot message yourself")
 
+    # Content moderation
+    is_clean, _ = check_content(request.content)
+    if not is_clean:
+        raise HTTPException(status_code=400, detail="Your message contains inappropriate language. Please revise.")
+
     recipient = (await db.execute(select(User).where(User.id == request.recipient_id))).scalar_one_or_none()
     if not recipient:
         raise HTTPException(status_code=404, detail="Recipient not found")
@@ -335,6 +348,7 @@ async def get_messages(
     )).scalars().all()
     for m in unread_msgs:
         m.is_read = True
+        m.status = MessageStatus.SEEN
     if unread_msgs:
         await db.commit()
 
@@ -350,6 +364,63 @@ async def get_messages(
         items.append(_msg_to_dict(msg, sender.full_name if sender else "Unknown"))
 
     return items
+
+
+@router.delete("/conversations/{conversation_id}", summary="Delete a conversation and all its messages")
+async def delete_conversation(
+    conversation_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    conv = (await db.execute(
+        select(Conversation).where(
+            Conversation.id == conversation_id,
+            or_(Conversation.user1_id == current_user.id, Conversation.user2_id == current_user.id),
+        )
+    )).scalar_one_or_none()
+    if not conv:
+        raise HTTPException(status_code=404, detail="Conversation not found")
+
+    # Delete all messages in the conversation
+    msgs = (await db.execute(select(Message).where(Message.conversation_id == conversation_id))).scalars().all()
+    for m in msgs:
+        await db.delete(m)
+    await db.delete(conv)
+    await db.commit()
+    return {"ok": True}
+
+
+@router.delete("/messages/{message_id}", summary="Delete a single message (sender only)")
+async def delete_message(
+    message_id: int,
+    for_everyone: bool = Query(False),
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    msg = (await db.execute(
+        select(Message).where(Message.id == message_id, Message.sender_id == current_user.id)
+    )).scalar_one_or_none()
+    if not msg:
+        raise HTTPException(status_code=404, detail="Message not found or not yours")
+
+    conv_id = msg.conversation_id
+    if for_everyone:
+        # Delete for everyone - remove the message entirely
+        await db.delete(msg)
+        await db.commit()
+        # Notify via socket
+        from app.core.socketio import sio
+        await sio.emit("message_deleted", {"message_id": message_id, "conversation_id": conv_id}, room=f"conv_{conv_id}")
+        return {"ok": True, "action": "deleted_for_everyone"}
+    else:
+        # Soft delete - replace content with placeholder
+        msg.content = "This message was deleted"
+        msg.message_type = "deleted"
+        msg.file_url = None
+        msg.file_name = None
+        msg.file_size = None
+        await db.commit()
+        return {"ok": True, "action": "deleted"}
 
 
 @router.get("/unread-count", summary="Get total unread message count")
