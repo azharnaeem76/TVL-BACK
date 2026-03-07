@@ -1,5 +1,5 @@
 import enum
-from datetime import datetime, timezone
+from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime, Enum, Boolean, Text
 from app.core.database import Base
 
@@ -27,6 +27,8 @@ class User(Base):
     specialization = Column(String(255), nullable=True)
     bio = Column(Text, nullable=True)
     is_active = Column(Boolean, default=True)
+    is_suspended = Column(Boolean, default=False)
+    suspension_reason = Column(Text, nullable=True)
     preferred_language = Column(String(10), default="en")  # en, ur, roman_ur
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

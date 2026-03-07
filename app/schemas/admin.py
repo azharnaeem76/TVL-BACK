@@ -169,9 +169,23 @@ class SectionAdminResponse(BaseModel):
 # Users
 # ---------------------------------------------------------------------------
 
+class UserAdminCreate(BaseModel):
+    email: str
+    full_name: str
+    password: str
+    role: UserRole = UserRole.CLIENT
+    phone: Optional[str] = None
+    city: Optional[str] = None
+    bar_number: Optional[str] = None
+    specialization: Optional[str] = None
+    preferred_language: str = "en"
+
+
 class UserAdminUpdate(BaseModel):
     role: Optional[UserRole] = None
     is_active: Optional[bool] = None
+    is_suspended: Optional[bool] = None
+    suspension_reason: Optional[str] = None
     full_name: Optional[str] = None
     phone: Optional[str] = None
     city: Optional[str] = None
@@ -189,6 +203,8 @@ class UserAdminResponse(BaseModel):
     specialization: Optional[str] = None
     preferred_language: str = "en"
     is_active: bool = True
+    is_suspended: bool = False
+    suspension_reason: Optional[str] = None
     created_at: Optional[datetime] = None
 
     class Config:

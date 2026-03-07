@@ -3,8 +3,10 @@ from typing import Optional
 from app.models.user import UserRole
 
 
+ALLOWED_REGISTRATION_ROLES = {UserRole.CLIENT, UserRole.LAWYER, UserRole.LAW_STUDENT, UserRole.PARALEGAL}
+
 class UserCreate(BaseModel):
-    email: str
+    email: EmailStr
     full_name: str
     password: str
     role: UserRole = UserRole.CLIENT

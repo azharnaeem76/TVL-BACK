@@ -1,5 +1,5 @@
 import enum
-from datetime import datetime, timezone
+from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime, Enum, Text, ForeignKey, Float, Index
 from app.core.database import Base
 
@@ -60,7 +60,7 @@ class CaseLaw(Base):
     # Vector embedding for semantic search (stored as JSON text without pgvector)
     embedding = Column(Text, nullable=True)
 
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
 
 
 class Statute(Base):
@@ -79,7 +79,7 @@ class Statute(Base):
 
     embedding = Column(Text, nullable=True)
 
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
 
 
 class Section(Base):
@@ -94,7 +94,7 @@ class Section(Base):
 
     embedding = Column(Text, nullable=True)
 
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
 
 
 class SearchHistory(Base):
@@ -106,7 +106,7 @@ class SearchHistory(Base):
     detected_language = Column(String(20), nullable=True)
     normalized_query = Column(Text, nullable=True)
     results_count = Column(Integer, default=0)
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
 
 
 class ChatSession(Base):
@@ -115,8 +115,8 @@ class ChatSession(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=True)
     title = Column(String(255), nullable=True)
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow)
 
 
 class ChatMessage(Base):
@@ -128,4 +128,4 @@ class ChatMessage(Base):
     content = Column(Text, nullable=False)
     language = Column(String(20), nullable=True)
     cited_case_ids = Column(Text, nullable=True)  # JSON list of case law IDs
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=datetime.utcnow)

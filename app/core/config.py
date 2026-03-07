@@ -24,6 +24,9 @@ class Settings(BaseSettings):
     EMBEDDING_MODEL: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     EMBEDDING_DIMENSION: int = 384
 
+    # Model storage path (HuggingFace models cache)
+    HF_HOME: str = "D:\\AI_Models\\huggingface"
+
     # Google OAuth (optional)
     GOOGLE_CLIENT_ID: str = ""
     GOOGLE_CLIENT_SECRET: str = ""

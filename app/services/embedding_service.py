@@ -7,6 +7,7 @@ Uses paraphrase-multilingual-MiniLM-L12-v2 which supports:
 - Excellent for semantic similarity search
 """
 
+import os
 import numpy as np
 from functools import lru_cache
 from sentence_transformers import SentenceTransformer
@@ -18,6 +19,9 @@ settings = get_settings()
 @lru_cache(maxsize=1)
 def get_model() -> SentenceTransformer:
     """Load the multilingual embedding model (cached singleton)."""
+    # Use HF_HOME to store models in the configured directory
+    if settings.HF_HOME:
+        os.environ["HF_HOME"] = settings.HF_HOME
     print(f"Loading embedding model: {settings.EMBEDDING_MODEL}")
     model = SentenceTransformer(settings.EMBEDDING_MODEL)
     print("Embedding model loaded successfully.")

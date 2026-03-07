@@ -22,8 +22,8 @@ async def list_case_laws(
     court: Optional[Court] = Query(None, description="Filter by court"),
     year: Optional[int] = Query(None, description="Filter by year of judgment"),
     search: Optional[str] = Query(None, description="Search in title and citation"),
-    skip: int = Query(0, description="Pagination offset"),
-    limit: int = Query(20, description="Results per page (max 100)"),
+    skip: int = Query(0, ge=0, description="Pagination offset"),
+    limit: int = Query(20, ge=1, le=100, description="Results per page (max 100)"),
     db: AsyncSession = Depends(get_db),
 ):
     query = select(CaseLaw)
@@ -68,8 +68,8 @@ async def get_case_law(case_id: int, db: AsyncSession = Depends(get_db)):
 async def list_statutes(
     category: Optional[LawCategory] = Query(None, description="Filter by law category"),
     search: Optional[str] = Query(None, description="Search in statute title"),
-    skip: int = Query(0, description="Pagination offset"),
-    limit: int = Query(20, description="Results per page"),
+    skip: int = Query(0, ge=0, description="Pagination offset"),
+    limit: int = Query(20, ge=1, le=100, description="Results per page (max 100)"),
     db: AsyncSession = Depends(get_db),
 ):
     query = select(Statute)

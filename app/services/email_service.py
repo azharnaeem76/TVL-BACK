@@ -174,6 +174,44 @@ def send_hearing_reminder(to_email: str, full_name: str, case_title: str, hearin
     return send_email(to_email, f"Hearing Reminder: {case_title}", html)
 
 
+def send_password_reset_email(to_email: str, full_name: str, reset_token: str) -> bool:
+    """Send password reset email."""
+    reset_url = f"http://localhost:3000/reset-password?token={reset_token}"
+    html = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {{ font-family: 'Georgia', serif; margin: 0; padding: 0; background: #0a0e1a; color: #e5e7eb; }}
+            .container {{ max-width: 600px; margin: 0 auto; padding: 40px 20px; }}
+            .header {{ text-align: center; padding: 20px 0; border-bottom: 1px solid rgba(196, 166, 107, 0.2); }}
+            .logo {{ font-size: 24px; font-weight: bold; color: #c4a66b; }}
+            .content {{ padding: 30px 0; }}
+            h2 {{ color: #ffffff; }}
+            p {{ color: #9ca3af; line-height: 1.6; }}
+            .cta {{ display: inline-block; background: linear-gradient(135deg, #c4a66b, #8B7355); color: #0a0e1a; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; }}
+            .warning {{ color: #f59e0b; font-size: 13px; }}
+            .footer {{ text-align: center; padding: 20px 0; color: #6b7280; font-size: 12px; }}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"><div class="logo">TVL</div></div>
+            <div class="content">
+                <h2>Password Reset Request</h2>
+                <p>Hello {full_name},</p>
+                <p>We received a request to reset your password. Click the button below:</p>
+                <p style="text-align: center;"><a href="{reset_url}" class="cta">Reset Password</a></p>
+                <p class="warning">This link expires in 15 minutes. If you didn't request this, ignore this email.</p>
+            </div>
+            <div class="footer">TVL - The Value of Law</div>
+        </div>
+    </body>
+    </html>
+    """
+    return send_email(to_email, "Password Reset - TVL", html, f"Reset your password: {reset_url}")
+
+
 def send_notification_email(to_email: str, full_name: str, title: str, message: str, link: Optional[str] = None) -> bool:
     """Send a generic notification email."""
     link_html = f'<a href="{link}" style="color: #c4a66b;">View Details</a>' if link else ''

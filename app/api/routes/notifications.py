@@ -5,10 +5,11 @@ from sqlalchemy import select, func, update
 from typing import Optional
 from pydantic import BaseModel
 from datetime import datetime
-from app.core.database import get_db
+from app.core.database import get_db, async_session
 from app.core.security import get_current_user
 from app.models.user import User
 from app.models.features import Notification, NotificationType
+from app.core.socketio import emit_notification
 
 router = APIRouter(prefix="/notifications", tags=["Notifications"])
 
@@ -66,6 +67,20 @@ async def get_notifications(
     }
 
 
+@router.put("/read-all", summary="Mark all notifications as read")
+async def mark_all_read(
+    db: AsyncSession = Depends(get_db),
+    user: User = Depends(get_current_user),
+):
+    await db.execute(
+        update(Notification).where(
+            Notification.user_id == user.id, Notification.is_read == False
+        ).values(is_read=True)
+    )
+    await db.flush()
+    return {"ok": True}
+
+
 @router.put("/{notification_id}/read", summary="Mark notification as read")
 async def mark_as_read(
     notification_id: int,
@@ -83,20 +98,6 @@ async def mark_as_read(
     return {"ok": True}
 
 
-@router.put("/read-all", summary="Mark all notifications as read")
-async def mark_all_read(
-    db: AsyncSession = Depends(get_db),
-    user: User = Depends(get_current_user),
-):
-    await db.execute(
-        update(Notification).where(
-            Notification.user_id == user.id, Notification.is_read == False
-        ).values(is_read=True)
-    )
-    await db.flush()
-    return {"ok": True}
-
-
 @router.get("/unread-count", summary="Get unread notification count")
 async def unread_count(
     db: AsyncSession = Depends(get_db),
@@ -107,4 +108,41 @@ async def unread_count(
             Notification.user_id == user.id, Notification.is_read == False
         )
     )).scalar() or 0
-    return {"count": count}
+    return {"unread_count": count}
+
+
+# ---------------------------------------------------------------------------
+# Helper: create a notification and push via Socket.IO
+# ---------------------------------------------------------------------------
+
+async def create_and_emit_notification(
+    user_id: int,
+    title: str,
+    message: str,
+    notif_type: NotificationType = NotificationType.SYSTEM,
+    link: str | None = None,
+):
+    """Create a notification in DB and emit it via Socket.IO in real time."""
+    async with async_session() as session:
+        notif = Notification(
+            user_id=user_id,
+            type=notif_type,
+            title=title,
+            message=message,
+            link=link,
+        )
+        session.add(notif)
+        await session.flush()
+        await session.refresh(notif)
+
+        await emit_notification(user_id, {
+            "id": notif.id,
+            "type": notif.type.value if hasattr(notif.type, 'value') else str(notif.type),
+            "title": notif.title,
+            "message": notif.message,
+            "is_read": False,
+            "link": notif.link,
+            "created_at": str(notif.created_at),
+        })
+
+        await session.commit()

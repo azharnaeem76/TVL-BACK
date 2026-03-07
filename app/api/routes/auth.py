@@ -10,7 +10,8 @@ from app.core.config import get_settings
 from app.core.security import hash_password, verify_password, create_access_token, get_current_user
 from app.models.user import User, UserRole
 from app.models.features import Notification, NotificationType
-from app.schemas.user import UserCreate, UserLogin, UserResponse, TokenResponse
+import secrets
+from app.schemas.user import UserCreate, UserLogin, UserResponse, TokenResponse, ALLOWED_REGISTRATION_ROLES
 from app.services.email_service import send_welcome_email
 
 logger = logging.getLogger(__name__)
@@ -39,6 +40,9 @@ class GoogleLoginRequest(BaseModel):
     description="Create a new account with role selection. Returns JWT token and user profile.",
 )
 async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
+    if user_data.role not in ALLOWED_REGISTRATION_ROLES:
+        raise HTTPException(status_code=400, detail="Invalid role for registration")
+
     result = await db.execute(select(User).where(User.email == user_data.email))
     if result.scalar_one_or_none():
         raise HTTPException(status_code=400, detail="Email already registered")
@@ -100,6 +104,10 @@ async def login(credentials: UserLogin, db: AsyncSession = Depends(get_db)):
     if not user.is_active:
         raise HTTPException(status_code=403, detail="Account is deactivated")
 
+    if getattr(user, 'is_suspended', False):
+        reason = getattr(user, 'suspension_reason', None) or "Contact support for details"
+        raise HTTPException(status_code=403, detail=f"Account is suspended: {reason}")
+
     token = create_access_token({"sub": user.id})
     return TokenResponse(
         access_token=token,
@@ -146,6 +154,9 @@ async def google_login(payload: GoogleLoginRequest, db: AsyncSession = Depends(g
     if not email:
         raise HTTPException(status_code=400, detail="Google account has no email")
 
+    if payload.role not in ALLOWED_REGISTRATION_ROLES:
+        raise HTTPException(status_code=400, detail="Invalid role for registration")
+
     # Check if user exists
     result = await db.execute(select(User).where(User.email == email))
     user = result.scalar_one_or_none()
@@ -154,12 +165,15 @@ async def google_login(payload: GoogleLoginRequest, db: AsyncSession = Depends(g
         # Existing user - login
         if not user.is_active:
             raise HTTPException(status_code=403, detail="Account is deactivated")
+        if getattr(user, 'is_suspended', False):
+            reason = getattr(user, 'suspension_reason', None) or "Contact support for details"
+            raise HTTPException(status_code=403, detail=f"Account is suspended: {reason}")
     else:
         # New user - register
         user = User(
             email=email,
             full_name=name,
-            hashed_password=hash_password(f"google_oauth_{email}"),  # Placeholder password
+            hashed_password=hash_password(secrets.token_urlsafe(32)),  # Random password for OAuth users
             role=payload.role,
         )
         db.add(user)
@@ -200,3 +214,137 @@ async def google_login(payload: GoogleLoginRequest, db: AsyncSession = Depends(g
 )
 async def get_me(current_user: User = Depends(get_current_user)):
     return UserResponse.model_validate(current_user)
+
+
+# ---------------------------------------------------------------------------
+# Profile Update
+# ---------------------------------------------------------------------------
+
+class ProfileUpdate(BaseModel):
+    full_name: Optional[str] = None
+    phone: Optional[str] = None
+    city: Optional[str] = None
+    specialization: Optional[str] = None
+    bar_number: Optional[str] = None
+    bio: Optional[str] = None
+    preferred_language: Optional[str] = None
+
+
+@router.put(
+    "/me",
+    response_model=UserResponse,
+    summary="Update current user profile",
+    description="Update profile fields like name, phone, city, specialization.",
+)
+async def update_me(
+    payload: ProfileUpdate,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    for field, value in payload.model_dump(exclude_unset=True).items():
+        setattr(current_user, field, value)
+    await db.flush()
+    await db.refresh(current_user)
+    # Update localStorage user data on next request
+    return UserResponse.model_validate(current_user)
+
+
+# ---------------------------------------------------------------------------
+# Password Change
+# ---------------------------------------------------------------------------
+
+class PasswordChange(BaseModel):
+    current_password: str
+    new_password: str
+
+
+@router.put(
+    "/change-password",
+    summary="Change password",
+    description="Change password for the currently authenticated user.",
+)
+async def change_password(
+    payload: PasswordChange,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    if not verify_password(payload.current_password, current_user.hashed_password):
+        raise HTTPException(status_code=400, detail="Current password is incorrect")
+    if len(payload.new_password) < 6:
+        raise HTTPException(status_code=400, detail="New password must be at least 6 characters")
+    current_user.hashed_password = hash_password(payload.new_password)
+    await db.flush()
+    return {"ok": True, "message": "Password changed successfully"}
+
+
+# ---------------------------------------------------------------------------
+# Password Reset (forgot password)
+# ---------------------------------------------------------------------------
+
+class ForgotPasswordRequest(BaseModel):
+    email: str
+
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str
+
+
+@router.post(
+    "/forgot-password",
+    summary="Request password reset",
+    description="Send a password reset link to the user's email.",
+)
+async def forgot_password(
+    payload: ForgotPasswordRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    result = await db.execute(select(User).where(User.email == payload.email))
+    user = result.scalar_one_or_none()
+    # Always return success to prevent email enumeration
+    if not user:
+        return {"ok": True, "message": "If the email exists, a reset link has been sent."}
+
+    # Generate a short-lived reset token (15 min)
+    reset_token = create_access_token({"sub": user.id, "type": "reset"})
+
+    # Send reset email
+    try:
+        from app.services.email_service import send_password_reset_email
+        send_password_reset_email(user.email, user.full_name, reset_token)
+    except Exception as e:
+        logger.warning(f"Reset email failed: {e}")
+
+    return {"ok": True, "message": "If the email exists, a reset link has been sent."}
+
+
+@router.post(
+    "/reset-password",
+    summary="Reset password with token",
+    description="Reset password using the token from the reset email.",
+)
+async def reset_password(
+    payload: ResetPasswordRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    from jose import JWTError, jwt as jose_jwt
+
+    try:
+        decoded = jose_jwt.decode(payload.token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
+        if decoded.get("type") != "reset":
+            raise HTTPException(status_code=400, detail="Invalid reset token")
+        user_id = int(decoded.get("sub", 0))
+    except (JWTError, ValueError):
+        raise HTTPException(status_code=400, detail="Invalid or expired reset token")
+
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=400, detail="Invalid reset token")
+
+    if len(payload.new_password) < 6:
+        raise HTTPException(status_code=400, detail="Password must be at least 6 characters")
+
+    user.hashed_password = hash_password(payload.new_password)
+    await db.flush()
+    return {"ok": True, "message": "Password has been reset. You can now sign in."}

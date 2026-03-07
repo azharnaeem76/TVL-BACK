@@ -112,6 +112,8 @@ DEFAULT_FEATURES = [
     {"key": "case_tracker", "name": "Case Tracker", "description": "Track active court cases with hearing dates", "category": "collaboration", "enabled": True},
     {"key": "client_crm", "name": "Client Management", "description": "Manage clients, documents, and billing", "category": "collaboration", "enabled": True},
     {"key": "lawyer_directory", "name": "Lawyer Directory", "description": "Searchable directory of legal professionals", "category": "collaboration", "enabled": True},
+    {"key": "document_analysis", "name": "Document Upload & Analysis", "description": "Upload legal documents for AI extraction of key info", "category": "ai", "enabled": True},
+    {"key": "bookmarks", "name": "Bookmarks", "description": "Save and manage bookmarked case laws", "category": "core", "enabled": True},
     {"key": "messaging", "name": "Internal Messaging", "description": "Secure lawyer-client messaging", "category": "collaboration", "enabled": False},
     {"key": "team_workspaces", "name": "Team Workspaces", "description": "Law firm team collaboration", "category": "collaboration", "enabled": False},
 

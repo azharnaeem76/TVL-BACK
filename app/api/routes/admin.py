@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -9,6 +9,7 @@ from app.core.database import get_db
 from app.core.security import get_current_user
 from app.models.user import User, UserRole
 from app.models.legal import CaseLaw, Statute, Section, LawCategory, Court
+from app.core.security import hash_password
 from app.schemas.admin import (
     DashboardStats,
     CategoryCount,
@@ -23,6 +24,7 @@ from app.schemas.admin import (
     SectionCreate,
     SectionUpdate,
     SectionAdminResponse,
+    UserAdminCreate,
     UserAdminUpdate,
     UserAdminResponse,
     BulkCaseLawImport,
@@ -60,7 +62,7 @@ async def get_dashboard_stats(
     db: AsyncSession = Depends(get_db),
     _admin: User = Depends(require_admin),
 ):
-    now = datetime.now(timezone.utc)
+    now = datetime.utcnow()
     seven_days_ago = now - timedelta(days=7)
 
     # Totals
@@ -366,6 +368,45 @@ async def admin_delete_statute(
 # Sections CRUD
 # ---------------------------------------------------------------------------
 
+@router.get(
+    "/sections",
+    response_model=dict,
+    summary="List sections (admin, paginated)",
+)
+async def admin_list_sections(
+    statute_id: Optional[int] = Query(None),
+    search: Optional[str] = Query(None),
+    skip: int = Query(0, ge=0),
+    limit: int = Query(20, ge=1, le=100),
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(require_admin),
+):
+    base = select(Section)
+    count_q = select(func.count(Section.id))
+
+    if statute_id:
+        base = base.where(Section.statute_id == statute_id)
+        count_q = count_q.where(Section.statute_id == statute_id)
+    if search:
+        like = f"%{search}%"
+        base = base.where(Section.title.ilike(like) | Section.section_number.ilike(like))
+        count_q = count_q.where(Section.title.ilike(like) | Section.section_number.ilike(like))
+
+    total = (await db.execute(count_q)).scalar() or 0
+    rows = (
+        await db.execute(
+            base.order_by(Section.id.asc()).offset(skip).limit(limit)
+        )
+    ).scalars().all()
+
+    return {
+        "items": [SectionAdminResponse.model_validate(r) for r in rows],
+        "total": total,
+        "skip": skip,
+        "limit": limit,
+    }
+
+
 @router.post(
     "/sections",
     response_model=SectionAdminResponse,
@@ -498,6 +539,44 @@ async def admin_list_users(
     }
 
 
+@router.post(
+    "/users",
+    response_model=UserAdminResponse,
+    status_code=status.HTTP_201_CREATED,
+    summary="Create a user (admin, any role including admin/judge)",
+)
+async def admin_create_user(
+    payload: UserAdminCreate,
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(require_admin),
+):
+    # Check unique email
+    existing = (
+        await db.execute(select(User).where(User.email == payload.email))
+    ).scalar_one_or_none()
+    if existing:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=f"User with email '{payload.email}' already exists",
+        )
+
+    user = User(
+        email=payload.email,
+        full_name=payload.full_name,
+        hashed_password=hash_password(payload.password),
+        role=payload.role,
+        phone=payload.phone,
+        city=payload.city,
+        bar_number=payload.bar_number,
+        specialization=payload.specialization,
+        preferred_language=payload.preferred_language,
+    )
+    db.add(user)
+    await db.flush()
+    await db.refresh(user)
+    return UserAdminResponse.model_validate(user)
+
+
 @router.put(
     "/users/{user_id}",
     response_model=UserAdminResponse,
@@ -514,11 +593,16 @@ async def admin_update_user(
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
 
-    # Prevent admin from deactivating themselves
+    # Prevent admin from deactivating/suspending themselves
     if user.id == admin.id and payload.is_active is False:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="You cannot deactivate your own account",
+        )
+    if user.id == admin.id and payload.is_suspended is True:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="You cannot suspend your own account",
         )
 
     for field, value in payload.model_dump(exclude_unset=True).items():
