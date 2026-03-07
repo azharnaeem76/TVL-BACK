@@ -20,6 +20,11 @@ class Message(Base):
     id = Column(Integer, primary_key=True, index=True)
     conversation_id = Column(Integer, ForeignKey("conversations.id"), nullable=False, index=True)
     sender_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    content = Column(Text, nullable=False)
+    content = Column(Text, nullable=True)
+    message_type = Column(String(20), default="text")  # text, image, video, voice, file
+    file_url = Column(String(500), nullable=True)
+    file_name = Column(String(255), nullable=True)
+    file_size = Column(Integer, nullable=True)
+    duration = Column(Integer, nullable=True)  # voice/video duration in seconds
     is_read = Column(Boolean, default=False)
     created_at = Column(DateTime, default=datetime.utcnow)
