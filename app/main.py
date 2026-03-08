@@ -2,9 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from contextlib import asynccontextmanager
-from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum, study_content
+from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum, study_content, workspaces
 from app.core.database import engine, Base, async_session
 from app.api.routes.features import seed_features
+from app.api.routes.study_content import seed_study_content
 import socketio as socketio_lib
 from app.core.socketio import sio
 
@@ -22,6 +23,7 @@ async def lifespan(app: FastAPI):
     import app.models.support  # noqa
     import app.models.forum  # noqa
     import app.models.study_content  # noqa
+    import app.models.workspace  # noqa
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
         # Add config column to feature_flags if missing (create_all doesn't ALTER existing tables)
@@ -44,13 +46,14 @@ async def lifespan(app: FastAPI):
                 if "profile_picture" not in cols:
                     sync_conn.execute(text("ALTER TABLE users ADD COLUMN profile_picture VARCHAR(500)"))
         await conn.run_sync(_check_and_add_columns)
-    # Seed feature flags
+    # Seed feature flags and study content
     try:
         async with async_session() as session:
             await seed_features(session)
+            await seed_study_content(session)
             await session.commit()
     except Exception as e:
-        print(f"Feature seeding skipped: {e}")
+        print(f"Seeding skipped: {e}")
     yield
 
 
@@ -131,6 +134,7 @@ app.include_router(subscriptions.router, prefix="/api/v1")
 app.include_router(support.router, prefix="/api/v1")
 app.include_router(forum.router, prefix="/api/v1")
 app.include_router(study_content.router, prefix="/api/v1")
+app.include_router(workspaces.router, prefix="/api/v1")
 
 
 @app.get("/")

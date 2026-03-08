@@ -1,8 +1,10 @@
 """AI Tools API - Summarizer, Opinion, Predictor, Contract Analyzer, Citation Finder."""
 import json
 import logging
+import os
+import tempfile
 import httpx
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from pydantic import BaseModel, Field
 from typing import Optional
 from app.core.security import get_current_user
@@ -236,6 +238,110 @@ Return your response as JSON:
 
 Contract text:
 {request.contract_text[:6000]}"""
+
+    ai_text = await _call_ollama(prompt)
+    parsed = _parse_json(ai_text)
+
+    return AIContractResponse(
+        summary=parsed.get("summary", ai_text[:2000] if ai_text else "Could not analyze contract."),
+        risky_clauses=parsed.get("risky_clauses", []),
+        missing_clauses=parsed.get("missing_clauses", []),
+        recommendations=parsed.get("recommendations", []),
+        overall_risk=parsed.get("overall_risk", "Unknown"),
+    )
+
+
+def _extract_text_from_file(file_path: str, content_type: str) -> str:
+    """Extract text from uploaded document (PDF, image, Word)."""
+    ext = os.path.splitext(file_path)[1].lower()
+
+    # PDF
+    if ext == ".pdf" or "pdf" in content_type:
+        import pdfplumber
+        text_parts = []
+        with pdfplumber.open(file_path) as pdf:
+            for page in pdf.pages[:50]:  # limit to 50 pages
+                page_text = page.extract_text()
+                if page_text:
+                    text_parts.append(page_text)
+        return "\n".join(text_parts)
+
+    # Word documents
+    if ext in (".docx", ".doc") or "word" in content_type or "document" in content_type:
+        from docx import Document
+        doc = Document(file_path)
+        return "\n".join(p.text for p in doc.paragraphs if p.text.strip())
+
+    # Images (OCR)
+    if ext in (".png", ".jpg", ".jpeg", ".tiff", ".bmp", ".webp") or "image" in content_type:
+        from PIL import Image
+        import pytesseract
+        img = Image.open(file_path)
+        return pytesseract.image_to_string(img)
+
+    # Plain text
+    if ext in (".txt", ".text") or "text/plain" in content_type:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+            return f.read()
+
+    raise ValueError(f"Unsupported file type: {ext or content_type}")
+
+
+@router.post("/analyze-contract-upload", response_model=AIContractResponse, summary="Upload document for contract analysis")
+async def ai_analyze_contract_upload(
+    file: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+):
+    allowed_types = [
+        "application/pdf", "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "image/png", "image/jpeg", "image/jpg", "image/tiff", "image/bmp", "image/webp",
+        "text/plain",
+    ]
+    if file.content_type and not any(t in file.content_type for t in ["pdf", "word", "image", "text", "document", "msword"]):
+        raise HTTPException(status_code=400, detail=f"Unsupported file type: {file.content_type}. Upload PDF, Word, image, or text files.")
+
+    if file.size and file.size > 20 * 1024 * 1024:  # 20MB limit
+        raise HTTPException(status_code=400, detail="File too large. Maximum 20MB.")
+
+    # Save to temp file and extract text
+    suffix = os.path.splitext(file.filename or "")[1] or ".pdf"
+    try:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
+            content = await file.read()
+            tmp.write(content)
+            tmp_path = tmp.name
+
+        extracted_text = _extract_text_from_file(tmp_path, file.content_type or "")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        logger.error(f"Text extraction failed: {e}")
+        raise HTTPException(status_code=400, detail="Could not extract text from file. Try pasting the text manually.")
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except Exception:
+            pass
+
+    if not extracted_text or len(extracted_text.strip()) < 10:
+        raise HTTPException(status_code=400, detail="Could not extract meaningful text from the file. Try a clearer scan or paste text manually.")
+
+    prompt = f"""You are a Pakistani contract law expert. Analyze this contract for risky or unfair clauses under Pakistani law (Contract Act 1872).
+
+Return your response as JSON:
+{{
+  "summary": "brief summary of the contract",
+  "risky_clauses": [
+    {{"clause": "quoted clause text", "risk": "description of risk", "severity": "High/Medium/Low"}}
+  ],
+  "missing_clauses": ["important clause that should be included"],
+  "recommendations": ["recommendation 1", "recommendation 2"],
+  "overall_risk": "High/Medium/Low"
+}}
+
+Contract text:
+{extracted_text[:6000]}"""
 
     ai_text = await _call_ollama(prompt)
     parsed = _parse_json(ai_text)
