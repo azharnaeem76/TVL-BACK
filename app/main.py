@@ -31,6 +31,8 @@ async def lifespan(app: FastAPI):
                 cols = [c["name"] for c in insp.get_columns("feature_flags")]
                 if "config" not in cols:
                     sync_conn.execute(text("ALTER TABLE feature_flags ADD COLUMN config JSON"))
+                if "applicable_roles" not in cols:
+                    sync_conn.execute(text("ALTER TABLE feature_flags ADD COLUMN applicable_roles JSON"))
             if insp.has_table("messages"):
                 cols = [c["name"] for c in insp.get_columns("messages")]
                 for col, typ in [("message_type", "VARCHAR(50)"), ("file_url", "VARCHAR(500)"), ("file_name", "VARCHAR(500)"), ("file_size", "INTEGER"), ("duration", "INTEGER"), ("status", "VARCHAR(20)")]:

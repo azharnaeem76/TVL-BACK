@@ -28,6 +28,7 @@ class FeatureFlag(Base):
     category = Column(Enum(FeatureCategory), nullable=False)
     enabled = Column(Boolean, default=False)
     config = Column(JSON, nullable=True)  # Optional JSON config per feature
+    applicable_roles = Column(JSON, nullable=True)  # Which roles this feature applies to
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
