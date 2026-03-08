@@ -23,6 +23,24 @@ async def lifespan(app: FastAPI):
     import app.models.forum  # noqa
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+        # Add config column to feature_flags if missing (create_all doesn't ALTER existing tables)
+        from sqlalchemy import text, inspect as sa_inspect
+        def _check_and_add_columns(sync_conn):
+            insp = sa_inspect(sync_conn)
+            if insp.has_table("feature_flags"):
+                cols = [c["name"] for c in insp.get_columns("feature_flags")]
+                if "config" not in cols:
+                    sync_conn.execute(text("ALTER TABLE feature_flags ADD COLUMN config JSON"))
+            if insp.has_table("messages"):
+                cols = [c["name"] for c in insp.get_columns("messages")]
+                for col, typ in [("message_type", "VARCHAR(50)"), ("file_url", "VARCHAR(500)"), ("file_name", "VARCHAR(500)"), ("file_size", "INTEGER"), ("duration", "INTEGER"), ("status", "VARCHAR(20)")]:
+                    if col not in cols:
+                        sync_conn.execute(text(f"ALTER TABLE messages ADD COLUMN {col} {typ}"))
+            if insp.has_table("users"):
+                cols = [c["name"] for c in insp.get_columns("users")]
+                if "profile_picture" not in cols:
+                    sync_conn.execute(text("ALTER TABLE users ADD COLUMN profile_picture VARCHAR(500)"))
+        await conn.run_sync(_check_and_add_columns)
     # Seed feature flags
     try:
         async with async_session() as session:

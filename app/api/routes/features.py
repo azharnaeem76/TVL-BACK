@@ -151,7 +151,7 @@ DEFAULT_FEATURES = [
 
 
 async def seed_features(db: AsyncSession):
-    """Seed default feature flags if they don't exist."""
+    """Seed default feature flags if they don't exist, update config if missing."""
     for feat in DEFAULT_FEATURES:
         existing = (await db.execute(
             select(FeatureFlag).where(FeatureFlag.key == feat["key"])
@@ -165,4 +165,7 @@ async def seed_features(db: AsyncSession):
                 enabled=feat["enabled"],
                 config=feat.get("config"),
             ))
+        elif feat.get("config") and not existing.config:
+            # Update existing features with config if they don't have it yet
+            existing.config = feat["config"]
     await db.flush()
