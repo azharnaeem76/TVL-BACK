@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from contextlib import asynccontextmanager
-from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum
+from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum, study_content
 from app.core.database import engine, Base, async_session
 from app.api.routes.features import seed_features
 import socketio as socketio_lib
@@ -21,6 +21,7 @@ async def lifespan(app: FastAPI):
     import app.models.messaging  # noqa
     import app.models.support  # noqa
     import app.models.forum  # noqa
+    import app.models.study_content  # noqa
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
         # Add config column to feature_flags if missing (create_all doesn't ALTER existing tables)
@@ -129,6 +130,7 @@ app.include_router(moot_court.router, prefix="/api/v1")
 app.include_router(subscriptions.router, prefix="/api/v1")
 app.include_router(support.router, prefix="/api/v1")
 app.include_router(forum.router, prefix="/api/v1")
+app.include_router(study_content.router, prefix="/api/v1")
 
 
 @app.get("/")
