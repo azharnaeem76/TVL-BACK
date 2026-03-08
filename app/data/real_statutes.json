@@ -1,0 +1,1804 @@
+{
+  "statutes": [
+    {
+      "title": "Pakistan Penal Code, 1860",
+      "short_title": "PPC",
+      "act_number": "XLV of 1860",
+      "year": 1860,
+      "category": "CRIMINAL",
+      "summary_en": "The principal criminal code of Pakistan defining all offences and their punishments including Qisas and Diyat provisions.",
+      "summary_ur": "پاکستان کا بنیادی فوجداری قانون جو تمام جرائم اور ان کی سزاؤں کی تعریف کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Code of Criminal Procedure, 1898",
+      "short_title": "CrPC",
+      "act_number": "V of 1898",
+      "year": 1898,
+      "category": "CRIMINAL",
+      "summary_en": "The procedural law governing the administration of criminal justice including investigation, trial, and appeals.",
+      "summary_ur": "فوجداری انصاف کے نظام کا طریقہ کار قانون جو تفتیش، مقدمے اور اپیلوں کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Anti-Terrorism Act, 1997",
+      "short_title": "ATA",
+      "act_number": "XXVII of 1997",
+      "year": 1997,
+      "category": "CRIMINAL",
+      "summary_en": "Establishes anti-terrorism courts and defines terrorism-related offences with enhanced punishments.",
+      "summary_ur": "دہشت گردی کے خلاف عدالتیں قائم کرتا ہے اور دہشت گردی سے متعلق جرائم کی تعریف کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Control of Narcotic Substances Act, 1997",
+      "short_title": "CNSA",
+      "act_number": "XXV of 1997",
+      "year": 1997,
+      "category": "CRIMINAL",
+      "summary_en": "Comprehensive legislation controlling narcotics and psychotropic substances, prescribing severe penalties for trafficking and possession.",
+      "summary_ur": "منشیات اور نفسیاتی مادوں کو کنٹرول کرنے والا جامع قانون۔",
+      "is_active": true
+    },
+    {
+      "title": "National Accountability Ordinance, 1999",
+      "short_title": "NAB Ordinance",
+      "act_number": "XVIII of 1999",
+      "year": 1999,
+      "category": "CRIMINAL",
+      "summary_en": "Establishes NAB for investigating and prosecuting corruption and corrupt practices by public office holders.",
+      "summary_ur": "عوامی عہدیداروں کی بدعنوانی کی تحقیقات اور مقدمہ چلانے کے لیے نیب قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Prevention of Electronic Crimes Act, 2016",
+      "short_title": "PECA",
+      "act_number": "XL of 2016",
+      "year": 2016,
+      "category": "CYBER",
+      "summary_en": "Criminalizes cyber offences including unauthorized access, electronic fraud, cyber terrorism, and online harassment.",
+      "summary_ur": "سائبر جرائم بشمول غیر مجاز رسائی، الیکٹرانک فراڈ، سائبر دہشت گردی کو جرم قرار دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Arms Ordinance, 1965",
+      "short_title": "Arms Ordinance",
+      "act_number": "XX of 1965",
+      "year": 1965,
+      "category": "CRIMINAL",
+      "summary_en": "Regulates the manufacture, sale, possession, and carrying of arms and ammunition in Pakistan.",
+      "summary_ur": "پاکستان میں اسلحے کی تیاری، فروخت، قبضے اور لے جانے کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Explosive Substances Act, 1908",
+      "short_title": "Explosive Substances Act",
+      "act_number": "VI of 1908",
+      "year": 1908,
+      "category": "CRIMINAL",
+      "summary_en": "Controls the manufacture, possession, and use of explosive substances.",
+      "summary_ur": "دھماکہ خیز مواد کی تیاری، قبضے اور استعمال کو کنٹرول کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Official Secrets Act, 1923",
+      "short_title": "Official Secrets Act",
+      "act_number": "XIX of 1923",
+      "year": 1923,
+      "category": "CRIMINAL",
+      "summary_en": "Protects state secrets and penalizes espionage and unauthorized disclosure of official information.",
+      "summary_ur": "سرکاری رازوں کی حفاظت اور جاسوسی کو سزا دینے کا قانون۔",
+      "is_active": true
+    },
+    {
+      "title": "Foreigners Act, 1946",
+      "short_title": "Foreigners Act",
+      "act_number": "XXXI of 1946",
+      "year": 1946,
+      "category": "CRIMINAL",
+      "summary_en": "Regulates the entry, stay, and departure of foreigners in Pakistan.",
+      "summary_ur": "پاکستان میں غیر ملکیوں کے داخلے، قیام اور روانگی کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Probation of Offenders Ordinance, 1960",
+      "short_title": "Probation Ordinance",
+      "act_number": "XLV of 1960",
+      "year": 1960,
+      "category": "CRIMINAL",
+      "summary_en": "Provides for the release of offenders on probation instead of imprisonment in certain cases.",
+      "summary_ur": "بعض صورتوں میں مجرموں کو قید کی بجائے پروبیشن پر رہا کرنے کا انتظام۔",
+      "is_active": true
+    },
+    {
+      "title": "Juvenile Justice System Act, 2018",
+      "short_title": "JJSA",
+      "act_number": "XXII of 2018",
+      "year": 2018,
+      "category": "CRIMINAL",
+      "summary_en": "Establishes a separate juvenile justice system for children in conflict with the law, emphasizing rehabilitation.",
+      "summary_ur": "قانون سے تنازع میں بچوں کے لیے الگ نوعمر انصاف کا نظام قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Offence of Zina (Enforcement of Hudood) Ordinance, 1979",
+      "short_title": "Zina Ordinance",
+      "act_number": "VII of 1979",
+      "year": 1979,
+      "category": "ISLAMIC",
+      "summary_en": "Defines and prescribes punishments for zina (adultery/fornication) and zina-bil-jabr (rape) under Islamic law.",
+      "summary_ur": "زنا اور زنا بالجبر کی تعریف اور سزا اسلامی قانون کے تحت۔",
+      "is_active": true
+    },
+    {
+      "title": "Offence Against Property (Enforcement of Hudood) Ordinance, 1979",
+      "short_title": "Hudood Property Ordinance",
+      "act_number": "VI of 1979",
+      "year": 1979,
+      "category": "ISLAMIC",
+      "summary_en": "Prescribes hadd punishments for theft and robbery under Islamic penal law.",
+      "summary_ur": "اسلامی فوجداری قانون کے تحت چوری اور ڈکیتی کی حد کی سزائیں۔",
+      "is_active": true
+    },
+    {
+      "title": "Prohibition (Enforcement of Hadd) Order, 1979",
+      "short_title": "Prohibition Order",
+      "act_number": "IV of 1979",
+      "year": 1979,
+      "category": "ISLAMIC",
+      "summary_en": "Prohibits the manufacture, sale, and consumption of intoxicating liquor for Muslims.",
+      "summary_ur": "مسلمانوں کے لیے نشہ آور شراب کی تیاری، فروخت اور استعمال پر پابندی۔",
+      "is_active": true
+    },
+    {
+      "title": "Offence of Qazf (Enforcement of Hadd) Ordinance, 1979",
+      "short_title": "Qazf Ordinance",
+      "act_number": "VIII of 1979",
+      "year": 1979,
+      "category": "ISLAMIC",
+      "summary_en": "Defines the offence of qazf (false accusation of zina) and prescribes its punishment.",
+      "summary_ur": "قذف (زنا کا جھوٹا الزام) کے جرم اور اس کی سزا کی تعریف۔",
+      "is_active": true
+    },
+    {
+      "title": "Police Order, 2002",
+      "short_title": "Police Order",
+      "act_number": "XXII of 2002",
+      "year": 2002,
+      "category": "CRIMINAL",
+      "summary_en": "Restructures police organization and establishes accountability mechanisms including public safety commissions.",
+      "summary_ur": "پولیس تنظیم کی تنظیم نو اور پبلک سیفٹی کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Passport Act, 1974",
+      "short_title": "Passport Act",
+      "act_number": "No. V of 1974",
+      "year": 1974,
+      "category": "CRIMINAL",
+      "summary_en": "Regulates the issuance and use of passports and travel documents.",
+      "summary_ur": "پاسپورٹ اور سفری دستاویزات کے اجرا اور استعمال کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Emigration Ordinance, 1979",
+      "short_title": "Emigration Ordinance",
+      "act_number": "XVIII of 1979",
+      "year": 1979,
+      "category": "CRIMINAL",
+      "summary_en": "Regulates emigration from Pakistan and protects overseas Pakistani workers from exploitation.",
+      "summary_ur": "پاکستان سے ہجرت کو ریگولیٹ کرتا ہے اور بیرون ملک پاکستانی کارکنوں کی حفاظت کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Good Conduct Prisoners Probational Release Act, 1926",
+      "short_title": "Good Conduct Act",
+      "act_number": "III of 1926",
+      "year": 1926,
+      "category": "CRIMINAL",
+      "summary_en": "Provides for the release of prisoners on probation for good conduct before completion of sentence.",
+      "summary_ur": "اچھے رویے والے قیدیوں کو سزا مکمل ہونے سے پہلے پروبیشن پر رہا کرنے کا انتظام۔",
+      "is_active": false
+    },
+    {
+      "title": "Criminal Law Amendment Act, 2004",
+      "short_title": "Criminal Law Amendment",
+      "act_number": "I of 2004",
+      "year": 2004,
+      "category": "CRIMINAL",
+      "summary_en": "Amends PPC and CrPC provisions relating to honour crimes, making them cognizable and non-compoundable.",
+      "summary_ur": "غیرت کے نام پر جرائم سے متعلق تعزیرات پاکستان اور ضابطہ فوجداری میں ترامیم۔",
+      "is_active": true
+    },
+    {
+      "title": "Protection of Women (Criminal Laws Amendment) Act, 2006",
+      "short_title": "Women Protection Act",
+      "act_number": "None",
+      "year": 2006,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Amends Hudood Ordinances to distinguish between zina and rape, providing better protection for women victims.",
+      "summary_ur": "حدود آرڈیننس میں ترمیم کر کے زنا اور عصمت دری میں فرق کرتا ہے اور خواتین متاثرین کو بہتر تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Acid Control and Acid Crime Prevention Act, 2011",
+      "short_title": "Acid Crime Act",
+      "act_number": "None",
+      "year": 2011,
+      "category": "CRIMINAL",
+      "summary_en": "Criminalizes acid attacks with severe punishments and controls the sale and purchase of acid.",
+      "summary_ur": "تیزاب حملوں کو سخت سزاؤں کے ساتھ جرم قرار دیتا ہے اور تیزاب کی خرید و فروخت کو کنٹرول کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Criminal Law (Amendment) (Offences in the Name of Honour) Act, 2016",
+      "short_title": "Anti-Honour Killing Act",
+      "act_number": "None",
+      "year": 2016,
+      "category": "CRIMINAL",
+      "summary_en": "Eliminates the possibility of pardoning honour killers through compromise with the victim's family.",
+      "summary_ur": "غیرت کے نام پر قتل کرنے والوں کو متاثرین کے خاندان سے سمجھوتے کے ذریعے معاف کرنے کے امکان کو ختم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Code of Civil Procedure, 1908",
+      "short_title": "CPC",
+      "act_number": "V of 1908",
+      "year": 1908,
+      "category": "CIVIL",
+      "summary_en": "The principal procedural law governing civil litigation in Pakistan including suits, appeals, and execution of decrees.",
+      "summary_ur": "پاکستان میں دیوانی مقدمات کا بنیادی طریقہ کار قانون جو دعوے، اپیلیں اور ڈگریوں پر عملدرآمد کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Qanun-e-Shahadat Order, 1984",
+      "short_title": "QSO",
+      "act_number": "P.O. 10 of 1984",
+      "year": 1984,
+      "category": "CIVIL",
+      "summary_en": "The law of evidence in Pakistan replacing the Indian Evidence Act 1872, incorporating Islamic principles of testimony.",
+      "summary_ur": "پاکستان میں شہادت کا قانون جو بھارتی ایکٹ 1872 کی جگہ اسلامی اصولوں کے مطابق نافذ کیا گیا۔",
+      "is_active": true
+    },
+    {
+      "title": "Limitation Act, 1908",
+      "short_title": "Limitation Act",
+      "act_number": "IX of 1908",
+      "year": 1908,
+      "category": "CIVIL",
+      "summary_en": "Prescribes time limits for filing suits, appeals, and applications in courts.",
+      "summary_ur": "عدالتوں میں دعوے، اپیلیں اور درخواستیں دائر کرنے کی مدت مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Specific Relief Act, 1877",
+      "short_title": "SRA",
+      "act_number": "I of 1877",
+      "year": 1877,
+      "category": "CIVIL",
+      "summary_en": "Provides for specific performance of contracts, recovery of possession, and declaratory relief.",
+      "summary_ur": "معاہدوں کی مخصوص تعمیل، قبضے کی بحالی اور اعلانیہ ریلیف فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Arbitration Act, 1940",
+      "short_title": "Arbitration Act",
+      "act_number": "X of 1940",
+      "year": 1940,
+      "category": "CIVIL",
+      "summary_en": "Provides the legal framework for domestic arbitration proceedings and enforcement of arbitral awards.",
+      "summary_ur": "گھریلو ثالثی کی کارروائیوں اور ثالثی فیصلوں کے نفاذ کا قانونی فریم ورک۔",
+      "is_active": true
+    },
+    {
+      "title": "Fatal Accidents Act, 1855",
+      "short_title": "Fatal Accidents Act",
+      "act_number": "XIII of 1855",
+      "year": 1855,
+      "category": "CIVIL",
+      "summary_en": "Provides for compensation to dependents of a person whose death was caused by wrongful act or negligence.",
+      "summary_ur": "غلط فعل یا غفلت سے فوت ہونے والے شخص کے زیر کفالت افراد کو معاوضے کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Provincial Small Causes Courts Act, 1887",
+      "short_title": "Small Causes Courts Act",
+      "act_number": "IX of 1887",
+      "year": 1887,
+      "category": "CIVIL",
+      "summary_en": "Establishes courts for speedy disposal of petty civil cases involving small amounts.",
+      "summary_ur": "چھوٹی رقوم کے معمولی دیوانی مقدمات کے فوری نمٹانے کے لیے عدالتیں قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Legal Practitioners and Bar Councils Act, 1973",
+      "short_title": "Bar Councils Act",
+      "act_number": "XXXV of 1973",
+      "year": 1973,
+      "category": "CIVIL",
+      "summary_en": "Regulates the legal profession, establishes bar councils, and prescribes qualifications for legal practitioners.",
+      "summary_ur": "قانونی پیشے کو ریگولیٹ کرتا ہے، بار کونسلیں قائم کرتا ہے اور قانونی ماہرین کی اہلیت مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Suits Valuation Act, 1887",
+      "short_title": "Suits Valuation Act",
+      "act_number": "VII of 1887",
+      "year": 1887,
+      "category": "CIVIL",
+      "summary_en": "Determines the valuation of suits for purposes of jurisdiction and court fees.",
+      "summary_ur": "دائرہ اختیار اور عدالتی فیس کے مقاصد کے لیے دعووں کی قیمت کا تعین کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Provincial Insolvency Act, 1920",
+      "short_title": "Insolvency Act",
+      "act_number": "V of 1920",
+      "year": 1920,
+      "category": "CIVIL",
+      "summary_en": "Provides for the insolvency proceedings of individuals including adjudication and discharge.",
+      "summary_ur": "افراد کے دیوالیہ پن کی کارروائیوں بشمول فیصلے اور ڈسچارج کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Court Fees Act, 1870",
+      "short_title": "Court Fees Act",
+      "act_number": "VII of 1870",
+      "year": 1870,
+      "category": "CIVIL",
+      "summary_en": "Prescribes court fees payable on various documents filed in courts and offices.",
+      "summary_ur": "عدالتوں اور دفاتر میں دائر مختلف دستاویزات پر قابل ادائیگی عدالتی فیس مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Stamp Act, 1899",
+      "short_title": "Stamp Act",
+      "act_number": "II of 1899",
+      "year": 1899,
+      "category": "CIVIL",
+      "summary_en": "Regulates stamp duty on instruments and documents to prevent fraud and ensure proper revenue collection.",
+      "summary_ur": "دستاویزات پر سٹیمپ ڈیوٹی کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Registration Act, 1908",
+      "short_title": "Registration Act",
+      "act_number": "XVI of 1908",
+      "year": 1908,
+      "category": "PROPERTY",
+      "summary_en": "Provides for registration of documents relating to immovable property to secure title and prevent fraud.",
+      "summary_ur": "غیر منقولہ جائیداد سے متعلق دستاویزات کی رجسٹریشن کا انتظام۔",
+      "is_active": true
+    },
+    {
+      "title": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "short_title": "Constitution",
+      "act_number": "None",
+      "year": 1973,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "The supreme law of Pakistan establishing fundamental rights, structure of government, and Islamic provisions.",
+      "summary_ur": "پاکستان کا سپریم قانون جو بنیادی حقوق، حکومت کا ڈھانچہ اور اسلامی دفعات قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Civil Servants Act, 1973",
+      "short_title": "Civil Servants Act",
+      "act_number": "LXXI of 1973",
+      "year": 1973,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Governs the terms and conditions of civil servants including appointment, promotion, and disciplinary matters.",
+      "summary_ur": "سرکاری ملازمین کی تقرری، ترقی اور تادیبی معاملات کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Federal Public Service Commission Ordinance, 2002",
+      "short_title": "FPSC Ordinance",
+      "act_number": "None",
+      "year": 2002,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the Federal Public Service Commission for recruitment to federal civil services.",
+      "summary_ur": "وفاقی سول سروسز میں بھرتی کے لیے فیڈرل پبلک سروس کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Wafaqi Mohtasib (Ombudsman) Order, 1983",
+      "short_title": "Ombudsman Order",
+      "act_number": "P.O. 1 of 1983",
+      "year": 1983,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the office of Federal Ombudsman for redress of public grievances against government agencies.",
+      "summary_ur": "حکومتی اداروں کے خلاف عوامی شکایات کے ازالے کے لیے وفاقی محتسب کا دفتر قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "General Clauses Act, 1897",
+      "short_title": "General Clauses Act",
+      "act_number": "X of 1897",
+      "year": 1897,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Provides standard definitions and interpretation rules applicable to all Pakistani legislation.",
+      "summary_ur": "تمام پاکستانی قانون سازی پر لاگو معیاری تعریفیں اور تشریحی اصول فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan (Administration of Evacuee Property) Act, 1975",
+      "short_title": "Evacuee Property Act",
+      "act_number": "None",
+      "year": 1975,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Deals with the administration and management of evacuee property left during partition.",
+      "summary_ur": "تقسیم کے دوران چھوڑی گئی مہاجر جائیداد کے نظم و نسق سے متعلق ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Freedom of Information Ordinance, 2002",
+      "short_title": "FOI Ordinance",
+      "act_number": "XCVI of 2002",
+      "year": 2002,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides citizens the right to access information held by public bodies to promote transparency and accountability.",
+      "summary_ur": "شہریوں کو شفافیت اور جوابدہی کے فروغ کے لیے سرکاری اداروں کی معلومات تک رسائی کا حق دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Right of Access to Information Act, 2017",
+      "short_title": "Access to Information Act",
+      "act_number": "None",
+      "year": 2017,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Comprehensive federal law guaranteeing citizens' right to access information from public bodies.",
+      "summary_ur": "شہریوں کو سرکاری اداروں سے معلومات تک رسائی کے حق کی ضمانت دینے والا وفاقی قانون۔",
+      "is_active": true
+    },
+    {
+      "title": "Muslim Family Laws Ordinance, 1961",
+      "short_title": "MFLO",
+      "act_number": "VIII of 1961",
+      "year": 1961,
+      "category": "FAMILY",
+      "summary_en": "Regulates Muslim marriages, divorces, maintenance, and inheritance including polygamy restrictions.",
+      "summary_ur": "مسلم نکاح، طلاق، نفقہ اور وراثت کو ریگولیٹ کرتا ہے بشمول تعدد ازدواج پر پابندیاں۔",
+      "is_active": true
+    },
+    {
+      "title": "West Pakistan Family Courts Act, 1964",
+      "short_title": "Family Courts Act",
+      "act_number": "XXXV of 1964",
+      "year": 1964,
+      "category": "FAMILY",
+      "summary_en": "Establishes family courts for expeditious settlement of family disputes including dissolution of marriage, dower, maintenance, and custody.",
+      "summary_ur": "خاندانی تنازعات بشمول فسخ نکاح، حق مہر، نفقہ اور حضانت کے فوری تصفیے کے لیے فیملی کورٹس قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Guardians and Wards Act, 1890",
+      "short_title": "GWA",
+      "act_number": "VIII of 1890",
+      "year": 1890,
+      "category": "FAMILY",
+      "summary_en": "Provides for the appointment and powers of guardians for the person and property of minors.",
+      "summary_ur": "نابالغوں کی ذات اور جائیداد کے سرپرستوں کی تقرری اور اختیارات فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Dissolution of Muslim Marriages Act, 1939",
+      "short_title": "DMMA",
+      "act_number": "VIII of 1939",
+      "year": 1939,
+      "category": "FAMILY",
+      "summary_en": "Grants Muslim women the right to obtain dissolution of marriage on specified grounds including cruelty, desertion, and non-maintenance.",
+      "summary_ur": "مسلم خواتین کو مخصوص بنیادوں پر فسخ نکاح کا حق دیتا ہے بشمول ظلم، ترک اور عدم نفقہ۔",
+      "is_active": true
+    },
+    {
+      "title": "Child Marriage Restraint Act, 1929",
+      "short_title": "CMRA",
+      "act_number": "XIX of 1929",
+      "year": 1929,
+      "category": "FAMILY",
+      "summary_en": "Prohibits marriage of children below the prescribed age (16 for girls, 18 for boys in most provinces).",
+      "summary_ur": "مقررہ عمر سے کم عمر بچوں کی شادی پر پابندی لگاتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Dowry and Bridal Gifts (Restriction) Act, 1976",
+      "short_title": "Dowry Restriction Act",
+      "act_number": "XLIII of 1976",
+      "year": 1976,
+      "category": "FAMILY",
+      "summary_en": "Restricts the value of dowry and bridal gifts and penalizes excessive dowry demands.",
+      "summary_ur": "جہیز اور شادی کے تحائف کی قیمت پر پابندی لگاتا ہے اور ضرورت سے زیادہ جہیز کے مطالبات پر سزا دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Succession Act, 1925",
+      "short_title": "Succession Act",
+      "act_number": "XXXIX of 1925",
+      "year": 1925,
+      "category": "FAMILY",
+      "summary_en": "Governs testamentary and intestate succession for non-Muslim citizens of Pakistan.",
+      "summary_ur": "پاکستان کے غیر مسلم شہریوں کے لیے وصیت اور بلا وصیت وراثت کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Christian Marriage Act, 1872",
+      "short_title": "Christian Marriage Act",
+      "act_number": "XV of 1872",
+      "year": 1872,
+      "category": "FAMILY",
+      "summary_en": "Regulates the solemnization and registration of marriages of Christians in Pakistan.",
+      "summary_ur": "پاکستان میں عیسائیوں کے نکاح کی ادائیگی اور رجسٹریشن کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Christian Divorce Act, 1869",
+      "short_title": "Christian Divorce Act",
+      "act_number": "IV of 1869",
+      "year": 1869,
+      "category": "FAMILY",
+      "summary_en": "Provides grounds and procedure for divorce among Christians in Pakistan.",
+      "summary_ur": "پاکستان میں عیسائیوں کے درمیان طلاق کی بنیادیں اور طریقہ کار فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Hindu Marriage Act, 2017",
+      "short_title": "Hindu Marriage Act",
+      "act_number": "None",
+      "year": 2017,
+      "category": "FAMILY",
+      "summary_en": "Regulates the registration and validity of Hindu marriages in Pakistan.",
+      "summary_ur": "پاکستان میں ہندو شادیوں کی رجسٹریشن اور قانونی حیثیت کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Parsi Marriage and Divorce Act, 1936",
+      "short_title": "Parsi Marriage Act",
+      "act_number": "III of 1936",
+      "year": 1936,
+      "category": "FAMILY",
+      "summary_en": "Regulates marriage and divorce among the Parsi community.",
+      "summary_ur": "پارسی برادری کے نکاح اور طلاق کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Muslim Personal Law (Shariat) Application Act, 1962",
+      "short_title": "Shariat Application Act",
+      "act_number": "None",
+      "year": 1962,
+      "category": "ISLAMIC",
+      "summary_en": "Applies Islamic personal law to Muslims in matters of succession, marriage, divorce, and related issues.",
+      "summary_ur": "وراثت، نکاح، طلاق اور متعلقہ معاملات میں مسلمانوں پر اسلامی ذاتی قانون لاگو کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Contract Act, 1872",
+      "short_title": "Contract Act",
+      "act_number": "IX of 1872",
+      "year": 1872,
+      "category": "CIVIL",
+      "summary_en": "Defines the law relating to contracts including formation, performance, breach, and remedies.",
+      "summary_ur": "معاہدوں سے متعلق قانون کی تعریف بشمول تشکیل، عملدرآمد، خلاف ورزی اور علاج۔",
+      "is_active": true
+    },
+    {
+      "title": "Sale of Goods Act, 1930",
+      "short_title": "Sale of Goods Act",
+      "act_number": "III of 1930",
+      "year": 1930,
+      "category": "CIVIL",
+      "summary_en": "Governs contracts for the sale of goods including conditions, warranties, and rights of parties.",
+      "summary_ur": "اشیاء کی فروخت کے معاہدوں کو منظم کرتا ہے بشمول شرائط اور فریقین کے حقوق۔",
+      "is_active": true
+    },
+    {
+      "title": "Partnership Act, 1932",
+      "short_title": "Partnership Act",
+      "act_number": "IX of 1932",
+      "year": 1932,
+      "category": "CORPORATE",
+      "summary_en": "Defines the law relating to partnership including formation, duties of partners, and dissolution.",
+      "summary_ur": "شراکت داری سے متعلق قانون کی تعریف بشمول تشکیل، شراکت داروں کے فرائض اور تحلیل۔",
+      "is_active": true
+    },
+    {
+      "title": "Negotiable Instruments Act, 1881",
+      "short_title": "Negotiable Instruments Act",
+      "act_number": "XXVI of 1881",
+      "year": 1881,
+      "category": "BANKING",
+      "summary_en": "Governs promissory notes, bills of exchange, and cheques including dishonour and penalties.",
+      "summary_ur": "عہد ناموں، ہنڈیوں اور چیکوں کو منظم کرتا ہے بشمول بے عزتی اور جرمانے۔",
+      "is_active": true
+    },
+    {
+      "title": "Companies Act, 2017",
+      "short_title": "Companies Act",
+      "act_number": "XIX of 2017",
+      "year": 2017,
+      "category": "CORPORATE",
+      "summary_en": "Comprehensive legislation governing the incorporation, regulation, and winding up of companies in Pakistan.",
+      "summary_ur": "پاکستان میں کمپنیوں کی رجسٹریشن، ریگولیشن اور تحلیل کا جامع قانون۔",
+      "is_active": true
+    },
+    {
+      "title": "Securities Act, 2015",
+      "short_title": "Securities Act",
+      "act_number": "None",
+      "year": 2015,
+      "category": "CORPORATE",
+      "summary_en": "Regulates the securities market including listing, trading, and investor protection.",
+      "summary_ur": "سیکیورٹیز مارکیٹ کو ریگولیٹ کرتا ہے بشمول لسٹنگ، ٹریڈنگ اور سرمایہ کاروں کا تحفظ۔",
+      "is_active": true
+    },
+    {
+      "title": "Limited Liability Partnership Act, 2017",
+      "short_title": "LLP Act",
+      "act_number": "None",
+      "year": 2017,
+      "category": "CORPORATE",
+      "summary_en": "Introduces the concept of limited liability partnerships in Pakistan.",
+      "summary_ur": "پاکستان میں محدود ذمہ داری شراکت داری کا تصور متعارف کراتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Securities and Exchange Commission of Pakistan Act, 1997",
+      "short_title": "SECP Act",
+      "act_number": "XLII of 1997",
+      "year": 1997,
+      "category": "CORPORATE",
+      "summary_en": "Establishes SECP as the regulator of the corporate sector and capital markets.",
+      "summary_ur": "کارپوریٹ سیکٹر اور کیپیٹل مارکیٹس کے ریگولیٹر کے طور پر ایس ای سی پی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Insurance Ordinance, 2000",
+      "short_title": "Insurance Ordinance",
+      "act_number": "XXXIX of 2000",
+      "year": 2000,
+      "category": "CORPORATE",
+      "summary_en": "Regulates the insurance industry including licensing, operations, and policyholder protection.",
+      "summary_ur": "انشورنس انڈسٹری کو ریگولیٹ کرتا ہے بشمول لائسنسنگ، آپریشنز اور پالیسی ہولڈرز کا تحفظ۔",
+      "is_active": true
+    },
+    {
+      "title": "Financial Institutions (Recovery of Finances) Ordinance, 2001",
+      "short_title": "Recovery Ordinance",
+      "act_number": "XLVI of 2001",
+      "year": 2001,
+      "category": "BANKING",
+      "summary_en": "Establishes banking courts for expeditious recovery of finances by financial institutions.",
+      "summary_ur": "مالیاتی اداروں کی مالی وصولی کے لیے بینکنگ عدالتیں قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Transfer of Property Act, 1882",
+      "short_title": "TPA",
+      "act_number": "IV of 1882",
+      "year": 1882,
+      "category": "PROPERTY",
+      "summary_en": "Governs the transfer of property between living persons including sale, mortgage, lease, gift, and exchange.",
+      "summary_ur": "زندہ افراد کے درمیان جائیداد کی منتقلی کو منظم کرتا ہے بشمول فروخت، رہن، اجارہ، تحفہ اور تبادلہ۔",
+      "is_active": true
+    },
+    {
+      "title": "Land Acquisition Act, 1894",
+      "short_title": "Land Acquisition Act",
+      "act_number": "I of 1894",
+      "year": 1894,
+      "category": "PROPERTY",
+      "summary_en": "Provides for acquisition of land for public purposes and payment of compensation to landowners.",
+      "summary_ur": "عوامی مقاصد کے لیے زمین کے حصول اور زمینداروں کو معاوضے کی ادائیگی فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Land Revenue Act, 1967",
+      "short_title": "Land Revenue Act",
+      "act_number": "XVII of 1967",
+      "year": 1967,
+      "category": "PROPERTY",
+      "summary_en": "Governs land revenue administration, maintenance of land records, and settlement of land rights in Punjab.",
+      "summary_ur": "پنجاب میں محصول زمین کی انتظامیہ، زمین کے ریکارڈ کی دیکھ بھال اور حقوق اراضی کے تصفیے کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Tenancy Act, 1887",
+      "short_title": "Tenancy Act",
+      "act_number": "XVI of 1887",
+      "year": 1887,
+      "category": "PROPERTY",
+      "summary_en": "Defines the rights and liabilities of landlords and tenants in Punjab.",
+      "summary_ur": "پنجاب میں زمینداروں اور کرایہ داروں کے حقوق اور ذمہ داریوں کی تعریف کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Pre-emption Act, 1991",
+      "short_title": "Pre-emption Act",
+      "act_number": "IX of 1991",
+      "year": 1991,
+      "category": "PROPERTY",
+      "summary_en": "Grants right of pre-emption (shuf'a) to co-sharers and neighbours in sale of immovable property.",
+      "summary_ur": "غیر منقولہ جائیداد کی فروخت میں شریک حصہ داروں اور ہمسایوں کو حق شفعہ دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "West Pakistan Urban Rent Restriction Ordinance, 1959",
+      "short_title": "Rent Restriction Ordinance",
+      "act_number": "VI of 1959",
+      "year": 1959,
+      "category": "PROPERTY",
+      "summary_en": "Controls rents of urban premises and protects tenants from arbitrary eviction.",
+      "summary_ur": "شہری عمارتوں کے کرایوں کو کنٹرول کرتا ہے اور کرایہ داروں کو من مانے بے دخلی سے بچاتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Cantonment Rent Restriction Act, 1963",
+      "short_title": "Cantonment Rent Act",
+      "act_number": "None",
+      "year": 1963,
+      "category": "PROPERTY",
+      "summary_en": "Controls rents and regulates landlord-tenant relations in cantonment areas.",
+      "summary_ur": "چھاؤنی علاقوں میں کرایوں کو کنٹرول کرتا ہے اور مالک مکان اور کرایہ دار تعلقات کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Colonization of Government Lands Act, 1912",
+      "short_title": "Colonization Act",
+      "act_number": "None",
+      "year": 1912,
+      "category": "PROPERTY",
+      "summary_en": "Provides for the disposal and management of government lands for colonization purposes.",
+      "summary_ur": "نوآبادیاتی مقاصد کے لیے سرکاری اراضی کے تصرف اور انتظام کی فراہمی۔",
+      "is_active": false
+    },
+    {
+      "title": "Cantonments Act, 2020",
+      "short_title": "Cantonments Act",
+      "act_number": "None",
+      "year": 2020,
+      "category": "PROPERTY",
+      "summary_en": "Governs the administration of cantonments including land management and municipal services.",
+      "summary_ur": "چھاؤنیوں کا نظم و نسق بشمول زمین کا انتظام اور میونسپل خدمات۔",
+      "is_active": true
+    },
+    {
+      "title": "Easements Act, 1882",
+      "short_title": "Easements Act",
+      "act_number": "V of 1882",
+      "year": 1882,
+      "category": "PROPERTY",
+      "summary_en": "Defines easements and licenses relating to immovable property.",
+      "summary_ur": "غیر منقولہ جائیداد سے متعلق حقوق اسہول اور لائسنسوں کی تعریف کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Income Tax Ordinance, 2001",
+      "short_title": "ITO",
+      "act_number": "XLIX of 2001",
+      "year": 2001,
+      "category": "TAXATION",
+      "summary_en": "The principal tax law governing income tax in Pakistan including rates, exemptions, and procedures.",
+      "summary_ur": "پاکستان میں انکم ٹیکس کا بنیادی قانون بشمول شرحیں، استثنیٰ اور طریقہ کار۔",
+      "is_active": true
+    },
+    {
+      "title": "Sales Tax Act, 1990",
+      "short_title": "Sales Tax Act",
+      "act_number": "VII of 1990",
+      "year": 1990,
+      "category": "TAXATION",
+      "summary_en": "Imposes and regulates sales tax on goods manufactured and imported in Pakistan.",
+      "summary_ur": "پاکستان میں تیار اور درآمد شدہ اشیاء پر سیلز ٹیکس عائد اور ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Customs Act, 1969",
+      "short_title": "Customs Act",
+      "act_number": "IV of 1969",
+      "year": 1969,
+      "category": "TAXATION",
+      "summary_en": "Governs the levy and collection of customs duties on imports and exports.",
+      "summary_ur": "درآمدات اور برآمدات پر کسٹم ڈیوٹی کی وصولی کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Federal Excise Act, 2005",
+      "short_title": "Federal Excise Act",
+      "act_number": "None",
+      "year": 2005,
+      "category": "TAXATION",
+      "summary_en": "Levies and regulates federal excise duty on specified goods and services.",
+      "summary_ur": "مخصوص اشیاء اور خدمات پر وفاقی ایکسائز ڈیوٹی عائد اور ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Federal Board of Revenue Act, 2007",
+      "short_title": "FBR Act",
+      "act_number": "None",
+      "year": 2007,
+      "category": "TAXATION",
+      "summary_en": "Restructures the Central Board of Revenue as the Federal Board of Revenue.",
+      "summary_ur": "سنٹرل بورڈ آف ریونیو کو فیڈرل بورڈ آف ریونیو کے طور پر تنظیم نو کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Revenue Authority Act, 2012",
+      "short_title": "PRA Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "TAXATION",
+      "summary_en": "Establishes Punjab Revenue Authority for collection of sales tax on services in Punjab.",
+      "summary_ur": "پنجاب میں خدمات پر سیلز ٹیکس کی وصولی کے لیے پنجاب ریونیو اتھارٹی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Sindh Revenue Board Act, 2010",
+      "short_title": "SRB Act",
+      "act_number": "None",
+      "year": 2010,
+      "category": "TAXATION",
+      "summary_en": "Establishes Sindh Revenue Board for collection of provincial taxes on services.",
+      "summary_ur": "صوبائی خدمات پر ٹیکس کی وصولی کے لیے سندھ ریونیو بورڈ قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Foreign Exchange Regulation Act, 1947",
+      "short_title": "FERA",
+      "act_number": "VII of 1947",
+      "year": 1947,
+      "category": "BANKING",
+      "summary_en": "Regulates foreign exchange transactions and dealings in foreign currencies.",
+      "summary_ur": "غیر ملکی کرنسی کے لین دین کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Industrial Relations Act, 2012",
+      "short_title": "IRA",
+      "act_number": "X of 2012",
+      "year": 2012,
+      "category": "LABOR",
+      "summary_en": "Regulates the formation of trade unions, collective bargaining, and settlement of industrial disputes.",
+      "summary_ur": "ٹریڈ یونینوں کی تشکیل، اجتماعی سودے بازی اور صنعتی تنازعات کے تصفیے کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Payment of Wages Act, 1936",
+      "short_title": "Payment of Wages Act",
+      "act_number": "IV of 1936",
+      "year": 1936,
+      "category": "LABOR",
+      "summary_en": "Ensures timely payment of wages to workers and prevents unauthorized deductions.",
+      "summary_ur": "مزدوروں کو بروقت اجرت کی ادائیگی کو یقینی بناتا ہے اور غیر مجاز کٹوتیوں کو روکتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Workmen's Compensation Act, 1923",
+      "short_title": "Workmen's Compensation Act",
+      "act_number": "VIII of 1923",
+      "year": 1923,
+      "category": "LABOR",
+      "summary_en": "Provides compensation to workmen for injuries and occupational diseases arising during employment.",
+      "summary_ur": "ملازمت کے دوران زخموں اور پیشہ ورانہ بیماریوں کے لیے مزدوروں کو معاوضہ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Factories Act, 1934",
+      "short_title": "Factories Act",
+      "act_number": "XXV of 1934",
+      "year": 1934,
+      "category": "LABOR",
+      "summary_en": "Regulates working conditions in factories including safety, health, working hours, and holidays.",
+      "summary_ur": "فیکٹریوں میں کام کے حالات بشمول حفاظت، صحت، کام کے اوقات اور چھٹیوں کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Mines Act, 1923",
+      "short_title": "Mines Act",
+      "act_number": "IV of 1923",
+      "year": 1923,
+      "category": "LABOR",
+      "summary_en": "Regulates the safety and working conditions in mines.",
+      "summary_ur": "کانوں میں حفاظت اور کام کے حالات کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Employees' Old-Age Benefits Institution Act, 1976",
+      "short_title": "EOBI Act",
+      "act_number": "XIV of 1976",
+      "year": 1976,
+      "category": "LABOR",
+      "summary_en": "Establishes EOBI for providing old-age pensions and benefits to employees.",
+      "summary_ur": "ملازمین کو بڑھاپے کی پنشن اور مراعات فراہم کرنے کے لیے ای او بی آئی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Workers' Welfare Fund Ordinance, 1971",
+      "short_title": "WWF Ordinance",
+      "act_number": "XXXVI of 1971",
+      "year": 1971,
+      "category": "LABOR",
+      "summary_en": "Creates the Workers' Welfare Fund for housing, education, and welfare of workers.",
+      "summary_ur": "مزدوروں کی رہائش، تعلیم اور فلاح و بہبود کے لیے ورکرز ویلفیئر فنڈ بناتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Provincial Employees Social Security Ordinance, 1965",
+      "short_title": "Social Security Ordinance",
+      "act_number": "X of 1965",
+      "year": 1965,
+      "category": "LABOR",
+      "summary_en": "Provides social security benefits including medical care, cash benefits, and maternity benefits to employees.",
+      "summary_ur": "ملازمین کو سوشل سیکیورٹی مراعات بشمول طبی دیکھ بھال، نقد مراعات فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Minimum Wages Ordinance, 1961",
+      "short_title": "Minimum Wages Ordinance",
+      "act_number": "XXXIX of 1961",
+      "year": 1961,
+      "category": "LABOR",
+      "summary_en": "Provides for fixing minimum wages for unskilled workers.",
+      "summary_ur": "غیر ہنر مند مزدوروں کے لیے کم از کم اجرت مقرر کرنے کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Shops and Establishments Ordinance, 1969",
+      "short_title": "Shops and Establishments Ordinance",
+      "act_number": "None",
+      "year": 1969,
+      "category": "LABOR",
+      "summary_en": "Regulates working conditions in shops and commercial establishments including hours and holidays.",
+      "summary_ur": "دکانوں اور تجارتی اداروں میں کام کے حالات بشمول اوقات اور چھٹیوں کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Trade Organizations Act, 2013",
+      "short_title": "Trade Organizations Act",
+      "act_number": "None",
+      "year": 2013,
+      "category": "LABOR",
+      "summary_en": "Regulates the formation and functioning of chambers of commerce, trade associations, and trade bodies.",
+      "summary_ur": "چیمبرز آف کامرس، تجارتی انجمنوں اور تجارتی اداروں کی تشکیل اور کام کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Bonded Labour System (Abolition) Act, 1992",
+      "short_title": "Bonded Labour Act",
+      "act_number": "III of 1992",
+      "year": 1992,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Abolishes the bonded labour system and frees all bonded labourers from existing obligations.",
+      "summary_ur": "بندھوا مزدوری کے نظام کو ختم کرتا ہے اور تمام بندھوا مزدوروں کو آزاد کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "State Bank of Pakistan Act, 1956",
+      "short_title": "SBP Act",
+      "act_number": "XXXIII of 1956",
+      "year": 1956,
+      "category": "BANKING",
+      "summary_en": "Establishes the State Bank of Pakistan as the central bank with powers of monetary policy and banking regulation.",
+      "summary_ur": "مانیٹری پالیسی اور بینکنگ ریگولیشن کے اختیارات کے ساتھ اسٹیٹ بینک آف پاکستان قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Banking Companies Ordinance, 1962",
+      "short_title": "Banking Companies Ordinance",
+      "act_number": "LVII of 1962",
+      "year": 1962,
+      "category": "BANKING",
+      "summary_en": "Regulates banking companies including licensing, operations, and winding up.",
+      "summary_ur": "بینکنگ کمپنیوں کو ریگولیٹ کرتا ہے بشمول لائسنسنگ، آپریشنز اور تحلیل۔",
+      "is_active": true
+    },
+    {
+      "title": "Banks (Nationalization) Act, 1974",
+      "short_title": "Banks Nationalization Act",
+      "act_number": "None",
+      "year": 1974,
+      "category": "BANKING",
+      "summary_en": "Nationalized major commercial banks in Pakistan, later partially privatized.",
+      "summary_ur": "پاکستان کے بڑے تجارتی بینکوں کو قومیانے کا قانون، بعد میں جزوی طور پر نجکاری ہوئی۔",
+      "is_active": true
+    },
+    {
+      "title": "Microfinance Institutions Ordinance, 2001",
+      "short_title": "Microfinance Ordinance",
+      "act_number": "LV of 2001",
+      "year": 2001,
+      "category": "BANKING",
+      "summary_en": "Provides for the establishment, regulation, and supervision of microfinance institutions.",
+      "summary_ur": "مائیکرو فنانس اداروں کے قیام، ریگولیشن اور نگرانی فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Anti-Money Laundering Act, 2010",
+      "short_title": "AMLA",
+      "act_number": "VII of 2010",
+      "year": 2010,
+      "category": "BANKING",
+      "summary_en": "Criminalizes money laundering and provides for the detection, prevention, and prosecution of money laundering offences.",
+      "summary_ur": "منی لانڈرنگ کو جرم قرار دیتا ہے اور منی لانڈرنگ جرائم کا پتہ لگانے، روک تھام اور قانونی کارروائی فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Copyright Ordinance, 1962",
+      "short_title": "Copyright Ordinance",
+      "act_number": "XXXIV of 1962",
+      "year": 1962,
+      "category": "INTELLECTUAL_PROPERTY",
+      "summary_en": "Protects literary, dramatic, musical, and artistic works and prescribes penalties for infringement.",
+      "summary_ur": "ادبی، ڈرامائی، موسیقی اور فنی تصانیف کی حفاظت اور خلاف ورزی پر سزائیں مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Trade Marks Ordinance, 2001",
+      "short_title": "Trade Marks Ordinance",
+      "act_number": "XIX of 2001",
+      "year": 2001,
+      "category": "INTELLECTUAL_PROPERTY",
+      "summary_en": "Provides for registration and protection of trade marks and prevention of counterfeit goods.",
+      "summary_ur": "ٹریڈ مارکس کی رجسٹریشن اور تحفظ اور جعلی اشیاء کی روک تھام فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Patents Ordinance, 2000",
+      "short_title": "Patents Ordinance",
+      "act_number": "LXI of 2000",
+      "year": 2000,
+      "category": "INTELLECTUAL_PROPERTY",
+      "summary_en": "Governs the grant and protection of patents for inventions in Pakistan.",
+      "summary_ur": "پاکستان میں ایجادات کے لیے پیٹنٹ کی منظوری اور تحفظ کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Registered Designs Ordinance, 2000",
+      "short_title": "Designs Ordinance",
+      "act_number": "XLV of 2000",
+      "year": 2000,
+      "category": "INTELLECTUAL_PROPERTY",
+      "summary_en": "Provides for registration and protection of industrial designs.",
+      "summary_ur": "صنعتی ڈیزائنوں کی رجسٹریشن اور تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Intellectual Property Organization of Pakistan Act, 2012",
+      "short_title": "IPO Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "INTELLECTUAL_PROPERTY",
+      "summary_en": "Establishes the Intellectual Property Organization of Pakistan for administration of IP laws.",
+      "summary_ur": "آئی پی قوانین کے نظم و نسق کے لیے پاکستان کی دانشورانہ ملکیت کی تنظیم قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Environmental Protection Act, 1997",
+      "short_title": "PEPA",
+      "act_number": "XXXIV of 1997",
+      "year": 1997,
+      "category": "ENVIRONMENTAL",
+      "summary_en": "Provides for the protection, conservation, and improvement of the environment and prevention of pollution.",
+      "summary_ur": "ماحول کے تحفظ، تحفظ اور بہتری اور آلودگی کی روک تھام فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Forest Act, 1927",
+      "short_title": "Forest Act",
+      "act_number": "XVI of 1927",
+      "year": 1927,
+      "category": "ENVIRONMENTAL",
+      "summary_en": "Consolidates the law relating to forests, forest produce, and forest offences.",
+      "summary_ur": "جنگلات، جنگلاتی پیداوار اور جنگلاتی جرائم سے متعلق قانون کو مستحکم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Canal and Drainage Act, 1873",
+      "short_title": "Canal and Drainage Act",
+      "act_number": "VIII of 1873",
+      "year": 1873,
+      "category": "ENVIRONMENTAL",
+      "summary_en": "Provides for the regulation of irrigation and drainage through canals.",
+      "summary_ur": "نہروں کے ذریعے آبپاشی اور نکاسی آب کے ضابطے فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Climate Change Act, 2017",
+      "short_title": "Climate Change Act",
+      "act_number": "None",
+      "year": 2017,
+      "category": "ENVIRONMENTAL",
+      "summary_en": "Establishes the Pakistan Climate Change Authority and Council for climate change mitigation and adaptation.",
+      "summary_ur": "موسمیاتی تبدیلی کی تخفیف اور موافقت کے لیے پاکستان کلائمیٹ چینج اتھارٹی اور کونسل قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Wildlife Protection Ordinance, 1972",
+      "short_title": "Wildlife Protection Ordinance",
+      "act_number": "None",
+      "year": 1972,
+      "category": "ENVIRONMENTAL",
+      "summary_en": "Provides for the protection and preservation of wildlife in Pakistan.",
+      "summary_ur": "پاکستان میں جنگلی حیات کے تحفظ اور بقا فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Transgender Persons (Protection of Rights) Act, 2018",
+      "short_title": "Transgender Act",
+      "act_number": "None",
+      "year": 2018,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Recognizes the rights of transgender persons and prohibits discrimination against them.",
+      "summary_ur": "خواجہ سراؤں کے حقوق کو تسلیم کرتا ہے اور ان کے خلاف امتیاز کو ممنوع قرار دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "ICT Rights of Persons with Disability Act, 2020",
+      "short_title": "Disability Rights Act",
+      "act_number": "None",
+      "year": 2020,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides for the rights and protection of persons with disabilities in the Islamabad Capital Territory.",
+      "summary_ur": "اسلام آباد دارالحکومت میں معذور افراد کے حقوق اور تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Domestic Violence (Prevention and Protection) Act, 2016",
+      "short_title": "Punjab DV Act",
+      "act_number": "None",
+      "year": 2016,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides protection against domestic violence in Punjab province.",
+      "summary_ur": "پنجاب صوبے میں گھریلو تشدد کے خلاف تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Sindh Domestic Violence (Prevention and Protection) Act, 2013",
+      "short_title": "Sindh DV Act",
+      "act_number": "None",
+      "year": 2013,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides protection to victims of domestic violence in Sindh province.",
+      "summary_ur": "سندھ صوبے میں گھریلو تشدد کے متاثرین کو تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Prevention of Trafficking in Persons Act, 2018",
+      "short_title": "Anti-Trafficking Act",
+      "act_number": "None",
+      "year": 2018,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Criminalizes human trafficking and provides protection and rehabilitation for victims.",
+      "summary_ur": "انسانی سمگلنگ کو جرم قرار دیتا ہے اور متاثرین کے لیے تحفظ اور بحالی فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Right to Free and Compulsory Education Act, 2012",
+      "short_title": "Education Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Implements Article 25-A of the Constitution guaranteeing free education to children aged 5-16.",
+      "summary_ur": "آئین کی دفعہ 25-اے کا نفاذ جو 5-16 سال کے بچوں کو مفت تعلیم کی ضمانت دیتی ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Commission on the Status of Women Act, 2012",
+      "short_title": "NCSW Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Establishes a commission to examine women's rights and recommend policy measures.",
+      "summary_ur": "خواتین کے حقوق کا جائزہ لینے اور پالیسی اقدامات کی سفارش کے لیے کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Enforcement of Shariah Act, 1991",
+      "short_title": "Shariah Act",
+      "act_number": "X of 1991",
+      "year": 1991,
+      "category": "ISLAMIC",
+      "summary_en": "Provides for the enforcement of Shariah as the supreme law, subject to the Constitution.",
+      "summary_ur": "آئین کے تابع شریعت کو بالادست قانون کے طور پر نافذ کرنے کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Zakat and Ushr Ordinance, 1980",
+      "short_title": "Zakat Ordinance",
+      "act_number": "XVIII of 1980",
+      "year": 1980,
+      "category": "ISLAMIC",
+      "summary_en": "Provides for the compulsory collection and distribution of zakat and ushr.",
+      "summary_ur": "زکوٰۃ اور عشر کی لازمی وصولی اور تقسیم فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Waqf Properties Ordinance, 1979",
+      "short_title": "Waqf Ordinance",
+      "act_number": "LXIV of 1979",
+      "year": 1979,
+      "category": "ISLAMIC",
+      "summary_en": "Regulates the management and administration of waqf properties.",
+      "summary_ur": "وقف جائیدادوں کے نظم و نسق اور انتظامیہ کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Investigation for Fair Trial Act, 2013",
+      "short_title": "Fair Trial Act",
+      "act_number": "None",
+      "year": 2013,
+      "category": "CRIMINAL",
+      "summary_en": "Authorizes surveillance and interception of communications for investigation of scheduled offences.",
+      "summary_ur": "مقررہ جرائم کی تحقیقات کے لیے نگرانی اور مواصلات کی مداخلت کی اجازت دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Criminal Law (Second Amendment) Act, 2016",
+      "short_title": "Anti-Rape Amendment",
+      "act_number": "None",
+      "year": 2016,
+      "category": "CRIMINAL",
+      "summary_en": "Strengthens penalties for rape and introduces forensic evidence requirements.",
+      "summary_ur": "عصمت دری کی سزاؤں کو سخت کرتا ہے اور فرانزک ثبوت کی ضروریات متعارف کراتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Protection against Harassment of Women at Workplace Act, 2010",
+      "short_title": "Harassment Act",
+      "act_number": "IV of 2010",
+      "year": 2010,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Defines harassment at workplace and establishes inquiry committee mechanism for complaints.",
+      "summary_ur": "کام کی جگہ پر ہراسانی کی تعریف کرتا ہے اور شکایات کے لیے تحقیقاتی کمیٹی کا طریقہ کار قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Witness Protection Act, 2018",
+      "short_title": "Witness Protection Act",
+      "act_number": "None",
+      "year": 2018,
+      "category": "CRIMINAL",
+      "summary_en": "Provides for protection of witnesses in criminal proceedings in Punjab.",
+      "summary_ur": "پنجاب میں فوجداری کارروائیوں میں گواہوں کے تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Telecommunication (Re-organization) Act, 1996",
+      "short_title": "PTA Act",
+      "act_number": "XVII of 1996",
+      "year": 1996,
+      "category": "CYBER",
+      "summary_en": "Establishes the Pakistan Telecommunication Authority and regulates the telecom sector.",
+      "summary_ur": "پاکستان ٹیلی کمیونیکیشن اتھارٹی قائم کرتا ہے اور ٹیلی کام سیکٹر کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Electronic Transactions Ordinance, 2002",
+      "short_title": "ETO",
+      "act_number": "LI of 2002",
+      "year": 2002,
+      "category": "CYBER",
+      "summary_en": "Provides legal recognition for electronic documents, signatures, and transactions.",
+      "summary_ur": "الیکٹرانک دستاویزات، دستخطوں اور لین دین کو قانونی تسلیم فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Highway Authority Act, 1991",
+      "short_title": "NHA Act",
+      "act_number": "XI of 1991",
+      "year": 1991,
+      "category": "CIVIL",
+      "summary_en": "Establishes the NHA for planning, development, and maintenance of national highways.",
+      "summary_ur": "قومی شاہراہوں کی منصوبہ بندی، ترقی اور دیکھ بھال کے لیے این ایچ اے قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Competition Act, 2010",
+      "short_title": "Competition Act",
+      "act_number": "XIX of 2010",
+      "year": 2010,
+      "category": "CORPORATE",
+      "summary_en": "Promotes free competition and prevents monopolies, abuse of dominance, and deceptive marketing.",
+      "summary_ur": "آزاد مسابقت کو فروغ دیتا ہے اور اجارہ داری، غلبے کے غلط استعمال کو روکتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Consumer Protection Act, 2005",
+      "short_title": "Consumer Protection Act",
+      "act_number": "None",
+      "year": 2005,
+      "category": "CIVIL",
+      "summary_en": "Provides for protection of consumer rights and establishment of consumer courts.",
+      "summary_ur": "صارفین کے حقوق کے تحفظ اور صارف عدالتوں کے قیام فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Charitable Endowments Act, 1890",
+      "short_title": "Endowments Act",
+      "act_number": "VI of 1890",
+      "year": 1890,
+      "category": "CIVIL",
+      "summary_en": "Provides for the vesting and administration of charitable endowments.",
+      "summary_ur": "خیراتی وقف کی تحویل اور انتظام فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Cooperative Societies Act, 1925",
+      "short_title": "Cooperative Act",
+      "act_number": "VII of 1925",
+      "year": 1925,
+      "category": "CORPORATE",
+      "summary_en": "Provides for the formation, registration, and regulation of cooperative societies.",
+      "summary_ur": "تعاون پر مبنی سوسائٹیوں کی تشکیل، رجسٹریشن اور ریگولیشن فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Trusts Act, 1882",
+      "short_title": "Trusts Act",
+      "act_number": "II of 1882",
+      "year": 1882,
+      "category": "CIVIL",
+      "summary_en": "Defines the law relating to private trusts and the duties of trustees.",
+      "summary_ur": "نجی ٹرسٹوں اور ٹرسٹیز کے فرائض سے متعلق قانون کی تعریف کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Majority Act, 1875",
+      "short_title": "Majority Act",
+      "act_number": "IX of 1875",
+      "year": 1875,
+      "category": "CIVIL",
+      "summary_en": "Defines the age of majority as 18 years for all purposes except marriage, dower, and divorce.",
+      "summary_ur": "نکاح، مہر اور طلاق کے علاوہ تمام مقاصد کے لیے بلوغت کی عمر 18 سال مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Oaths Act, 1873",
+      "short_title": "Oaths Act",
+      "act_number": "X of 1873",
+      "year": 1873,
+      "category": "CIVIL",
+      "summary_en": "Governs the administration of oaths and affirmations in courts and other proceedings.",
+      "summary_ur": "عدالتوں اور دیگر کارروائیوں میں حلف اور تصدیق کے نظم کو منظم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Defamation Ordinance, 2002",
+      "short_title": "Defamation Ordinance",
+      "act_number": "LVI of 2002",
+      "year": 2002,
+      "category": "CIVIL",
+      "summary_en": "Provides civil remedies for defamation through defamation tribunals.",
+      "summary_ur": "ہتک عزت کے ٹریبیونلز کے ذریعے ہتک عزت کے دیوانی علاج فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Societies Registration Act, 1860",
+      "short_title": "Societies Registration Act",
+      "act_number": "XXI of 1860",
+      "year": 1860,
+      "category": "CIVIL",
+      "summary_en": "Provides for the registration and regulation of literary, scientific, and charitable societies.",
+      "summary_ur": "ادبی، سائنسی اور خیراتی سوسائٹیوں کی رجسٹریشن اور ضابطے فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Red Crescent Society Act, 1920",
+      "short_title": "Red Crescent Act",
+      "act_number": "XV of 1920",
+      "year": 1920,
+      "category": "CIVIL",
+      "summary_en": "Establishes and regulates the Pakistan Red Crescent Society.",
+      "summary_ur": "پاکستان ریڈ کریسنٹ سوسائٹی قائم اور ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Prize Competitions and Lottery (Prohibition) Act, 1989",
+      "short_title": "Lottery Act",
+      "act_number": "None",
+      "year": 1989,
+      "category": "CIVIL",
+      "summary_en": "Prohibits prize competitions, lotteries, and gambling.",
+      "summary_ur": "انعامی مقابلوں، لاٹری اور جوئے پر پابندی لگاتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Local Government Act, 2013",
+      "short_title": "Punjab LGA",
+      "act_number": "None",
+      "year": 2013,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the local government system in Punjab province with union councils and district governments.",
+      "summary_ur": "یونین کونسلوں اور ضلعی حکومتوں کے ساتھ پنجاب میں بلدیاتی نظام قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Sindh Local Government Act, 2013",
+      "short_title": "Sindh LGA",
+      "act_number": "None",
+      "year": 2013,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the local government system in Sindh province.",
+      "summary_ur": "سندھ صوبے میں بلدیاتی نظام قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Khyber Pakhtunkhwa Local Government Act, 2013",
+      "short_title": "KP LGA",
+      "act_number": "None",
+      "year": 2013,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes local government system in KP province.",
+      "summary_ur": "خیبر پختونخوا میں بلدیاتی نظام قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Balochistan Local Government Act, 2010",
+      "short_title": "Balochistan LGA",
+      "act_number": "None",
+      "year": 2010,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes local government system in Balochistan province.",
+      "summary_ur": "بلوچستان صوبے میں بلدیاتی نظام قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Election Act, 2017",
+      "short_title": "Election Act",
+      "act_number": "XXXIII of 2017",
+      "year": 2017,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Comprehensive law governing elections to the National Assembly, Senate, provincial assemblies, and local governments.",
+      "summary_ur": "قومی اسمبلی، سینیٹ، صوبائی اسمبلیوں اور مقامی حکومتوں کے انتخابات کا جامع قانون۔",
+      "is_active": true
+    },
+    {
+      "title": "Political Parties Order, 2002",
+      "short_title": "Political Parties Order",
+      "act_number": "XVIII of 2002",
+      "year": 2002,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Regulates the formation, functioning, and accountability of political parties.",
+      "summary_ur": "سیاسی جماعتوں کی تشکیل، کام کاج اور جوابدہی کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Accountability Bureau Rules, 2000",
+      "short_title": "NAB Rules",
+      "act_number": "None",
+      "year": 2000,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Prescribes rules for the functioning and procedures of NAB.",
+      "summary_ur": "نیب کے کام کاج اور طریقہ کار کے قواعد مقرر کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Islamabad Capital Territory Administration of Justice Act, 2017",
+      "short_title": "ICT Justice Act",
+      "act_number": "None",
+      "year": 2017,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Reorganizes the judicial setup of Islamabad Capital Territory.",
+      "summary_ur": "اسلام آباد دارالحکومت کے عدالتی ڈھانچے کی تنظیم نو کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Service Tribunals Act, 1973",
+      "short_title": "Service Tribunals Act",
+      "act_number": "LXX of 1973",
+      "year": 1973,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes service tribunals for adjudication of service matters of civil servants.",
+      "summary_ur": "سرکاری ملازمین کے خدمتی معاملات کے فیصلے کے لیے سروس ٹریبیونلز قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan International Airlines Corporation Act, 1956",
+      "short_title": "PIA Act",
+      "act_number": "XXXV of 1956",
+      "year": 1956,
+      "category": "CORPORATE",
+      "summary_en": "Establishes PIA Corporation for national and international air transport services.",
+      "summary_ur": "قومی اور بین الاقوامی فضائی نقل و حمل کی خدمات کے لیے پی آئی اے کارپوریشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Atomic Energy Commission Ordinance, 1965",
+      "short_title": "PAEC Ordinance",
+      "act_number": "None",
+      "year": 1965,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the Pakistan Atomic Energy Commission for peaceful uses of nuclear energy.",
+      "summary_ur": "ایٹمی توانائی کے پرامن استعمال کے لیے پاکستان ایٹمی توانائی کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Drug Regulatory Authority of Pakistan Act, 2012",
+      "short_title": "DRAP Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "CIVIL",
+      "summary_en": "Establishes the Drug Regulatory Authority for regulation of drugs and therapeutic goods.",
+      "summary_ur": "ادویات اور علاج معالجے کی اشیاء کے ضابطے کے لیے ڈرگ ریگولیٹری اتھارٹی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Medical Commission Act, 2020",
+      "short_title": "PMC Act",
+      "act_number": "None",
+      "year": 2020,
+      "category": "CIVIL",
+      "summary_en": "Establishes the Pakistan Medical Commission for regulation of medical education and practice.",
+      "summary_ur": "طبی تعلیم اور پریکٹس کے ضابطے کے لیے پاکستان میڈیکل کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Higher Education Commission Ordinance, 2002",
+      "short_title": "HEC Ordinance",
+      "act_number": "LIII of 2002",
+      "year": 2002,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes HEC for regulation and promotion of higher education in Pakistan.",
+      "summary_ur": "پاکستان میں اعلیٰ تعلیم کے ضابطے اور فروغ کے لیے ایچ ای سی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Vocational and Technical Training Commission Act, 2011",
+      "short_title": "NAVTTC Act",
+      "act_number": "None",
+      "year": 2011,
+      "category": "LABOR",
+      "summary_en": "Establishes NAVTTC for regulation and promotion of technical and vocational education.",
+      "summary_ur": "فنی اور پیشہ ورانہ تعلیم کے ضابطے اور فروغ کے لیے نیوٹیک قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "ICT Child Protection Act, 2018",
+      "short_title": "Child Protection Act",
+      "act_number": "None",
+      "year": 2018,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides for protection of children from abuse, exploitation, and neglect in Islamabad.",
+      "summary_ur": "اسلام آباد میں بچوں کو بدسلوکی، استحصال اور غفلت سے تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Benami Transactions (Prohibition) Act, 2017",
+      "short_title": "Benami Act",
+      "act_number": "V of 2017",
+      "year": 2017,
+      "category": "PROPERTY",
+      "summary_en": "Prohibits benami (anonymous) property transactions and provides for confiscation of benami property.",
+      "summary_ur": "بے نامی جائیداد کے لین دین پر پابندی اور بے نامی جائیداد ضبطی کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Charitable Institutions (Regulation and Control) Act, 2018",
+      "short_title": "Charity Regulation Act",
+      "act_number": "None",
+      "year": 2018,
+      "category": "CIVIL",
+      "summary_en": "Regulates the establishment, operation, and funding of charitable institutions in Punjab.",
+      "summary_ur": "پنجاب میں خیراتی اداروں کے قیام، آپریشن اور فنڈنگ کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Council of Scientific and Industrial Research Act, 1973",
+      "short_title": "PCSIR Act",
+      "act_number": "None",
+      "year": 1973,
+      "category": "CIVIL",
+      "summary_en": "Establishes PCSIR for promoting scientific research and industrial development.",
+      "summary_ur": "سائنسی تحقیق اور صنعتی ترقی کو فروغ دینے کے لیے پی سی ایس آئی آر قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Standards and Quality Control Authority Act, 1996",
+      "short_title": "PSQCA Act",
+      "act_number": "None",
+      "year": 1996,
+      "category": "CORPORATE",
+      "summary_en": "Establishes PSQCA for standardization and quality control of products.",
+      "summary_ur": "مصنوعات کی معیار بندی اور معیار کنٹرول کے لیے پی ایس کیو سی اے قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Export Development Fund Act, 1999",
+      "short_title": "EDF Act",
+      "act_number": "None",
+      "year": 1999,
+      "category": "CORPORATE",
+      "summary_en": "Provides for the Export Development Fund for promotion and development of exports.",
+      "summary_ur": "برآمدات کی ترقی اور فروغ کے لیے ایکسپورٹ ڈویلپمنٹ فنڈ فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Broadcasting Corporation Act, 1973",
+      "short_title": "PBC Act",
+      "act_number": "XXXII of 1973",
+      "year": 1973,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes the Pakistan Broadcasting Corporation for public broadcasting services.",
+      "summary_ur": "عوامی نشریاتی خدمات کے لیے پاکستان براڈکاسٹنگ کارپوریشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Electronic Media Regulatory Authority Ordinance, 2002",
+      "short_title": "PEMRA Ordinance",
+      "act_number": "XIII of 2002",
+      "year": 2002,
+      "category": "CYBER",
+      "summary_en": "Establishes PEMRA for regulation and licensing of electronic media including TV, radio, and cable.",
+      "summary_ur": "ٹی وی، ریڈیو اور کیبل سمیت الیکٹرانک میڈیا کے ضابطے اور لائسنسنگ کے لیے پیمرا قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Press, Newspapers, News Agencies and Books Registration Ordinance, 2002",
+      "short_title": "Press Registration Ordinance",
+      "act_number": "None",
+      "year": 2002,
+      "category": "CIVIL",
+      "summary_en": "Provides for the registration of printing presses, newspapers, and news agencies.",
+      "summary_ur": "پرنٹنگ پریسوں، اخبارات اور خبر رساں ایجنسیوں کی رجسٹریشن فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan National Shipping Corporation Ordinance, 1979",
+      "short_title": "PNSC Ordinance",
+      "act_number": "None",
+      "year": 1979,
+      "category": "CORPORATE",
+      "summary_en": "Establishes PNSC for national shipping services.",
+      "summary_ur": "قومی شپنگ خدمات کے لیے پی این ایس سی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Railways Act, 1890",
+      "short_title": "Railways Act",
+      "act_number": "None",
+      "year": 1890,
+      "category": "CIVIL",
+      "summary_en": "Governs the operation and management of railways in Pakistan.",
+      "summary_ur": "پاکستان میں ریلوے کی آپریشن اور انتظام کو منظم کرتا ہے۔",
+      "is_active": false
+    },
+    {
+      "title": "Motor Vehicles Ordinance, 1965",
+      "short_title": "Motor Vehicles Ordinance",
+      "act_number": "XIX of 1965",
+      "year": 1965,
+      "category": "CIVIL",
+      "summary_en": "Regulates the registration, licensing, and use of motor vehicles.",
+      "summary_ur": "موٹر گاڑیوں کی رجسٹریشن، لائسنسنگ اور استعمال کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Citizenship Act, 1951",
+      "short_title": "Citizenship Act",
+      "act_number": "II of 1951",
+      "year": 1951,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Defines Pakistani citizenship and provides for acquisition and termination of citizenship.",
+      "summary_ur": "پاکستانی شہریت کی تعریف اور شہریت کے حصول اور خاتمے کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Naturalization Act, 1926",
+      "short_title": "Naturalization Act",
+      "act_number": "VII of 1926",
+      "year": 1926,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Provides for naturalization of foreigners as Pakistani citizens.",
+      "summary_ur": "غیر ملکیوں کو پاکستانی شہری بنانے کی فراہمی۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Merchant Shipping Ordinance, 2001",
+      "short_title": "Merchant Shipping Ordinance",
+      "act_number": "None",
+      "year": 2001,
+      "category": "CORPORATE",
+      "summary_en": "Regulates merchant shipping activities including registration, safety, and marine pollution prevention.",
+      "summary_ur": "تجارتی بحری جہاز رانی کی سرگرمیوں کو ریگولیٹ کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Civil Aviation Authority Ordinance, 1982",
+      "short_title": "CAA Ordinance",
+      "act_number": "XXXV of 1982",
+      "year": 1982,
+      "category": "CIVIL",
+      "summary_en": "Establishes the Civil Aviation Authority for regulation and development of civil aviation.",
+      "summary_ur": "سول ایوی ایشن کے ضابطے اور ترقی کے لیے سول ایوی ایشن اتھارٹی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Post Office Act, 1898",
+      "short_title": "Post Office Act",
+      "act_number": "VI of 1898",
+      "year": 1898,
+      "category": "CIVIL",
+      "summary_en": "Governs the postal service and confers exclusive privilege on the Government for conveyance of letters.",
+      "summary_ur": "ڈاک خدمت کو منظم کرتا ہے اور خطوط کی ترسیل کے لیے حکومت کو خصوصی اختیار دیتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Database and Registration Authority Ordinance, 2000",
+      "short_title": "NADRA Ordinance",
+      "act_number": "VIII of 2000",
+      "year": 2000,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes NADRA for registration of citizens and maintenance of national database.",
+      "summary_ur": "شہریوں کی رجسٹریشن اور قومی ڈیٹا بیس کی دیکھ بھال کے لیے نادرا قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Muslim Personal Law (Shariat) Application Act, 1937",
+      "short_title": "Shariat Application Act 1937",
+      "act_number": "XXVI of 1937",
+      "year": 1937,
+      "category": "ISLAMIC",
+      "summary_en": "Applies Muslim personal law in matters of inheritance, marriage, and related family matters.",
+      "summary_ur": "وراثت، نکاح اور متعلقہ خاندانی معاملات میں مسلم ذاتی قانون لاگو کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Punjab Food Authority Act, 2011",
+      "short_title": "Punjab Food Act",
+      "act_number": "None",
+      "year": 2011,
+      "category": "CIVIL",
+      "summary_en": "Establishes the Punjab Food Authority for regulation of food safety and quality.",
+      "summary_ur": "غذائی حفاظت اور معیار کے ضابطے کے لیے پنجاب فوڈ اتھارٹی قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Sindh Right of Children to Free and Compulsory Education Act, 2013",
+      "short_title": "Sindh Education Act",
+      "act_number": "None",
+      "year": 2013,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Provides for free and compulsory education to children aged 5-16 in Sindh.",
+      "summary_ur": "سندھ میں 5 سے 16 سال کے بچوں کو مفت اور لازمی تعلیم فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Commission on the Status of Women Act, 2012",
+      "short_title": "PCSW Act",
+      "act_number": "None",
+      "year": 2012,
+      "category": "HUMAN_RIGHTS",
+      "summary_en": "Establishes the Commission for examining and reviewing women's rights and recommending reforms.",
+      "summary_ur": "خواتین کے حقوق کا جائزہ لینے اور اصلاحات کی سفارش کے لیے کمیشن قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "National Highway Safety Ordinance, 2000",
+      "short_title": "Highway Safety Ordinance",
+      "act_number": "None",
+      "year": 2000,
+      "category": "CIVIL",
+      "summary_en": "Provides for safety and regulation of traffic on national highways.",
+      "summary_ur": "قومی شاہراہوں پر ٹریفک کی حفاظت اور ضابطے فراہم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Pakistan Testing Service Act, 2019",
+      "short_title": "PTS Act",
+      "act_number": "None",
+      "year": 2019,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Establishes a testing service for standardized examinations for government recruitment.",
+      "summary_ur": "سرکاری بھرتی کے لیے معیاری امتحانات کی ٹیسٹنگ سروس قائم کرتا ہے۔",
+      "is_active": true
+    },
+    {
+      "title": "Whistleblower Protection and Vigilance Commission Act, 2019",
+      "short_title": "Whistleblower Act",
+      "act_number": "None",
+      "year": 2019,
+      "category": "CONSTITUTIONAL",
+      "summary_en": "Provides protection for whistleblowers who expose corruption and fraud.",
+      "summary_ur": "بدعنوانی اور فراڈ کا پردہ فاش کرنے والوں کو تحفظ فراہم کرتا ہے۔",
+      "is_active": true
+    }
+  ]
+}

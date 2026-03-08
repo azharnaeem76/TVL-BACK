@@ -36,7 +36,10 @@ async def list_case_laws(
         query = query.where(CaseLaw.year == year)
     if search:
         query = query.where(
-            CaseLaw.title.ilike(f"%{search}%") | CaseLaw.citation.ilike(f"%{search}%")
+            CaseLaw.title.ilike(f"%{search}%") |
+            CaseLaw.citation.ilike(f"%{search}%") |
+            CaseLaw.sections_applied.ilike(f"%{search}%") |
+            CaseLaw.headnotes.ilike(f"%{search}%")
         )
 
     query = query.order_by(CaseLaw.year.desc()).offset(skip).limit(limit)

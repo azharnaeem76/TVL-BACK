@@ -6,6 +6,11 @@ from app.api.routes import auth, search, chat, case_law, ingestion, admin, featu
 from app.core.database import engine, Base, async_session
 from app.api.routes.features import seed_features
 from app.api.routes.study_content import seed_study_content
+from app.data.seed_case_laws import seed_case_laws
+from app.data.seed_statutes import seed_statutes
+from app.data.seed_sections import seed_sections
+from app.data.seed_study_content_data import seed_study_content_from_json
+from app.data.seed_pakistan_laws import seed_pakistan_law_statutes
 import socketio as socketio_lib
 from app.core.socketio import sio
 
@@ -51,6 +56,11 @@ async def lifespan(app: FastAPI):
         async with async_session() as session:
             await seed_features(session)
             await seed_study_content(session)
+            await seed_case_laws(session)
+            await seed_statutes(session)
+            await seed_sections(session)
+            await seed_study_content_from_json(session)
+            await seed_pakistan_law_statutes(session)
             await session.commit()
     except Exception as e:
         print(f"Seeding skipped: {e}")
@@ -106,7 +116,7 @@ All endpoints (except guest search) require a Bearer JWT token. Get one via `/ap
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

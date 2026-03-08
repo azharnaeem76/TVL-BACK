@@ -1,0 +1,2634 @@
+{
+  "study_content": [
+    {
+      "content_type": "quiz_question",
+      "title": "Article 9 - Right to Life",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Article 9 of the Constitution of Pakistan 1973 deals with:",
+        "options": [
+          "Right to life and liberty",
+          "Freedom of speech",
+          "Right to education",
+          "Freedom of movement"
+        ],
+        "correct": 0,
+        "explanation": "Article 9 states: No person shall be deprived of life or liberty save in accordance with law."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Amendment Power",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Constitution of Pakistan, the power to amend the Constitution lies with:",
+        "options": [
+          "The President",
+          "The Parliament",
+          "The Supreme Court",
+          "The Prime Minister"
+        ],
+        "correct": 1,
+        "explanation": "Article 239 of the Constitution grants the Parliament the power to amend the Constitution by a two-thirds majority."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Writ Jurisdiction",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Which article provides for writ jurisdiction of the High Court?",
+        "options": [
+          "Article 184",
+          "Article 185",
+          "Article 199",
+          "Article 203"
+        ],
+        "correct": 2,
+        "explanation": "Article 199 empowers each High Court to issue writs including habeas corpus, mandamus, prohibition, quo warranto, and certiorari."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "President Dissolution",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The President of Pakistan can dissolve the National Assembly under:",
+        "options": [
+          "Article 48",
+          "Article 58",
+          "Article 90",
+          "Article 112"
+        ],
+        "correct": 1,
+        "explanation": "Article 58 deals with the dissolution of the National Assembly on the advice of the Prime Minister."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Fundamental Rights",
+      "category": "Constitutional",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Fundamental Rights in the Constitution of Pakistan 1973 are contained in:",
+        "options": [
+          "Part I",
+          "Part II Chapter 1",
+          "Part III",
+          "Part IV"
+        ],
+        "correct": 1,
+        "explanation": "Fundamental Rights are enshrined in Part II, Chapter 1 (Articles 8-28) of the Constitution."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "State Religion",
+      "category": "Constitutional",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The State religion of Pakistan under Article 2 is:",
+        "options": [
+          "No state religion",
+          "Islam",
+          "All religions equally",
+          "Determined by Parliament"
+        ],
+        "correct": 1,
+        "explanation": "Article 2 declares Islam as the State religion of Pakistan."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Right to Fair Trial",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Article 10-A (Right to Fair Trial) was inserted by which Constitutional Amendment?",
+        "options": [
+          "17th Amendment",
+          "18th Amendment",
+          "19th Amendment",
+          "21st Amendment"
+        ],
+        "correct": 1,
+        "explanation": "The 18th Amendment (2010) inserted Article 10-A guaranteeing the right to fair trial and due process."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Objectives Resolution",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Objectives Resolution was made a substantive part of the Constitution through:",
+        "options": [
+          "Article 2",
+          "Article 2-A",
+          "Article 3",
+          "Preamble"
+        ],
+        "correct": 1,
+        "explanation": "Article 2-A states the Objectives Resolution is a substantive part of the Constitution."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Supreme Court Original Jurisdiction",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Article 184(3), the Supreme Court can take suo motu notice of matters involving:",
+        "options": [
+          "Only criminal cases",
+          "Fundamental rights of public importance",
+          "Only civil disputes",
+          "Tax matters"
+        ],
+        "correct": 1,
+        "explanation": "Article 184(3) allows the SC to take up matters of public importance involving enforcement of fundamental rights."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Senate Composition",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The total number of members in the Senate of Pakistan is:",
+        "options": [
+          "96",
+          "100",
+          "104",
+          "87"
+        ],
+        "correct": 0,
+        "explanation": "The Senate consists of 96 members with equal representation from each province."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Federal Shariat Court",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Federal Shariat Court is established under which Article?",
+        "options": [
+          "Article 199",
+          "Article 203-C",
+          "Article 227",
+          "Article 175"
+        ],
+        "correct": 1,
+        "explanation": "Article 203-C establishes the Federal Shariat Court to examine whether laws are repugnant to Islam."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Concurrent Legislative List",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Concurrent Legislative List was abolished by which Amendment?",
+        "options": [
+          "17th Amendment",
+          "18th Amendment",
+          "20th Amendment",
+          "25th Amendment"
+        ],
+        "correct": 1,
+        "explanation": "The 18th Amendment (2010) abolished the Concurrent Legislative List, devolving subjects to provinces."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Emergency Provisions",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Proclamation of Emergency under the Constitution can be made by:",
+        "options": [
+          "Prime Minister",
+          "President",
+          "Supreme Court",
+          "Parliament"
+        ],
+        "correct": 1,
+        "explanation": "Under Article 232, the President may proclaim a state of emergency when the security of Pakistan is threatened."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Disqualification Art 63",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Article 63, a person is disqualified from Parliament if:",
+        "options": [
+          "He is over 65 years old",
+          "He has been convicted of moral turpitude",
+          "He lives abroad",
+          "He is a government contractor"
+        ],
+        "correct": 1,
+        "explanation": "Article 63 lists grounds including conviction involving moral turpitude, insolvency, and dual nationality."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "NAB Under Constitution",
+      "category": "Constitutional",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The 18th Amendment transferred which subjects from Federal to Provincial list?",
+        "options": [
+          "Defense and foreign affairs",
+          "Education, health, and environment",
+          "Currency and customs",
+          "Banking and finance"
+        ],
+        "correct": 1,
+        "explanation": "The 18th Amendment transferred 47 subjects including education, health, environment to provinces."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Equality Before Law",
+      "category": "Constitutional",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Article 25 of the Constitution guarantees:",
+        "options": [
+          "Freedom of religion",
+          "Right to property",
+          "Equality of citizens before law",
+          "Freedom of assembly"
+        ],
+        "correct": 2,
+        "explanation": "Article 25 states all citizens are equal before law and entitled to equal protection of law."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Right to Education Art 25-A",
+      "category": "Constitutional",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Article 25-A guarantees free education for children aged:",
+        "options": [
+          "3 to 12 years",
+          "5 to 16 years",
+          "6 to 14 years",
+          "4 to 18 years"
+        ],
+        "correct": 1,
+        "explanation": "Article 25-A provides for free and compulsory education to all children aged 5-16 years."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Right to Information",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Article 19-A provides citizens the right to:",
+        "options": [
+          "Free speech",
+          "Access to information",
+          "Privacy",
+          "Assembly"
+        ],
+        "correct": 1,
+        "explanation": "Article 19-A guarantees every citizen the right to have access to information in matters of public importance."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "National Assembly Seats",
+      "category": "Constitutional",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The total number of general seats in the National Assembly is:",
+        "options": [
+          "272",
+          "342",
+          "200",
+          "336"
+        ],
+        "correct": 1,
+        "explanation": "The National Assembly has 342 total seats including 272 general seats and reserved seats for women and minorities."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "PM Qualification Age",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The minimum age to become Prime Minister of Pakistan is:",
+        "options": [
+          "21 years",
+          "25 years",
+          "30 years",
+          "35 years"
+        ],
+        "correct": 1,
+        "explanation": "Under Article 91, a member of the National Assembly can become PM, and the minimum age for NA membership is 25."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "PPC Section 302",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Section 302 of the PPC deals with:",
+        "options": [
+          "Theft",
+          "Qatl-i-amd (intentional murder)",
+          "Hurt",
+          "Robbery"
+        ],
+        "correct": 1,
+        "explanation": "Section 302 PPC prescribes punishment for Qatl-i-amd (intentional murder)."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Right of Private Defence",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under PPC, the right of private defence extends to causing death in cases under:",
+        "options": [
+          "Section 96",
+          "Section 100",
+          "Section 102",
+          "Section 106"
+        ],
+        "correct": 1,
+        "explanation": "Section 100 lists situations where private defence extends to causing death."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Bail Non-Bailable",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 497 CrPC, bail in non-bailable offences requires:",
+        "options": [
+          "Only surety",
+          "Reasonable grounds of not guilty",
+          "Permission of complainant",
+          "Written consent of prosecutor"
+        ],
+        "correct": 1,
+        "explanation": "Section 497 allows bail when there are reasonable grounds for believing the accused is not guilty."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "FIR Section",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "An FIR is registered under which section of CrPC?",
+        "options": [
+          "Section 144",
+          "Section 154",
+          "Section 161",
+          "Section 173"
+        ],
+        "correct": 1,
+        "explanation": "Section 154 CrPC provides for information in cognizable cases to be recorded as FIR."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Section 144 CrPC",
+      "category": "Criminal",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Section 144 CrPC empowers which authority to impose restrictions?",
+        "options": [
+          "Inspector General of Police",
+          "District Magistrate",
+          "Sessions Judge",
+          "Commissioner"
+        ],
+        "correct": 1,
+        "explanation": "Section 144 empowers the District Magistrate to issue orders in urgent cases of nuisance or danger."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Cheque Dishonour",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Dishonour of cheque is punishable under which section of PPC?",
+        "options": [
+          "Section 420",
+          "Section 468",
+          "Section 489-F",
+          "Section 406"
+        ],
+        "correct": 2,
+        "explanation": "Section 489-F PPC punishes dishonest issuance of a cheque that is dishonoured with up to 3 years imprisonment."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Section 420 PPC",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Section 420 PPC deals with:",
+        "options": [
+          "Murder",
+          "Cheating and dishonestly inducing delivery of property",
+          "Robbery",
+          "Forgery"
+        ],
+        "correct": 1,
+        "explanation": "Section 420 punishes cheating and thereby dishonestly inducing delivery of any property."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Common Intention",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Section 34 PPC deals with:",
+        "options": [
+          "Theft by servant",
+          "Acts done in common intention",
+          "Criminal conspiracy",
+          "Abetment"
+        ],
+        "correct": 1,
+        "explanation": "Section 34 provides that when a criminal act is done by several persons in furtherance of common intention, each is liable."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Criminal Conspiracy",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Criminal conspiracy is defined under which section of PPC?",
+        "options": [
+          "Section 34",
+          "Section 109",
+          "Section 120-B",
+          "Section 148"
+        ],
+        "correct": 2,
+        "explanation": "Section 120-B defines and punishes criminal conspiracy."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Dacoity",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "How many persons are required to constitute dacoity?",
+        "options": [
+          "Two or more",
+          "Three or more",
+          "Five or more",
+          "Seven or more"
+        ],
+        "correct": 2,
+        "explanation": "Under Section 395, when five or more persons conjointly commit robbery, it is dacoity."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Diyat",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Diyat (blood money) is defined under which section of PPC?",
+        "options": [
+          "Section 302",
+          "Section 304",
+          "Section 308",
+          "Section 310"
+        ],
+        "correct": 2,
+        "explanation": "Section 308 defines diyat and provides that its value shall not be less than 30,630 grams of silver."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Anticipatory Bail",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Pre-arrest/anticipatory bail is provided under which section of CrPC?",
+        "options": [
+          "Section 496",
+          "Section 497",
+          "Section 498",
+          "Section 499"
+        ],
+        "correct": 2,
+        "explanation": "Section 498 CrPC provides for pre-arrest bail when a person apprehends arrest in a non-bailable offence."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Challan Section",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Police report/challan is submitted under which section of CrPC?",
+        "options": [
+          "Section 154",
+          "Section 161",
+          "Section 164",
+          "Section 173"
+        ],
+        "correct": 3,
+        "explanation": "Section 173 CrPC requires the police officer to forward a report (challan) to the Magistrate upon completion of investigation."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Confession Before Magistrate",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Recording of confession before a Magistrate is governed by:",
+        "options": [
+          "Section 154 CrPC",
+          "Section 161 CrPC",
+          "Section 164 CrPC",
+          "Section 173 CrPC"
+        ],
+        "correct": 2,
+        "explanation": "Section 164 CrPC provides for recording of confessions and statements before a Magistrate."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Habeas Corpus",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Habeas corpus can be issued by the High Court under which section of CrPC?",
+        "options": [
+          "Section 435",
+          "Section 491",
+          "Section 497",
+          "Section 561-A"
+        ],
+        "correct": 1,
+        "explanation": "Section 491 CrPC empowers the High Court to issue habeas corpus for persons illegally detained."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Inherent Powers HC",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Inherent powers of the High Court are preserved under:",
+        "options": [
+          "Section 435 CrPC",
+          "Section 491 CrPC",
+          "Section 540 CrPC",
+          "Section 561-A CrPC"
+        ],
+        "correct": 3,
+        "explanation": "Section 561-A preserves the inherent powers of the High Court to make orders necessary for justice or prevent abuse of process."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Blasphemy Law",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Defiling the Holy Quran is punishable under which section of PPC?",
+        "options": [
+          "Section 295-A",
+          "Section 295-B",
+          "Section 295-C",
+          "Section 298-A"
+        ],
+        "correct": 1,
+        "explanation": "Section 295-B PPC provides for punishment of willful defiling of the Holy Quran."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Rape Punishment",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Minimum punishment for rape under Section 376 PPC is:",
+        "options": [
+          "5 years",
+          "7 years",
+          "10 years",
+          "14 years"
+        ],
+        "correct": 2,
+        "explanation": "Section 376 provides imprisonment not less than 10 years but may extend to 25 years or death."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Compoundable Offences",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Compounding of offences is dealt with under which section of CrPC?",
+        "options": [
+          "Section 249-A",
+          "Section 265-D",
+          "Section 345",
+          "Section 401"
+        ],
+        "correct": 2,
+        "explanation": "Section 345 CrPC lists offences that may be compounded by specified persons."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Cyber Terrorism PECA",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Cyber terrorism under PECA 2016 is punishable with imprisonment up to:",
+        "options": [
+          "7 years",
+          "10 years",
+          "14 years",
+          "25 years"
+        ],
+        "correct": 2,
+        "explanation": "Section 10 of PECA provides imprisonment up to 14 years or fine up to 50 million rupees for cyber terrorism."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Res Judicata",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The principle of Res Judicata is contained in which section of CPC?",
+        "options": [
+          "Section 9",
+          "Section 10",
+          "Section 11",
+          "Section 12"
+        ],
+        "correct": 2,
+        "explanation": "Section 11 CPC embodies the principle of Res Judicata preventing re-litigation of decided issues."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Limitation Money Suit",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The limitation period for a suit for recovery of money is:",
+        "options": [
+          "1 year",
+          "2 years",
+          "3 years",
+          "6 years"
+        ],
+        "correct": 2,
+        "explanation": "Under Article 46 of the Limitation Act, the period is 3 years from when the amount becomes due."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Inherent Powers CPC",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Inherent powers of the court are saved under which section of CPC?",
+        "options": [
+          "Section 100",
+          "Section 115",
+          "Section 144",
+          "Section 151"
+        ],
+        "correct": 3,
+        "explanation": "Section 151 CPC saves the inherent power of the Court to make orders necessary for the ends of justice."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Second Appeal",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A second appeal lies to the High Court under which section of CPC?",
+        "options": [
+          "Section 96",
+          "Section 100",
+          "Section 104",
+          "Section 115"
+        ],
+        "correct": 1,
+        "explanation": "Section 100 CPC provides for second appeal to the High Court on substantial questions of law."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Revision CPC",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Revisional jurisdiction of the High Court is under which section?",
+        "options": [
+          "Section 96",
+          "Section 100",
+          "Section 104",
+          "Section 115"
+        ],
+        "correct": 3,
+        "explanation": "Section 115 CPC provides revisional jurisdiction to the High Court."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Stay of Suit CPC",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Section 10 CPC deals with:",
+        "options": [
+          "Res judicata",
+          "Stay of suit",
+          "Bar to further suit",
+          "Revision"
+        ],
+        "correct": 1,
+        "explanation": "Section 10 stays proceedings when the same matter is directly in issue in a previously instituted suit."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Institution of Suits",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Every suit is instituted by presentation of a:",
+        "options": [
+          "Written statement",
+          "Plaint",
+          "Petition",
+          "Memorandum"
+        ],
+        "correct": 1,
+        "explanation": "Section 26 CPC provides that every suit shall be instituted by the presentation of a plaint."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Decree and Judgment",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under CPC, after hearing a case the court pronounces:",
+        "options": [
+          "Only judgment",
+          "Judgment followed by decree",
+          "Only decree",
+          "Order only"
+        ],
+        "correct": 1,
+        "explanation": "Section 33 CPC states the court shall pronounce judgment and a decree shall follow."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Burden of Proof",
+      "category": "Evidence",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Article 117 of QSO, the burden of proof lies on:",
+        "options": [
+          "Person who denies a fact",
+          "Person who asserts a fact",
+          "The court",
+          "Prosecution only"
+        ],
+        "correct": 1,
+        "explanation": "Article 117 states the burden lies on the person who would fail if no evidence were given on either side."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Dying Declaration QSO",
+      "category": "Evidence",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A dying declaration is admissible under which Article of QSO?",
+        "options": [
+          "Article 27",
+          "Article 37",
+          "Article 46",
+          "Article 59"
+        ],
+        "correct": 1,
+        "explanation": "Article 37 QSO deals with dying declarations about the cause of death."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Competence of Witnesses",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The competence and number of witnesses is governed by which Article of QSO?",
+        "options": [
+          "Article 3",
+          "Article 17",
+          "Article 59",
+          "Article 117"
+        ],
+        "correct": 1,
+        "explanation": "Article 17 determines competence of witnesses according to Islamic injunctions."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Oral Evidence",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under QSO, all facts except contents of documents may be proved by:",
+        "options": [
+          "Only documentary evidence",
+          "Oral evidence",
+          "Circumstantial evidence only",
+          "Expert opinion only"
+        ],
+        "correct": 1,
+        "explanation": "Article 59 states all facts except contents of documents may be proved by oral evidence."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Cross Examination",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Cross-examination of a witness is conducted by:",
+        "options": [
+          "The party who called the witness",
+          "The adverse party",
+          "The judge",
+          "The jury"
+        ],
+        "correct": 1,
+        "explanation": "Article 133 defines cross-examination as examination of a witness by the adverse party."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Estoppel",
+      "category": "Evidence",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The principle of estoppel is contained in which Article of QSO?",
+        "options": [
+          "Article 117",
+          "Article 129",
+          "Article 140",
+          "Article 153"
+        ],
+        "correct": 3,
+        "explanation": "Article 153 QSO embodies the doctrine of estoppel."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Leading Questions",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A question suggesting the desired answer is called a:",
+        "options": [
+          "Direct question",
+          "Leading question",
+          "Cross question",
+          "Rebuttal question"
+        ],
+        "correct": 1,
+        "explanation": "Article 140 defines a leading question as one that suggests the answer expected."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Admission QSO",
+      "category": "Evidence",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Admissions are defined under which Article of QSO?",
+        "options": [
+          "Article 17",
+          "Article 27",
+          "Article 37",
+          "Article 59"
+        ],
+        "correct": 1,
+        "explanation": "Article 27 defines an admission as a statement suggesting inference as to a fact in issue."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Presumption Certified Copy",
+      "category": "Evidence",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under QSO, the court shall presume genuineness of:",
+        "options": [
+          "All documents",
+          "Certified copies of court records",
+          "Only registered documents",
+          "Only notarized documents"
+        ],
+        "correct": 1,
+        "explanation": "Article 76 QSO creates a presumption of genuineness for certified copies of court records."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Valid Contract Elements",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 10 of the Contract Act, which is NOT essential for a valid contract?",
+        "options": [
+          "Free consent",
+          "Lawful consideration",
+          "Written document",
+          "Competent parties"
+        ],
+        "correct": 2,
+        "explanation": "A written document is not always required. Section 10 requires free consent, competent parties, lawful consideration, and lawful object."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Void Agreement",
+      "category": "Contract",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "An agreement in restraint of trade under Section 27 is:",
+        "options": [
+          "Voidable",
+          "Valid",
+          "Void",
+          "Illegal"
+        ],
+        "correct": 2,
+        "explanation": "Section 27 declares every agreement in restraint of trade void, except for sale of goodwill."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Age of Contract",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Contract Act, a person competent to contract must be:",
+        "options": [
+          "At least 16",
+          "At least 18",
+          "Of the age of majority",
+          "At least 21"
+        ],
+        "correct": 2,
+        "explanation": "Section 11 states every person of the age of majority and of sound mind is competent to contract."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Coercion Definition",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Coercion under Section 15 of the Contract Act includes:",
+        "options": [
+          "Only physical force",
+          "Threatening an act forbidden by PPC",
+          "Economic pressure only",
+          "Social pressure"
+        ],
+        "correct": 1,
+        "explanation": "Section 15 defines coercion as committing or threatening to commit any act forbidden by the PPC."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Fraud Section",
+      "category": "Contract",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Fraud is defined under which section of the Contract Act?",
+        "options": [
+          "Section 14",
+          "Section 15",
+          "Section 16",
+          "Section 17"
+        ],
+        "correct": 3,
+        "explanation": "Section 17 defines fraud as acts committed with intent to deceive another party."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Impossible Agreement",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "An agreement to do an impossible act is:",
+        "options": [
+          "Voidable",
+          "Valid until impossible",
+          "Void",
+          "Enforceable"
+        ],
+        "correct": 2,
+        "explanation": "Section 56 states an agreement to do an act impossible in itself is void."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Compensation Breach",
+      "category": "Contract",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Compensation for breach of contract is governed by Section:",
+        "options": [
+          "56",
+          "63",
+          "73",
+          "124"
+        ],
+        "correct": 2,
+        "explanation": "Section 73 provides that the party suffering breach is entitled to compensation for loss or damage."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Contract of Guarantee",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A contract of guarantee involves how many parties?",
+        "options": [
+          "Two",
+          "Three",
+          "Four",
+          "Five"
+        ],
+        "correct": 1,
+        "explanation": "Section 126 defines guarantee as a contract involving three parties: surety, principal debtor, and creditor."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Bailment",
+      "category": "Contract",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Bailment is defined under which section of the Contract Act?",
+        "options": [
+          "Section 124",
+          "Section 126",
+          "Section 148",
+          "Section 182"
+        ],
+        "correct": 2,
+        "explanation": "Section 148 defines bailment as delivery of goods by one person to another for some purpose."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Agency",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "An agent is defined under Section:",
+        "options": [
+          "Section 148",
+          "Section 182",
+          "Section 124",
+          "Section 126"
+        ],
+        "correct": 1,
+        "explanation": "Section 182 defines an agent as a person employed to do any act for another."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Khula",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Khula is a form of dissolution of marriage at the instance of:",
+        "options": [
+          "The husband",
+          "The wife",
+          "The court only",
+          "The arbitration council"
+        ],
+        "correct": 1,
+        "explanation": "Khula is the wife's right to seek dissolution by returning the dower to the husband."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Talaq Notice",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 7 of MFLO, talaq notice must be given to:",
+        "options": [
+          "The wife only",
+          "The Chairman and a copy to the wife",
+          "The court only",
+          "The Nikah Registrar"
+        ],
+        "correct": 1,
+        "explanation": "Section 7 requires notice to the Chairman of Union Council and a copy to the wife. Talaq is effective after 90 days."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Polygamy MFLO",
+      "category": "Family",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under MFLO, a man requires permission for second marriage from:",
+        "options": [
+          "The first wife",
+          "The Arbitration Council",
+          "The court",
+          "The Nikah Registrar"
+        ],
+        "correct": 1,
+        "explanation": "Section 6 of MFLO requires previous permission of the Arbitration Council for a second marriage."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Grounds for Dissolution",
+      "category": "Family",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Dissolution of Muslim Marriages Act 1939, a wife can seek dissolution on:",
+        "options": [
+          "Any ground",
+          "Only cruelty",
+          "Specified grounds including cruelty, desertion, and non-maintenance",
+          "Only non-payment of dower"
+        ],
+        "correct": 2,
+        "explanation": "Section 2 of DMMA lists specific grounds including whereabouts unknown, failure to maintain, imprisonment, impotency, insanity, cruelty."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Child Marriage Age",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Child Marriage Restraint Act, the minimum marriage age for boys is:",
+        "options": [
+          "14 years",
+          "16 years",
+          "18 years",
+          "21 years"
+        ],
+        "correct": 2,
+        "explanation": "The minimum age is 18 for boys (16 for girls in most provinces)."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Dower MFLO",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 10 of MFLO, when no mode of payment of dower is specified, the entire amount is presumed:",
+        "options": [
+          "Payable at divorce",
+          "Payable on demand",
+          "Payable in installments",
+          "Payable at death"
+        ],
+        "correct": 1,
+        "explanation": "Section 10 states the entire dower amount is presumed payable on demand if no payment mode is specified."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Guardians and Wards",
+      "category": "Family",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Guardians and Wards Act, the paramount consideration for appointing a guardian is:",
+        "options": [
+          "Religion of parents",
+          "Wealth of guardian",
+          "Welfare of the minor",
+          "Age of guardian"
+        ],
+        "correct": 2,
+        "explanation": "Section 17 GWA states the court shall consider the welfare of the minor as the paramount consideration."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Succession Non-Muslim",
+      "category": "Family",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Succession for non-Muslims in Pakistan is governed by:",
+        "options": [
+          "Muslim Personal Law",
+          "Succession Act 1925",
+          "MFLO",
+          "Custom"
+        ],
+        "correct": 1,
+        "explanation": "The Succession Act 1925 governs testamentary and intestate succession for non-Muslims."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Sale TPA",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under TPA, sale is defined as transfer of ownership for:",
+        "options": [
+          "Gift",
+          "Price paid or promised",
+          "Exchange only",
+          "Mortgage"
+        ],
+        "correct": 1,
+        "explanation": "Section 54 TPA defines sale as transfer of ownership in exchange for a price."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Mortgage TPA",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A mortgage under TPA is defined in Section:",
+        "options": [
+          "Section 54",
+          "Section 58",
+          "Section 105",
+          "Section 122"
+        ],
+        "correct": 1,
+        "explanation": "Section 58 defines mortgage as transfer of interest in immovable property to secure payment of money."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Gift Registration",
+      "category": "Property",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 123 TPA, a gift of immovable property requires:",
+        "options": [
+          "Only verbal declaration",
+          "Registration",
+          "Only delivery",
+          "Written agreement only"
+        ],
+        "correct": 1,
+        "explanation": "Section 123 states gift of immovable property must be registered."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Lis Pendens",
+      "category": "Property",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The doctrine of Lis Pendens is contained in which section of TPA?",
+        "options": [
+          "Section 5",
+          "Section 41",
+          "Section 52",
+          "Section 54"
+        ],
+        "correct": 2,
+        "explanation": "Section 52 TPA embodies lis pendens - property subject of a suit cannot be transferred to defeat rights of parties."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Lease Definition",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "A lease under TPA is defined in Section:",
+        "options": [
+          "Section 54",
+          "Section 58",
+          "Section 105",
+          "Section 122"
+        ],
+        "correct": 2,
+        "explanation": "Section 105 defines lease as transfer of right to enjoy property for a certain time for rent."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Pre-emption",
+      "category": "Property",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The right of pre-emption (shuf'a) in Punjab is governed by:",
+        "options": [
+          "Transfer of Property Act",
+          "Punjab Pre-emption Act 1991",
+          "Registration Act",
+          "Stamp Act"
+        ],
+        "correct": 1,
+        "explanation": "The Punjab Pre-emption Act 1991 grants pre-emption rights to co-sharers and neighbours."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Registration Compulsory",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 17 of the Registration Act, registration is compulsory for:",
+        "options": [
+          "All documents",
+          "Only sale deeds",
+          "Instruments of gift and transfer of immovable property over Rs. 100",
+          "Only mortgage deeds"
+        ],
+        "correct": 2,
+        "explanation": "Section 17 requires registration of gifts of immovable property and transfers exceeding Rs. 100."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Land Acquisition",
+      "category": "Property",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Compensation for land acquisition is determined under Section:",
+        "options": [
+          "Section 4",
+          "Section 6",
+          "Section 11",
+          "Section 23"
+        ],
+        "correct": 3,
+        "explanation": "Section 23 of the Land Acquisition Act lists matters to be considered in determining compensation."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Sources of Islamic Law",
+      "category": "Islamic",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The primary sources of Islamic law are:",
+        "options": [
+          "Quran, Sunnah, Ijma, Qiyas",
+          "Only Quran",
+          "Quran and Hadith only",
+          "Custom and usage"
+        ],
+        "correct": 0,
+        "explanation": "The four primary sources are: Quran, Sunnah (Hadith), Ijma (consensus), and Qiyas (analogical reasoning)."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Schools of Thought",
+      "category": "Islamic",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The predominant school of Islamic jurisprudence in Pakistan is:",
+        "options": [
+          "Shafi'i",
+          "Hanafi",
+          "Maliki",
+          "Hanbali"
+        ],
+        "correct": 1,
+        "explanation": "The Hanafi school is the predominant school of jurisprudence followed in Pakistan."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Hudood",
+      "category": "Islamic",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Hudood refers to:",
+        "options": [
+          "Fixed punishments prescribed by Allah",
+          "Discretionary punishments",
+          "Civil penalties",
+          "Administrative fines"
+        ],
+        "correct": 0,
+        "explanation": "Hudood are fixed punishments prescribed in the Quran for specific offences like theft, zina, and false accusation."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Zakat Ordinance",
+      "category": "Islamic",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Zakat and Ushr Ordinance was enacted in:",
+        "options": [
+          "1947",
+          "1973",
+          "1980",
+          "1984"
+        ],
+        "correct": 2,
+        "explanation": "The Zakat and Ushr Ordinance 1980 provides for compulsory collection and distribution of zakat."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Waqf",
+      "category": "Islamic",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Waqf in Islamic law means:",
+        "options": [
+          "Gift to relatives",
+          "Dedication of property for religious or charitable purposes",
+          "Inheritance share",
+          "Dowry"
+        ],
+        "correct": 1,
+        "explanation": "Waqf is the permanent dedication of property by a Muslim for religious, charitable, or pious purposes."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Muslim Inheritance",
+      "category": "Islamic",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Islamic law, a daughter's share in inheritance when there are sons is:",
+        "options": [
+          "Equal to son",
+          "Half of son's share",
+          "One-third",
+          "One-fourth"
+        ],
+        "correct": 1,
+        "explanation": "Under Quranic injunctions (4:11), a daughter receives half the share of a son."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Federal Shariat Court Role",
+      "category": "Islamic",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Federal Shariat Court can examine whether any law is repugnant to:",
+        "options": [
+          "Constitution only",
+          "International law",
+          "Injunctions of Islam",
+          "Common law"
+        ],
+        "correct": 2,
+        "explanation": "Under Article 203-D, the FSC examines whether any law is repugnant to the injunctions of Islam."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Company Types",
+      "category": "Corporate",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Companies Act 2017, a private company must have at least:",
+        "options": [
+          "1 director",
+          "2 directors",
+          "3 directors",
+          "7 directors"
+        ],
+        "correct": 1,
+        "explanation": "Section 150 requires every private company to have at least 2 directors and public companies at least 7."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Directors Duties",
+      "category": "Corporate",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under Section 166 of the Companies Act, directors must act in:",
+        "options": [
+          "Personal interest",
+          "Good faith for the company",
+          "Interest of majority only",
+          "Interest of creditors only"
+        ],
+        "correct": 1,
+        "explanation": "Section 166 requires directors to act in good faith to promote the objects of the company."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "SECP Role",
+      "category": "Corporate",
+      "exam_type": "bar",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "SECP stands for:",
+        "options": [
+          "Supreme Economic Control Panel",
+          "Securities and Exchange Commission of Pakistan",
+          "State Enterprise Control Program",
+          "Securities Exchange Company of Pakistan"
+        ],
+        "correct": 1,
+        "explanation": "The Securities and Exchange Commission of Pakistan regulates the corporate sector and capital markets."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "AGM Requirement",
+      "category": "Corporate",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Every company must hold an Annual General Meeting:",
+        "options": [
+          "Every 6 months",
+          "Every year",
+          "Every 2 years",
+          "At directors' discretion"
+        ],
+        "correct": 1,
+        "explanation": "Section 85 of the Companies Act requires every company to hold an AGM each year."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Winding Up Modes",
+      "category": "Corporate",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Companies Act, winding up can be:",
+        "options": [
+          "Only by court",
+          "Only voluntary",
+          "By court or voluntary",
+          "Only by SECP"
+        ],
+        "correct": 2,
+        "explanation": "Section 290 provides two modes of winding up: by the court or voluntary."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "PECA Year",
+      "category": "Cyber",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The Prevention of Electronic Crimes Act was enacted in:",
+        "options": [
+          "2002",
+          "2010",
+          "2016",
+          "2018"
+        ],
+        "correct": 2,
+        "explanation": "PECA was enacted in 2016 to address cyber crimes in Pakistan."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Unauthorized Access PECA",
+      "category": "Cyber",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Unauthorized access to information system under PECA Section 3 is punishable with:",
+        "options": [
+          "Fine only",
+          "3 months imprisonment or Rs. 50,000 fine",
+          "1 year imprisonment",
+          "5 years imprisonment"
+        ],
+        "correct": 1,
+        "explanation": "Section 3 provides imprisonment up to 3 months or fine up to Rs. 50,000 or both."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Cyber Terrorism PECA",
+      "category": "Cyber",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The maximum fine for cyber terrorism under PECA is:",
+        "options": [
+          "Rs. 1 million",
+          "Rs. 10 million",
+          "Rs. 50 million",
+          "Rs. 100 million"
+        ],
+        "correct": 2,
+        "explanation": "Section 10 provides fine up to Rs. 50 million for cyber terrorism."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Electronic Fraud",
+      "category": "Cyber",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Electronic fraud is covered under which section of PECA?",
+        "options": [
+          "Section 10",
+          "Section 13",
+          "Section 14",
+          "Section 16"
+        ],
+        "correct": 2,
+        "explanation": "Section 14 of PECA deals with electronic fraud involving unauthorized access for valuable things."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Online Harassment",
+      "category": "Cyber",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Offences against dignity of a natural person under PECA are in Section:",
+        "options": [
+          "Section 14",
+          "Section 16",
+          "Section 18",
+          "Section 20"
+        ],
+        "correct": 1,
+        "explanation": "Section 16 deals with offences against the dignity of a natural person through information systems."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Income Tax Filing",
+      "category": "Taxation",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Return of income is filed under Section:",
+        "options": [
+          "Section 4",
+          "Section 114",
+          "Section 120",
+          "Section 148"
+        ],
+        "correct": 1,
+        "explanation": "Section 114 of the Income Tax Ordinance requires every person with taxable income to file a return."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Capital Gains Tax",
+      "category": "Taxation",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Capital gains are taxable under Section:",
+        "options": [
+          "Section 11",
+          "Section 15",
+          "Section 21",
+          "Section 37"
+        ],
+        "correct": 3,
+        "explanation": "Section 37 provides that capital gains arising on disposal of capital assets are chargeable to tax."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Best Judgment",
+      "category": "Taxation",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Best judgment assessment can be made by the Commissioner under Section:",
+        "options": [
+          "Section 114",
+          "Section 120",
+          "Section 122",
+          "Section 131"
+        ],
+        "correct": 1,
+        "explanation": "Section 120 allows the Commissioner to make best judgment assessment when return is not filed."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "FBR Full Form",
+      "category": "Taxation",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "FBR stands for:",
+        "options": [
+          "Federal Bureau of Revenue",
+          "Federal Board of Revenue",
+          "Financial Board of Regulation",
+          "Federal Banking Regulator"
+        ],
+        "correct": 1,
+        "explanation": "The Federal Board of Revenue (formerly Central Board of Revenue) administers tax laws in Pakistan."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Trade Union Right",
+      "category": "Labour",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The right to form trade unions is guaranteed under:",
+        "options": [
+          "Article 15 of Constitution",
+          "Article 17 of Constitution",
+          "Article 19 of Constitution",
+          "Article 25 of Constitution"
+        ],
+        "correct": 1,
+        "explanation": "Article 17 guarantees freedom of association including the right to form trade unions."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Minimum Wages",
+      "category": "Labour",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Minimum wages for unskilled workers are fixed under:",
+        "options": [
+          "Payment of Wages Act",
+          "Minimum Wages Ordinance 1961",
+          "Industrial Relations Act",
+          "Factories Act"
+        ],
+        "correct": 1,
+        "explanation": "The Minimum Wages Ordinance 1961 provides for fixing minimum wages for unskilled workers."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Weekly Holiday Factory",
+      "category": "Labour",
+      "exam_type": "bar",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Under the Factories Act, the weekly holiday is:",
+        "options": [
+          "Saturday",
+          "Friday",
+          "Sunday",
+          "Any day decided by employer"
+        ],
+        "correct": 2,
+        "explanation": "Section 34 of the Factories Act provides that no adult worker shall work on Sunday."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Daily Hours Factory",
+      "category": "Labour",
+      "exam_type": "llb",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Maximum daily working hours in a factory under the Factories Act are:",
+        "options": [
+          "6 hours",
+          "8 hours",
+          "9 hours",
+          "10 hours"
+        ],
+        "correct": 2,
+        "explanation": "Section 36 provides no adult worker shall work more than 9 hours in any day."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Rule of Law",
+      "category": "Jurisprudence",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The rule of law means:",
+        "options": [
+          "Rule by kings",
+          "Supremacy of law over arbitrary power",
+          "Rule by majority",
+          "Rule by judges"
+        ],
+        "correct": 1,
+        "explanation": "Rule of law means supremacy of law, equality before law, and predominance of legal spirit."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Sources of Law Pakistan",
+      "category": "Jurisprudence",
+      "exam_type": "lat",
+      "difficulty": "easy",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Which is a primary source of law in Pakistan?",
+        "options": [
+          "Textbooks",
+          "Legislation",
+          "Legal journals",
+          "Law commission reports"
+        ],
+        "correct": 1,
+        "explanation": "Legislation enacted by Parliament is a primary source of law."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Stare Decisis",
+      "category": "Jurisprudence",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The doctrine of stare decisis means:",
+        "options": [
+          "New cases create new law",
+          "Following previous judicial decisions",
+          "Judges can ignore precedent",
+          "Law changes with each case"
+        ],
+        "correct": 1,
+        "explanation": "Stare decisis is the principle of following precedent - courts follow principles established in earlier decisions."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Natural Justice",
+      "category": "Jurisprudence",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The two principles of natural justice are:",
+        "options": [
+          "Justice delayed and justice denied",
+          "Audi alteram partem and nemo judex in causa sua",
+          "Equity and good conscience",
+          "Reasonableness and proportionality"
+        ],
+        "correct": 1,
+        "explanation": "The two principles are: hear the other side (audi alteram partem) and no one should be judge in own cause (nemo judex in causa sua)."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Interpretation of Statutes",
+      "category": "Jurisprudence",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The literal rule of interpretation requires:",
+        "options": [
+          "Considering the spirit of law",
+          "Giving words their ordinary meaning",
+          "Looking at parliamentary intent",
+          "Considering social impact"
+        ],
+        "correct": 1,
+        "explanation": "The literal rule requires words to be given their ordinary, plain, and natural meaning."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Legal Maxim",
+      "category": "Jurisprudence",
+      "exam_type": "bar",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "The maxim 'Ignorantia juris non excusat' means:",
+        "options": [
+          "Ignorance of law excuses",
+          "Ignorance of law is no excuse",
+          "Law must be just",
+          "Law applies equally"
+        ],
+        "correct": 1,
+        "explanation": "Ignorantia juris non excusat means ignorance of law is no excuse - every person is presumed to know the law."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Equity Definition",
+      "category": "Jurisprudence",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "In jurisprudence, equity means:",
+        "options": [
+          "Equal distribution",
+          "Justice based on fairness and conscience",
+          "Only monetary compensation",
+          "Criminal justice"
+        ],
+        "correct": 1,
+        "explanation": "Equity is the body of law developed to mitigate the rigors of common law, based on fairness and conscience."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Obiter Dicta",
+      "category": "Jurisprudence",
+      "exam_type": "bar",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Obiter dicta in a judgment refers to:",
+        "options": [
+          "Binding part of judgment",
+          "Incidental remarks not essential to the decision",
+          "The operative order",
+          "The ratio decidendi"
+        ],
+        "correct": 1,
+        "explanation": "Obiter dicta are observations made by the court that are not essential to the decision and are not binding."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Ratio Decidendi",
+      "category": "Jurisprudence",
+      "exam_type": "llb",
+      "difficulty": "medium",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Ratio decidendi means:",
+        "options": [
+          "The obiter dicta",
+          "The reason for the decision (binding part)",
+          "The dissenting opinion",
+          "The facts of the case"
+        ],
+        "correct": 1,
+        "explanation": "Ratio decidendi is the legal principle upon which the decision is based and forms binding precedent."
+      }
+    },
+    {
+      "content_type": "quiz_question",
+      "title": "Legal Positivism",
+      "category": "Jurisprudence",
+      "exam_type": "llb",
+      "difficulty": "hard",
+      "content": null,
+      "is_published": true,
+      "question_data": {
+        "question": "Legal positivism is associated with which jurist?",
+        "options": [
+          "Hugo Grotius",
+          "John Austin",
+          "Thomas Aquinas",
+          "Aristotle"
+        ],
+        "correct": 1,
+        "explanation": "John Austin is the founder of legal positivism, defining law as a command of the sovereign backed by sanction."
+      }
+    },
+    {
+      "content_type": "study_note",
+      "title": "Constitutional Law - Fundamental Rights Overview",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Fundamental Rights (Articles 8-28)</h2><p>The Constitution of Pakistan 1973 guarantees fundamental rights in Part II, Chapter 1.</p><h3>Key Articles:</h3><ul><li><strong>Article 8:</strong> Laws inconsistent with fundamental rights are void</li><li><strong>Article 9:</strong> Security of person - no deprivation of life or liberty except in accordance with law</li><li><strong>Article 10:</strong> Safeguards as to arrest and detention</li><li><strong>Article 10A:</strong> Right to fair trial (inserted by 18th Amendment)</li><li><strong>Article 14:</strong> Inviolability of dignity of man and privacy of home</li><li><strong>Article 17:</strong> Freedom of association</li><li><strong>Article 19:</strong> Freedom of speech</li><li><strong>Article 25:</strong> Equality of citizens</li><li><strong>Article 25-A:</strong> Right to education (5-16 years)</li></ul><h3>Enforcement:</h3><p>Under Article 199, any citizen can approach the High Court for enforcement of fundamental rights through writ jurisdiction. Under Article 184(3), the Supreme Court may take up matters of public importance involving fundamental rights.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Criminal Procedure - Bail Essentials",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Bail Provisions under CrPC</h2><h3>Types of Bail:</h3><ol><li><strong>Pre-arrest bail (Section 498 CrPC):</strong> Anticipatory bail granted before arrest</li><li><strong>Post-arrest bail (Section 497 CrPC):</strong> Granted after arrest in non-bailable offences</li><li><strong>Bail in bailable offences (Section 496):</strong> As of right</li></ol><h3>Key Principles:</h3><ul><li>Bail is the rule, jail is the exception</li><li>Reasonable grounds to believe accused not guilty</li><li>Further inquiry into guilt is required</li><li>Accused is not previously convicted of similar offence</li></ul><h3>Cancellation of Bail:</h3><p>Section 497(5) CrPC allows cancellation when accused misuses bail or tampers with evidence.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Contract Act 1872 - Key Concepts",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Contract Act 1872 - Essential Concepts</h2><h3>Formation (Section 10):</h3><p>Free consent + competent parties + lawful consideration + lawful object = valid contract.</p><h3>Definitions:</h3><ul><li><strong>Offer (S.2a):</strong> Proposal to do or abstain</li><li><strong>Acceptance (S.2b):</strong> Signifying assent to proposal</li><li><strong>Consideration (S.2d):</strong> Quid pro quo</li><li><strong>Void (S.2g):</strong> Not enforceable</li></ul><h3>Vitiating Factors:</h3><ul><li>Coercion (S.15), Undue Influence (S.16), Fraud (S.17), Misrepresentation (S.18), Mistake (S.20-22)</li></ul><h3>Types of Contracts:</h3><ul><li>Indemnity (S.124), Guarantee (S.126), Bailment (S.148), Agency (S.182)</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Evidence Law - QSO Key Provisions",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Qanun-e-Shahadat Order 1984</h2><h3>Structure:</h3><p>The QSO replaced the Indian Evidence Act 1872, incorporating Islamic principles of testimony.</p><h3>Key Concepts:</h3><ul><li><strong>Article 17:</strong> Competence and number of witnesses per Islamic injunctions</li><li><strong>Article 27:</strong> Admissions</li><li><strong>Article 37:</strong> Dying declarations</li><li><strong>Article 59:</strong> All facts except document contents provable by oral evidence</li><li><strong>Article 117:</strong> Burden of proof on the person who asserts</li><li><strong>Article 153:</strong> Estoppel</li></ul><h3>Examination of Witnesses:</h3><ul><li>Examination-in-chief (Art. 132): By the party calling the witness</li><li>Cross-examination (Art. 133): By the adverse party</li><li>Re-examination (Art. 134): By the calling party</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "PPC - Offences Against Body (Qisas and Diyat)",
+      "category": "Criminal",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Pakistan Penal Code - Qisas and Diyat Law</h2><h3>Key Sections (299-338):</h3><ul><li><strong>S.299:</strong> Definitions - badl-i-sulh, daman, diyat</li><li><strong>S.300:</strong> Qatl-i-amd (intentional murder)</li><li><strong>S.302:</strong> Punishment - death as qisas, life imprisonment, or 25 years as ta'zir</li><li><strong>S.308:</strong> Diyat - minimum 30,630 grams of silver</li><li><strong>S.309:</strong> Qatl-bis-sabab (unintentional)</li><li><strong>S.310:</strong> Qatl-i-khata (by mistake)</li><li><strong>S.316:</strong> Hurt defined</li><li><strong>S.324:</strong> Attempt to commit qatl-i-amd</li></ul><h3>Waiver and Compounding:</h3><p>Under Qisas and Diyat provisions, the heirs of the victim may waive or compound the right of qisas (except in fasad-fil-arz cases). The Criminal Law Amendment Act 2016 restricted compounding in honour killing cases.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Family Law - Marriage and Divorce",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Muslim Family Law in Pakistan</h2><h3>Marriage (Nikah):</h3><ul><li>Offer (ijab) and acceptance (qabul) required</li><li>Two Muslim witnesses mandatory</li><li>Dower (mahr) must be fixed</li><li>Registration under MFLO Section 5 compulsory</li></ul><h3>Divorce:</h3><ul><li><strong>Talaq:</strong> Husband's right, notice to Chairman required (S.7 MFLO), effective after 90 days</li><li><strong>Khula:</strong> Wife's right to dissolution by returning dower</li><li><strong>DMMA 1939:</strong> Judicial dissolution on grounds like cruelty, desertion, non-maintenance</li><li><strong>Tafwiz:</strong> Delegated right of divorce to wife</li></ul><h3>Maintenance:</h3><p>Husband is bound to maintain wife. Under S.9 MFLO, wife can apply to Chairman for maintenance determination.</p><h3>Custody (Hizanat):</h3><p>Mother has right of custody: sons until 7 years, daughters until puberty (Hanafi school). Welfare of child is paramount (GWA S.17).</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Transfer of Property Act - Key Concepts",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Transfer of Property Act 1882</h2><h3>Types of Transfer:</h3><ul><li><strong>Sale (S.54):</strong> Transfer of ownership for a price</li><li><strong>Mortgage (S.58):</strong> Transfer of interest to secure payment</li><li><strong>Lease (S.105):</strong> Transfer of right to enjoy for rent</li><li><strong>Gift (S.122-123):</strong> Voluntary transfer without consideration, immovable must be registered</li><li><strong>Exchange:</strong> Mutual transfer of ownership</li></ul><h3>Important Doctrines:</h3><ul><li><strong>Lis Pendens (S.52):</strong> Property in suit cannot be transferred to defeat rights</li><li><strong>Part Performance (S.53-A):</strong> Protection of transferee who has performed part of contract</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Criminal Law - FIR to Trial Process",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Criminal Justice Process</h2><h3>1. FIR (S.154 CrPC):</h3><p>First Information Report recording cognizable offence. Non-registration is itself an offence.</p><h3>2. Investigation (S.156-173):</h3><p>Police investigation including examination of witnesses (S.161), recording confessions before Magistrate (S.164), and submission of challan (S.173).</p><h3>3. Cognizance (S.190):</h3><p>Magistrate takes cognizance on complaint, police report, or information.</p><h3>4. Trial:</h3><p>Charge framing, prosecution evidence, statement of accused (S.342), defence evidence, arguments, judgment.</p><h3>5. Appeal:</h3><p>Appeal lies to Sessions/High Court. Revision under S.435/S.439.</p><h3>Key Rights:</h3><ul><li>Right to bail (S.496-498)</li><li>Right to counsel (Art. 10 Constitution)</li><li>Right to fair trial (Art. 10-A Constitution)</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "CPC - Suit Procedure",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Civil Suit Procedure Under CPC</h2><h3>1. Institution (S.26):</h3><p>Every suit is instituted by presentation of a plaint.</p><h3>2. Written Statement:</h3><p>Defendant files written statement within 30 days (Order VIII).</p><h3>3. Issues:</h3><p>Court frames issues on material propositions of fact or law on which parties disagree (Order XIV).</p><h3>4. Discovery and Inspection:</h3><p>Parties may seek discovery of documents (Order XI).</p><h3>5. Trial and Evidence:</h3><p>Examination, cross-examination, and re-examination of witnesses.</p><h3>6. Judgment and Decree (S.33):</h3><p>Court pronounces judgment; decree follows.</p><h3>7. Execution (S.47):</h3><p>Decree executed through the court that passed it.</p><h3>8. Appeals:</h3><ul><li>First appeal (S.96) from original decree</li><li>Second appeal (S.100) to High Court on questions of law</li><li>Revision (S.115) to High Court</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Constitutional Law - 18th Amendment Impact",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>18th Amendment (2010) - Major Changes</h2><h3>Key Reforms:</h3><ol><li><strong>Article 10-A:</strong> Right to fair trial added as fundamental right</li><li><strong>Article 19-A:</strong> Right to information added</li><li><strong>Concurrent List abolished:</strong> 47 subjects devolved to provinces</li><li><strong>Article 25-A:</strong> Right to free education (5-16 years)</li><li><strong>PM Powers:</strong> Strengthened parliamentary system</li><li><strong>Judicial appointments:</strong> Judicial Commission established (Art. 175-A)</li><li><strong>NFC Award:</strong> Enhanced provincial financial autonomy</li><li><strong>Senate Chairman:</strong> Acting President role confirmed</li></ol><h3>Provincial Autonomy:</h3><p>The 18th Amendment significantly enhanced provincial autonomy by abolishing the Concurrent Legislative List and devolving subjects like education, health, and environment to provinces.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "PECA 2016 - Cyber Crimes Overview",
+      "category": "Cyber",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Prevention of Electronic Crimes Act 2016</h2><h3>Key Offences:</h3><ul><li><strong>S.3:</strong> Unauthorized access (3 months/Rs.50,000)</li><li><strong>S.4:</strong> Unauthorized data copying (6 months/Rs.100,000)</li><li><strong>S.5:</strong> System interference (damage to IT systems)</li><li><strong>S.10:</strong> Cyber terrorism (14 years/Rs.50 million)</li><li><strong>S.13:</strong> Electronic forgery</li><li><strong>S.14:</strong> Electronic fraud</li><li><strong>S.16:</strong> Offences against dignity</li><li><strong>S.18:</strong> Offences against modesty</li><li><strong>S.20:</strong> Offences against minors</li><li><strong>S.21:</strong> Child pornography</li><li><strong>S.24:</strong> Spamming</li></ul><h3>Investigation:</h3><p>FIA (Federal Investigation Agency) is the primary investigating agency for cyber crimes.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "NAB Law - Anti-Corruption Framework",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>National Accountability Ordinance 1999</h2><h3>Key Provisions:</h3><ul><li><strong>S.4:</strong> NAB established for corruption eradication</li><li><strong>S.9:</strong> Corruption offences defined - gratification, misappropriation, assets beyond means</li><li><strong>S.10:</strong> Punishment up to 14 years and fine</li><li><strong>S.14:</strong> Power to freeze property during investigation</li><li><strong>S.15:</strong> Voluntary return of assets</li><li><strong>S.24:</strong> Plea bargain provisions</li></ul><h3>Criticism and Reforms:</h3><p>The NAB Ordinance has been controversial. The Supreme Court has set guidelines for bail in NAB cases and emphasized that NAB should not be used for political victimization.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Limitation Act 1908 - Essential Guide",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Limitation Act 1908</h2><h3>Purpose:</h3><p>Prescribes time limits for filing suits, appeals, and applications. Based on the principle that law helps the vigilant, not the sleeping.</p><h3>Key Provisions:</h3><ul><li><strong>S.3:</strong> Bar of limitation - suit after prescribed period shall be dismissed</li><li><strong>S.4:</strong> If period expires on holiday, suit can be filed next working day</li><li><strong>S.5:</strong> Extension for sufficient cause in appeals</li><li><strong>S.12:</strong> Day from which period is reckoned is excluded</li><li><strong>S.14:</strong> Time in bona fide proceedings in wrong court excluded</li></ul><h3>Common Periods:</h3><ul><li>Money recovery: 3 years</li><li>Specific performance: 3 years</li><li>Possession of immovable property: 12 years</li><li>Appeal from decree: 30/90 days depending on court</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Companies Act 2017 - Directors and Governance",
+      "category": "Corporate",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Companies Act 2017 - Corporate Governance</h2><h3>Directors:</h3><ul><li>Public company: minimum 7 directors</li><li>Private company: minimum 2 directors</li><li>Independent directors required for listed companies</li><li><strong>S.166:</strong> Duties - act in good faith, avoid conflict of interest</li></ul><h3>Meetings:</h3><ul><li><strong>S.85:</strong> AGM mandatory every year</li><li>EGM can be called by directors or 10% members</li></ul><h3>Accounts and Audit:</h3><ul><li><strong>S.204:</strong> Proper books of account at registered office</li><li><strong>S.223:</strong> Annual audit by appointed auditor</li></ul><h3>Winding Up:</h3><ul><li><strong>S.290:</strong> By court or voluntary</li><li><strong>S.301:</strong> Court winding up for inability to pay debts</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Income Tax in Pakistan - Overview",
+      "category": "Taxation",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Income Tax Ordinance 2001 - Key Concepts</h2><h3>Heads of Income:</h3><ol><li>Salary (S.11)</li><li>Income from Property (S.15)</li><li>Income from Business (S.18)</li><li>Capital Gains (S.37)</li><li>Income from Other Sources (S.39)</li></ol><h3>Filing:</h3><ul><li><strong>S.114:</strong> Return of income mandatory for taxable persons</li><li><strong>S.120:</strong> Best judgment assessment for non-filers</li><li><strong>S.122:</strong> Amendment of assessments within 5 years</li></ul><h3>Appeals:</h3><ul><li>Commissioner (Appeals) under S.127</li><li>Appellate Tribunal under S.131</li><li>High Court on question of law</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Labour Laws - Workers' Rights",
+      "category": "Labour",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>Labour Laws in Pakistan - Key Protections</h2><h3>Working Conditions:</h3><ul><li><strong>Factories Act:</strong> Maximum 9 hours/day, Sunday rest</li><li><strong>Payment of Wages Act:</strong> Timely payment, limited deductions</li></ul><h3>Social Security:</h3><ul><li><strong>EOBI:</strong> Old-age pensions and benefits</li><li><strong>Workers' Welfare Fund:</strong> Housing, education, welfare</li><li><strong>Social Security:</strong> Medical care, cash benefits</li></ul><h3>Trade Unions:</h3><ul><li><strong>IRA 2012:</strong> Freedom of association, collective bargaining</li><li>CBA certification for collective bargaining</li><li>Protection against unfair labour practices</li></ul><h3>Dispute Resolution:</h3><p>Industrial disputes resolved through conciliation, arbitration, or Labour Court adjudication.</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "study_note",
+      "title": "Legal Ethics and Professional Conduct",
+      "category": "Jurisprudence",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Legal Ethics for Advocates</h2><h3>Key Duties:</h3><ul><li>Duty to the court: honesty, candour, and respect</li><li>Duty to client: competence, diligence, and confidentiality</li><li>Duty to opponent: fairness and professional courtesy</li><li>Duty to profession: maintain dignity and reputation</li></ul><h3>Legal Practitioners Act 1973:</h3><ul><li>Registration with Bar Council mandatory</li><li>Misconduct punishable by disciplinary committee</li><li>Advocate cannot appear without vakalatnama</li></ul><h3>Bar Council Rules:</h3><ul><li>No touting or advertising</li><li>No conflict of interest</li><li>Maintain client privilege</li><li>Pro bono service encouraged</li></ul>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part I - Constitutional Law 2024",
+      "category": "Constitutional",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part I - Constitutional Law</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A - MCQs (20 Marks)</h3><ol><li>The Preamble declares Pakistan as: a) Secular Republic b) Islamic Republic c) Federal Republic d) Democratic Republic</li><li>Fundamental Rights are in: a) Part I b) Part II Chapter 1 c) Part III d) Part IV</li><li>Article 10-A guarantees: a) Right to education b) Right to fair trial c) Right to property d) Right to assembly</li><li>The 18th Amendment was passed in: a) 2006 b) 2008 c) 2010 d) 2012</li></ol><h3>Part B - Short Questions (40 Marks)</h3><ol><li>Define Parliamentary Sovereignty under the Constitution.</li><li>Explain the procedure of amendment under Article 239.</li><li>Discuss grounds for disqualification under Article 63.</li><li>What is the significance of Article 10A?</li></ol><h3>Part C - Essay Questions (40 Marks)</h3><ol><li>Critically analyze the role of the Supreme Court in protecting fundamental rights through Article 184(3).</li><li>Discuss the impact of the 18th Amendment on federalism.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "Bar Council Exam - Criminal Law 2023",
+      "category": "Criminal",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Bar Council Licensing Examination</h2><h3>Criminal Law & Procedure - 2023</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Section A (30 Marks)</h3><ol><li>Define Qatl-i-amd under PPC. What punishments are prescribed?</li><li>Explain the right of private defence under PPC Sections 96-106.</li><li>Discuss bail provisions in non-bailable offences under Section 497 CrPC.</li></ol><h3>Section B (40 Marks)</h3><ol><li>Draft an application for pre-arrest bail under Section 498 CrPC.</li><li>Explain the procedure for FIR registration and its evidentiary value.</li><li>Differentiate between cognizable and non-cognizable offences.</li></ol><h3>Section C (30 Marks)</h3><ol><li>A is charged with murder of B. The only evidence is a dying declaration by B. Discuss admissibility.</li><li>Discuss the procedure from FIR to challan under CrPC.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LAT Sample Paper 2024",
+      "category": "General",
+      "exam_type": "lat",
+      "difficulty": null,
+      "content": "<h2>HEC Law Admission Test (LAT)</h2><h3>Sample Paper 2024</h3><p><em>Time: 2 Hours | Total MCQs: 100</em></p><h3>Section 1: Legal Aptitude (40 Questions)</h3><ol><li>The rule of law means: a) Government by laws b) Government by people c) Supremacy of law d) All of the above</li><li>Which organ interprets the Constitution? a) Legislature b) Executive c) Judiciary d) Military</li><li>Age of majority under Majority Act 1875: a) 16 b) 18 c) 21 d) 25</li><li>The highest court of Pakistan is: a) High Court b) FSC c) Supreme Court d) District Court</li></ol><h3>Section 2: Pakistan Studies (30 Questions)</h3><ol><li>Lahore Resolution was passed in: a) 1938 b) 1940 c) 1942 d) 1946</li><li>First Constituent Assembly head: a) Liaquat Ali Khan b) Quaid-e-Azam c) Khawaja Nazimuddin d) Bogra</li></ol><h3>Section 3: English (30 Questions)</h3><p>Reading comprehension and grammar...</p>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part II - Contract Law 2024",
+      "category": "Contract",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part II - Contract Law</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A (20 Marks)</h3><ol><li>Define 'contract' under Section 2(h) of the Contract Act.</li><li>What is consideration? Can a contract exist without consideration?</li><li>Distinguish between void and voidable contracts.</li><li>What is fraud under Section 17?</li></ol><h3>Part B (40 Marks)</h3><ol><li>Explain the essential elements of a valid contract under Section 10.</li><li>Discuss the effect of agreements in restraint of trade (S.27).</li><li>Explain the law of indemnity and guarantee with examples.</li></ol><h3>Part C (40 Marks)</h3><ol><li>A enters into a contract with B under coercion. Discuss the legal position.</li><li>Discuss the remedies available for breach of contract under the Contract Act.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part I - Evidence Law 2024",
+      "category": "Evidence",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part I - Qanun-e-Shahadat Order 1984</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A (30 Marks)</h3><ol><li>Define 'evidence', 'fact', and 'relevant' under Article 2 of QSO.</li><li>Explain Article 17 regarding competence of witnesses.</li><li>Discuss the burden of proof under Articles 117-118.</li></ol><h3>Part B (40 Marks)</h3><ol><li>Explain the law of dying declarations under Article 37 of QSO.</li><li>What is estoppel? Discuss Article 153.</li><li>Discuss the admissibility of electronic evidence in Pakistani courts.</li></ol><h3>Part C (30 Marks)</h3><ol><li>A is charged with murder. The prosecution relies on circumstantial evidence. Discuss the evidentiary principles.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part III - CPC 2024",
+      "category": "Civil",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part III - Code of Civil Procedure 1908</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A (20 Marks)</h3><ol><li>What is res judicata under Section 11?</li><li>Explain the difference between first appeal (S.96) and second appeal (S.100).</li><li>What are inherent powers under Section 151?</li></ol><h3>Part B (40 Marks)</h3><ol><li>Explain the procedure for institution and trial of a civil suit.</li><li>Discuss the revisional jurisdiction of the High Court under Section 115.</li></ol><h3>Part C (40 Marks)</h3><ol><li>A files a suit for recovery of money against B. B contends the suit is barred by res judicata. Discuss.</li><li>Draft a plaint for a suit for specific performance of contract.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part II - Family Law 2024",
+      "category": "Family",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part II - Muslim Family Law</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A (30 Marks)</h3><ol><li>What are the essentials of a valid Muslim marriage?</li><li>Explain the different types of divorce in Muslim law.</li><li>Discuss the concept of dower (mahr) and its types.</li></ol><h3>Part B (40 Marks)</h3><ol><li>Explain the provisions of Muslim Family Laws Ordinance 1961 regarding talaq.</li><li>What are the grounds for dissolution of marriage under DMMA 1939?</li><li>Discuss the law of custody (hizanat) of children in Muslim law.</li></ol><h3>Part C (30 Marks)</h3><ol><li>A Muslim wife seeks khula from her husband. Discuss the legal procedure and requirements.</li><li>Discuss the rules of inheritance under Muslim personal law.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "Bar Council - Civil Procedure 2023",
+      "category": "Civil",
+      "exam_type": "bar",
+      "difficulty": null,
+      "content": "<h2>Bar Council Licensing Examination</h2><h3>Civil Law & Procedure - 2023</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Section A (30 Marks)</h3><ol><li>Explain the doctrine of res judicata with leading case law.</li><li>Discuss the revisional jurisdiction under Section 115 CPC.</li><li>What is the difference between an order and a decree?</li></ol><h3>Section B (40 Marks)</h3><ol><li>Draft a written statement in a suit for recovery of possession.</li><li>Explain the execution proceedings under CPC.</li></ol><h3>Section C (30 Marks)</h3><ol><li>A obtains a decree against B. B's property is in a different jurisdiction. Discuss the execution procedure.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "LLB Part III - Transfer of Property 2024",
+      "category": "Property",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>LLB Part III - Transfer of Property Act</h2><h3>Annual Examination 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part A (30 Marks)</h3><ol><li>Define 'transfer of property' under Section 5 TPA.</li><li>Distinguish between sale, mortgage, and lease.</li><li>Explain the law of gift (hiba) under Muslim law and TPA.</li></ol><h3>Part B (40 Marks)</h3><ol><li>Discuss the different types of mortgages under Section 58.</li><li>Explain the doctrine of lis pendens under Section 52.</li></ol><h3>Part C (30 Marks)</h3><ol><li>A mortgages property to B. A fails to redeem. Discuss B's rights and remedies.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    },
+    {
+      "content_type": "past_paper",
+      "title": "CSS Law Optional 2024",
+      "category": "General",
+      "exam_type": "llb",
+      "difficulty": null,
+      "content": "<h2>CSS Competitive Examination</h2><h3>Law Optional Paper 2024</h3><p><em>Time: 3 Hours | Maximum Marks: 100</em></p><h3>Part I (50 Marks)</h3><ol><li>Discuss the concept of judicial review in Pakistan with reference to Articles 184 and 199 of the Constitution.</li><li>Analyze the evolution of fundamental rights jurisprudence in Pakistan.</li><li>Discuss the independence of judiciary as guaranteed by the Constitution.</li></ol><h3>Part II (50 Marks)</h3><ol><li>Explain the concept of due process and its application in Pakistani courts.</li><li>Discuss the role of the 18th Amendment in strengthening provincial autonomy.</li><li>Analyze the balance between national security and fundamental rights with reference to anti-terrorism legislation.</li></ol>",
+      "is_published": true,
+      "question_data": null
+    }
+  ]
+}

@@ -1,0 +1,2292 @@
+{
+  "sections": [
+    {
+      "section_number": "1",
+      "title": "Title and Extent",
+      "description": "This Act shall be called the Pakistan Penal Code and extends to the whole of Pakistan.",
+      "description_ur": "یہ ایکٹ تعزیرات پاکستان کہلائے گا اور پورے پاکستان پر لاگو ہوگا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "34",
+      "title": "Common Intention",
+      "description": "When a criminal act is done by several persons in furtherance of the common intention of all, each is liable as if done by him alone.",
+      "description_ur": "جب مشترکہ ارادے سے مجرمانہ فعل کیا جائے تو ہر شخص ذمہ دار ہوگا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "35",
+      "title": "Similar Intention",
+      "description": "Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, each person who joins in the act with such knowledge or intention is liable.",
+      "description_ur": "جب جرم صرف مجرمانہ علم یا ارادے سے ہو تو ہر شریک شخص ذمہ دار ہوگا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "96",
+      "title": "Right of Private Defence",
+      "description": "Nothing is an offence which is done in the exercise of the right of private defence.",
+      "description_ur": "جو کچھ حق دفاع کے استعمال میں کیا جائے وہ جرم نہیں ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "97",
+      "title": "Right of Private Defence of Body and Property",
+      "description": "Every person has a right to defend his own body and property against any offence affecting the human body or property.",
+      "description_ur": "ہر شخص کو اپنے جسم اور مال کے دفاع کا حق ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "100",
+      "title": "When Right Extends to Causing Death",
+      "description": "The right of private defence of the body extends to causing death when there is reasonable apprehension of death or grievous hurt.",
+      "description_ur": "جب موت یا شدید زخم کا معقول خدشہ ہو تو حق دفاع موت تک بڑھ جاتا ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "109",
+      "title": "Punishment of Abetment",
+      "description": "Whoever abets any offence shall be punished with the punishment provided for the offence if the act is committed.",
+      "description_ur": "جو کوئی کسی جرم کی اعانت کرے اسے اس جرم کی سزا ملے گی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "120-B",
+      "title": "Criminal Conspiracy",
+      "description": "Whoever is party to a criminal conspiracy to commit an offence punishable with death or imprisonment of two years or more shall be punished.",
+      "description_ur": "جو مجرمانہ سازش کا فریق ہو جس کا مقصد سزائے موت یا دو سال یا اس سے زائد قید کا جرم ہو۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "141",
+      "title": "Unlawful Assembly",
+      "description": "An assembly of five or more persons is an unlawful assembly if the common object is to commit any offence.",
+      "description_ur": "پانچ یا اس سے زیادہ اشخاص کا اجتماع غیر قانونی ہے اگر مشترکہ مقصد جرم ہو۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "148",
+      "title": "Rioting Armed with Deadly Weapon",
+      "description": "Whoever is guilty of rioting, being armed with a deadly weapon, shall be punished with imprisonment up to three years.",
+      "description_ur": "جو کوئی فساد کا مرتکب ہو اور مہلک ہتھیار سے مسلح ہو تو تین سال تک قید کی سزا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "153-A",
+      "title": "Promoting Enmity Between Groups",
+      "description": "Whoever promotes or attempts to promote disharmony or feelings of enmity, hatred or ill-will between different religious, racial, or regional groups.",
+      "description_ur": "جو مختلف مذہبی، نسلی یا علاقائی گروہوں میں دشمنی کو فروغ دے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "170",
+      "title": "Personating a Public Servant",
+      "description": "Whoever pretends to hold any particular office as a public servant, knowing that he does not hold such office.",
+      "description_ur": "جو کوئی سرکاری ملازم ہونے کا بہانہ کرے جبکہ وہ ایسا نہیں ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "186",
+      "title": "Obstructing Public Servant",
+      "description": "Whoever voluntarily obstructs any public servant in the discharge of his public functions.",
+      "description_ur": "جو کوئی جان بوجھ کر سرکاری ملازم کو اس کے فرائض کی ادائیگی میں رکاوٹ ڈالے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "193",
+      "title": "Giving False Evidence",
+      "description": "Whoever intentionally gives false evidence in any stage of a judicial proceeding shall be punished.",
+      "description_ur": "جو کوئی جان بوجھ کر عدالتی کارروائی میں جھوٹی شہادت دے اسے سزا ملے گی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "211",
+      "title": "False Charge of Offence",
+      "description": "Whoever institutes or causes to be instituted any criminal proceeding against any person knowing that there is no just or lawful ground.",
+      "description_ur": "جو کوئی بلا جواز کسی کے خلاف فوجداری کارروائی شروع کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "268",
+      "title": "Public Nuisance",
+      "description": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes common injury.",
+      "description_ur": "جو شخص ایسا فعل کرے جس سے عام نقصان ہو وہ عوامی مزاحمت کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "279",
+      "title": "Rash Driving on Public Way",
+      "description": "Whoever drives any vehicle or rides on any public way in a manner so rash or negligent as to endanger human life.",
+      "description_ur": "جو کوئی عوامی سڑک پر اتنی لاپرواہی سے گاڑی چلائے کہ انسانی جان خطرے میں ہو۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "292",
+      "title": "Sale of Obscene Books",
+      "description": "Whoever sells, distributes, or exhibits any obscene book, pamphlet, or drawing.",
+      "description_ur": "جو کوئی فحش کتاب، پمفلٹ یا تصویر فروخت، تقسیم یا نمائش کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "299",
+      "title": "Definitions (Qisas and Diyat)",
+      "description": "Defines key terms including badl-i-sulh, daman, diyat, fasad-fil-arz, and other concepts in Qisas and Diyat law.",
+      "description_ur": "قصاص و دیت کے قانون میں اہم اصطلاحات کی تعریف۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "300",
+      "title": "Qatl-i-amd (Intentional Murder)",
+      "description": "Whoever, with the intention of causing death or with the intention of causing bodily injury sufficient to cause death, causes the death of any person commits qatl-i-amd.",
+      "description_ur": "جو کوئی موت کا ارادہ رکھ کر کسی کی موت کا باعث بنے وہ قتل عمد کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "302",
+      "title": "Punishment of Qatl-i-amd",
+      "description": "Whoever commits qatl-i-amd shall be punished with death as qisas, or imprisonment for life as ta'zir, or imprisonment up to 25 years as ta'zir.",
+      "description_ur": "قتل عمد کی سزا: قصاص میں سزائے موت، یا تعزیر میں عمر قید، یا 25 سال تک قید۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "304",
+      "title": "Qatl-i-amd Not Liable to Qisas",
+      "description": "When qatl-i-amd is not liable to qisas due to waiver or compounding, the court shall award diyat or ta'zir.",
+      "description_ur": "جب قتل عمد قصاص کے قابل نہ ہو تو عدالت دیت یا تعزیر کی سزا دے گی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "308",
+      "title": "Diyat",
+      "description": "The court shall fix the value of diyat which shall not be less than the value of thirty thousand six hundred and thirty grams of silver.",
+      "description_ur": "عدالت دیت کی قیمت مقرر کرے گی جو تیس ہزار چھ سو تیس گرام چاندی کی قیمت سے کم نہیں ہوگی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "309",
+      "title": "Qatl-bis-sabab (Unintentional)",
+      "description": "Whoever causes death unintentionally by doing any act not amounting to qatl-i-amd or qatl shibh-i-amd commits qatl-bis-sabab.",
+      "description_ur": "جو کوئی غیر ارادی طور پر کسی ایسے فعل سے موت کا باعث بنے جو قتل عمد نہ ہو۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "310",
+      "title": "Qatl-i-khata (By Mistake)",
+      "description": "Whoever causes death by mistake without intention commits qatl-i-khata.",
+      "description_ur": "جو کوئی غلطی سے بغیر ارادے کے موت کا باعث بنے وہ قتل خطا کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "316",
+      "title": "Hurt",
+      "description": "Whoever causes bodily pain, disease, or infirmity to any person is said to cause hurt.",
+      "description_ur": "جو کوئی کسی شخص کو جسمانی تکلیف، بیماری یا کمزوری پہنچائے وہ ایذا رسانی کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "319",
+      "title": "Itlaf-i-udw (Destruction of Organ)",
+      "description": "Whoever destroys or permanently impairs the functioning of any organ or limb of another person commits itlaf-i-udw.",
+      "description_ur": "جو کوئی کسی شخص کے کسی عضو کو تباہ یا مستقل طور پر ناکارہ کر دے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "324",
+      "title": "Attempt to Commit Qatl-i-amd",
+      "description": "Whoever does any act with such intention or knowledge and under such circumstances that if he caused death he would be guilty of qatl-i-amd.",
+      "description_ur": "جو کوئی ایسے ارادے سے کوئی فعل کرے کہ اگر موت ہو جاتی تو وہ قتل عمد ہوتا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "332",
+      "title": "Hurt by Rash or Negligent Act",
+      "description": "Whoever causes hurt by doing any act so rashly or negligently as to endanger human life.",
+      "description_ur": "جو کوئی لاپرواہی سے ایسا فعل کرے جو انسانی جان کو خطرے میں ڈالے اور زخمی کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "337",
+      "title": "Punishment of Hurt",
+      "description": "Various categories of hurt with their prescribed punishments including badl-i-sulh, arsh, and daman.",
+      "description_ur": "ایذا رسانی کی مختلف اقسام اور ان کی مقررہ سزائیں بشمول بدل صلح، ارش اور ضمان۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "375",
+      "title": "Rape",
+      "description": "A man is said to commit rape who has sexual intercourse with a woman against her will, without her consent, or with consent obtained by putting her in fear of death or hurt.",
+      "description_ur": "مرد عصمت دری کا مرتکب ہوتا ہے جب عورت کی مرضی کے بغیر، رضامندی کے بغیر جماع کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "376",
+      "title": "Punishment for Rape",
+      "description": "Whoever commits rape shall be punished with death or imprisonment of either description for a term which shall not be less than ten years but may extend to twenty-five years.",
+      "description_ur": "عصمت دری کی سزا: سزائے موت یا کم از کم دس سال سے پچیس سال تک قید۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "378",
+      "title": "Theft",
+      "description": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property.",
+      "description_ur": "جو کوئی کسی شخص کی منقولہ جائیداد بے ایمانی سے بغیر رضامندی لے جائے وہ چوری ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "379",
+      "title": "Punishment for Theft",
+      "description": "Whoever commits theft shall be punished with imprisonment up to three years, or with fine, or with both.",
+      "description_ur": "چوری کی سزا: تین سال تک قید، یا جرمانہ، یا دونوں۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "382",
+      "title": "Theft After Preparation for Causing Hurt",
+      "description": "Whoever commits theft having made preparation for causing hurt to any person shall be punished with rigorous imprisonment up to ten years.",
+      "description_ur": "جو چوری کے لیے کسی کو نقصان پہنچانے کی تیاری کر کے چوری کرے، دس سال تک سخت قید۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "390",
+      "title": "Robbery",
+      "description": "In all robbery there is either theft or extortion. When theft is robbery - if the offender voluntarily causes or attempts to cause death, hurt, or wrongful restraint.",
+      "description_ur": "ہر ڈکیتی میں یا تو چوری یا بھتہ ہوتا ہے۔ جب مجرم رضاکارانہ طور پر موت، زخم یا ناجائز پابندی کا سبب بنے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "392",
+      "title": "Punishment for Robbery",
+      "description": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+      "description_ur": "ڈکیتی کی سزا: دس سال تک سخت قید اور جرمانہ بھی ہوگا۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "395",
+      "title": "Dacoity",
+      "description": "When five or more persons conjointly commit or attempt to commit a robbery, every person so committing, attempting, or aiding is said to commit dacoity.",
+      "description_ur": "جب پانچ یا اس سے زیادہ افراد مل کر ڈکیتی کریں تو یہ ڈکیتی ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "396",
+      "title": "Punishment for Dacoity with Murder",
+      "description": "If any person, one of five or more conjointly committing dacoity, commits murder in so committing, every person so engaged shall be punished with death, or imprisonment for life.",
+      "description_ur": "اگر ڈکیتی کے دوران قتل ہو تو ہر شریک شخص کو سزائے موت یا عمر قید ہوگی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "403",
+      "title": "Dishonest Misappropriation",
+      "description": "Whoever dishonestly misappropriates or converts to his own use any moveable property.",
+      "description_ur": "جو کوئی بے ایمانی سے کسی منقولہ جائیداد کو اپنے استعمال میں تبدیل کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "405",
+      "title": "Criminal Breach of Trust",
+      "description": "Whoever, being entrusted with property or with dominion over property, dishonestly misappropriates or converts it.",
+      "description_ur": "جسے جائیداد کی امانت دی گئی ہو اور وہ بے ایمانی سے اسے استعمال کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "406",
+      "title": "Punishment for Criminal Breach of Trust",
+      "description": "Whoever commits criminal breach of trust shall be punished with imprisonment up to three years, or with fine, or with both.",
+      "description_ur": "خیانت کی سزا: تین سال تک قید، یا جرمانہ، یا دونوں۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "415",
+      "title": "Cheating",
+      "description": "Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property.",
+      "description_ur": "جو کوئی دھوکہ دے کر کسی شخص سے جائیداد حاصل کرے وہ فریب دہی کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "420",
+      "title": "Cheating and Dishonestly Inducing Delivery",
+      "description": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property, or to make, alter, or destroy any valuable security.",
+      "description_ur": "جو فریب دہی سے جائیداد حاصل کرے یا قیمتی سکیورٹی بنوائے، بدلوائے یا تباہ کروائے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "463",
+      "title": "Forgery",
+      "description": "Whoever makes any false document or electronic record with intent to cause damage or injury, to support any claim, or to commit fraud.",
+      "description_ur": "جو کوئی جعلی دستاویز بنائے نقصان، دعوے یا فراڈ کی غرض سے وہ جعل سازی کا مرتکب ہے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "468",
+      "title": "Forgery for Cheating",
+      "description": "Whoever commits forgery, intending that the document forged shall be used for the purpose of cheating.",
+      "description_ur": "جو دھوکہ دہی کی غرض سے جعل سازی کرے اسے سات سال تک قید کی سزا ہوگی۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "471",
+      "title": "Using Forged Document as Genuine",
+      "description": "Whoever fraudulently or dishonestly uses as genuine any document which he knows or has reason to believe to be a forged document.",
+      "description_ur": "جو جعلی دستاویز کو جان بوجھ کر اصل کے طور پر استعمال کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "489-F",
+      "title": "Dishonour of Cheque",
+      "description": "Whoever dishonestly issues a cheque which is dishonoured on presentation shall be punished with imprisonment up to three years, or fine, or both.",
+      "description_ur": "جو بے ایمانی سے چیک جاری کرے جو پیشی پر بے عزت ہو، تین سال قید یا جرمانہ۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "495",
+      "title": "Bigamy",
+      "description": "Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such spouse.",
+      "description_ur": "جو شخص شوہر یا بیوی کی موجودگی میں دوسری شادی کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "497",
+      "title": "Adultery",
+      "description": "Whoever has sexual intercourse with a person who is and whom he knows or has reason to believe to be the wife of another man.",
+      "description_ur": "جو کوئی کسی دوسرے مرد کی بیوی سے جماع کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "499",
+      "title": "Defamation",
+      "description": "Whoever, by words either spoken or intended to be read, makes or publishes any imputation concerning any person, intending to harm the reputation of such person.",
+      "description_ur": "جو کوئی الفاظ سے کسی شخص کی ساکھ کو نقصان پہنچانے کی نیت سے الزام لگائے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "506",
+      "title": "Criminal Intimidation",
+      "description": "Whoever threatens another with any injury to his person, reputation, or property, with intent to cause alarm.",
+      "description_ur": "جو کوئی دوسرے کو اس کی جان، عزت یا مال کو نقصان کی دھمکی دے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "511",
+      "title": "Attempt to Commit Offences",
+      "description": "Whoever attempts to commit an offence punishable by this Code and does any act towards the commission of such offence.",
+      "description_ur": "جو کوئی اس ضابطے کے تحت قابل سزا جرم کی کوشش کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "295-A",
+      "title": "Deliberate and Malicious Acts to Outrage Religious Feelings",
+      "description": "Whoever with deliberate and malicious intention outrages the religious feelings of any class of citizens.",
+      "description_ur": "جو کوئی جان بوجھ کر اور بدنیتی سے شہریوں کے مذہبی جذبات کو ٹھیس پہنچائے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "295-B",
+      "title": "Defiling Holy Quran",
+      "description": "Whoever willfully defiles, damages, or desecrates a copy of the Holy Quran or any extract therefrom.",
+      "description_ur": "جو کوئی جان بوجھ کر قرآن پاک یا اس کے کسی حصے کی بے حرمتی کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "295-C",
+      "title": "Use of Derogatory Remarks About the Holy Prophet",
+      "description": "Whoever by words, either spoken or written, or by visible representation, or by any imputation, directly or indirectly, defiles the sacred name of the Holy Prophet Muhammad (PBUH).",
+      "description_ur": "جو کوئی الفاظ سے حضور نبی کریم صلی اللہ علیہ وسلم کے مقدس نام کی توہین کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "298-A",
+      "title": "Use of Derogatory Remarks About Holy Personages",
+      "description": "Whoever by words defiles the sacred name of any wife, member of the family, or companion of the Holy Prophet (PBUH).",
+      "description_ur": "جو کوئی الفاظ سے نبی کریم کی ازواج مطہرات یا اصحاب کے ناموں کی توہین کرے۔",
+      "statute_name": "Pakistan Penal Code, 1860",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "4",
+      "title": "Trial of Offences Under PPC",
+      "description": "All offences under the Pakistan Penal Code shall be investigated, inquired into, tried, and otherwise dealt with according to this Code.",
+      "description_ur": "تعزیرات پاکستان کے تمام جرائم کی تحقیقات اس ضابطے کے مطابق ہوں گی۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "6",
+      "title": "Classes of Criminal Courts",
+      "description": "There shall be five classes of criminal courts: Court of Session, Magistrate of the first class, Magistrate of the second class, Magistrate of the third class, and Executive Magistrate.",
+      "description_ur": "فوجداری عدالتوں کی پانچ اقسام ہوں گی۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "22",
+      "title": "Local Jurisdiction of Courts",
+      "description": "Every offence shall ordinarily be inquired into and tried by a court within whose local jurisdiction it was committed.",
+      "description_ur": "ہر جرم کی عام طور پر اسی عدالت میں تحقیقات اور سماعت ہوگی جس کے مقامی دائرہ اختیار میں وہ ارتکاب ہوا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "46",
+      "title": "How Arrest is Made",
+      "description": "In making an arrest the police officer shall actually touch or confine the body of the person to be arrested unless there be a submission to the custody by word or action.",
+      "description_ur": "گرفتاری کرتے وقت پولیس افسر شخص کے جسم کو چھوئے گا جب تک کہ وہ قولاً یا فعلاً تسلیم نہ کر لے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "54",
+      "title": "Arrest Without Warrant",
+      "description": "Any police officer may without an order from a Magistrate and without a warrant arrest any person who has been concerned in any cognizable offence.",
+      "description_ur": "کوئی بھی پولیس افسر بغیر وارنٹ کے قابل دست اندازی جرم میں ملوث شخص کو گرفتار کر سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "59",
+      "title": "Escape from Custody",
+      "description": "If a person in lawful custody escapes, the person from whose custody he escaped may immediately pursue and arrest him.",
+      "description_ur": "اگر قانونی تحویل میں کوئی شخص فرار ہو جائے تو فوری طور پر اس کا تعاقب اور گرفتاری ہو سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "61",
+      "title": "Person Arrested Not to be Detained for More Than 24 Hours",
+      "description": "No police officer shall detain a person arrested without warrant for more than twenty-four hours.",
+      "description_ur": "بغیر وارنٹ گرفتار شخص کو چوبیس گھنٹے سے زیادہ حراست میں نہیں رکھا جائے گا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "96",
+      "title": "Search of Place Entered by Person Sought",
+      "description": "If any person acting under a warrant of arrest has reason to believe that the person to be arrested has entered into or is within any place, any person residing in the place shall allow him free ingress.",
+      "description_ur": "اگر وارنٹ گرفتاری کے تحت کسی جگہ کی تلاشی ضروری ہو تو مکین داخلے کی اجازت دے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "103",
+      "title": "Magistrate May Direct Search in His Presence",
+      "description": "Any District Magistrate or Sub-Divisional Magistrate may direct a search to be made in his presence of any place.",
+      "description_ur": "ضلع مجسٹریٹ اپنی موجودگی میں کسی جگہ کی تلاشی کا حکم دے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "133",
+      "title": "Conditional Order for Removal of Nuisance",
+      "description": "A District Magistrate or Sub-Divisional Magistrate may make a conditional order requiring any person to remove any nuisance.",
+      "description_ur": "ضلع مجسٹریٹ کسی شخص سے مزاحمت دور کرنے کا مشروط حکم دے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "144",
+      "title": "Power to Issue Order in Urgent Cases of Nuisance",
+      "description": "The District Magistrate may direct any person to abstain from certain acts if it is likely to prevent danger to human life or health.",
+      "description_ur": "ضلع مجسٹریٹ فوری خطرے کی صورت میں بعض افعال سے روکنے کا حکم دے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "154",
+      "title": "Information in Cognizable Cases (FIR)",
+      "description": "Every information relating to the commission of a cognizable offence shall be reduced to writing by the officer in charge of a police station.",
+      "description_ur": "قابل دست اندازی جرم کی ہر اطلاع تھانے کے انچارج افسر تحریر کرے گا (ایف آئی آر)۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "155",
+      "title": "Information in Non-Cognizable Cases",
+      "description": "When information is given to an officer in charge of a police station of the commission of a non-cognizable offence, he shall enter the substance in a prescribed book.",
+      "description_ur": "ناقابل دست اندازی جرم کی اطلاع مقررہ رجسٹر میں درج کی جائے گی۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "156",
+      "title": "Police Officer's Power to Investigate",
+      "description": "Any officer in charge of a police station may investigate any cognizable case without order of a Magistrate.",
+      "description_ur": "تھانے کا انچارج افسر بغیر مجسٹریٹ کے حکم کے قابل دست اندازی مقدمے کی تحقیقات کر سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "157",
+      "title": "Procedure for Investigation",
+      "description": "If the officer in charge considers there is sufficient ground for investigating, he shall forthwith send a report to the Magistrate.",
+      "description_ur": "اگر انچارج افسر تحقیقات کی کافی وجہ سمجھے تو فوری طور پر مجسٹریٹ کو رپورٹ بھیجے گا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "161",
+      "title": "Examination of Witnesses by Police",
+      "description": "Any police officer making an investigation may examine orally any person supposed to be acquainted with the facts.",
+      "description_ur": "تحقیقات کرنے والا پولیس افسر واقعات سے واقف کسی بھی شخص سے زبانی استفسار کر سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "164",
+      "title": "Recording of Confessions and Statements",
+      "description": "Any Metropolitan Magistrate or Judicial Magistrate may record any confession or statement made to him in the course of an investigation.",
+      "description_ur": "میٹروپولیٹن مجسٹریٹ یا جوڈیشل مجسٹریٹ تحقیقات کے دوران اعتراف جرم یا بیان ریکارڈ کر سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "173",
+      "title": "Report of Police Officer (Challan)",
+      "description": "Every investigation shall be completed without unnecessary delay and a report (challan) shall be forwarded to the Magistrate empowered to take cognizance.",
+      "description_ur": "ہر تحقیقات بلا تاخیر مکمل ہوگی اور رپورٹ (چالان) مجسٹریٹ کو بھیجی جائے گی۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "190",
+      "title": "Cognizance of Offences by Magistrate",
+      "description": "Any Magistrate of the first class may take cognizance of any offence upon a complaint, a police report, or information received.",
+      "description_ur": "مجسٹریٹ درجہ اول شکایت، پولیس رپورٹ یا اطلاع پر جرم کا نوٹس لے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "200",
+      "title": "Examination of Complainant",
+      "description": "A Magistrate taking cognizance on a complaint shall examine upon oath the complainant and the witnesses present.",
+      "description_ur": "مجسٹریٹ شکایت پر نوٹس لیتے وقت شکایت کنندہ اور گواہوں کو حلف پر جانچے گا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "202",
+      "title": "Postponement of Issue of Process",
+      "description": "Any Magistrate may postpone the issue of process and direct investigation or inquiry.",
+      "description_ur": "مجسٹریٹ عمل جاری کرنے میں تاخیر کر سکتا ہے اور تحقیقات کا حکم دے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "241-A",
+      "title": "Summary Trial",
+      "description": "In cases triable summarily, the Magistrate shall frame a charge, try the accused, and pass judgment according to the summary procedure.",
+      "description_ur": "مختصر سماعت کے قابل مقدمات میں مجسٹریٹ الزام عائد کرے اور مختصر طریقے سے فیصلہ کرے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "249-A",
+      "title": "Acquittal on Withdrawal of Complaint",
+      "description": "The court may acquit the accused if the complainant fails to appear or does not wish to proceed.",
+      "description_ur": "اگر شکایت کنندہ حاضر نہ ہو یا آگے نہ بڑھنا چاہے تو عدالت ملزم کو بری کر سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "265-D",
+      "title": "Judgment of Acquittal or Conviction",
+      "description": "If the court finds the accused not guilty, it shall record an order of acquittal. If found guilty, the court shall pass sentence.",
+      "description_ur": "اگر عدالت ملزم کو بے قصور پائے تو بری کا حکم دے، قصوروار پائے تو سزا سنائے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "345",
+      "title": "Compoundable Offences",
+      "description": "The offences specified in the table may be compounded by the persons mentioned in the third column.",
+      "description_ur": "مندرجہ جدول میں مخصوص جرائم تیسرے کالم میں مذکور افراد کی طرف سے صلح کیے جا سکتے ہیں۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "401",
+      "title": "Power of Provincial Government to Suspend or Remit Sentences",
+      "description": "The Provincial Government may suspend or remit the whole or any part of the sentence.",
+      "description_ur": "صوبائی حکومت سزا کا پورا یا کوئی حصہ معطل یا معاف کر سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "426",
+      "title": "Suspension of Sentence Pending Appeal",
+      "description": "Pending an appeal, the Appellate Court may order that the execution of sentence be suspended.",
+      "description_ur": "اپیل زیر التوا ہونے پر اپیل عدالت سزا کے نفاذ کو معطل کرنے کا حکم دے سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "435",
+      "title": "Power of Revision",
+      "description": "The High Court or Session Court may call for and examine the record of any proceeding for the purpose of satisfying itself as to the correctness of any finding, sentence, or order.",
+      "description_ur": "ہائی کورٹ یا سیشن کورٹ کسی کارروائی کا ریکارڈ منگوا کر جانچ سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "491",
+      "title": "Power of High Court to Issue Habeas Corpus",
+      "description": "The High Court may direct that a person illegally detained be brought before the court and set at liberty.",
+      "description_ur": "ہائی کورٹ غیر قانونی طور پر حراست میں رکھے گئے شخص کو عدالت میں پیش کرنے اور آزاد کرنے کا حکم دے سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "496",
+      "title": "Bail in Bailable Offences",
+      "description": "When any person other than a person accused of a non-bailable offence is arrested, he shall be released on bail.",
+      "description_ur": "جب ناقابل ضمانت جرم کے علاوہ کسی جرم میں گرفتار ہو تو ضمانت پر رہا کیا جائے گا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "497",
+      "title": "Bail in Non-Bailable Offences",
+      "description": "When any person accused of a non-bailable offence is arrested, he may be released on bail if there are reasonable grounds for believing he is not guilty.",
+      "description_ur": "ناقابل ضمانت جرم میں گرفتار شخص کو ضمانت دی جا سکتی ہے اگر بے قصوری کے معقول وجوہات ہوں۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "498",
+      "title": "Pre-Arrest Bail (Anticipatory Bail)",
+      "description": "When any person has reason to believe that he may be arrested on an accusation of having committed a non-bailable offence, he may apply to the High Court or Court of Session for a direction.",
+      "description_ur": "جب کسی شخص کو یقین ہو کہ اسے ناقابل ضمانت جرم میں گرفتار کیا جا سکتا ہے تو وہ قبل از گرفتاری ضمانت کی درخواست دے سکتا ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "540",
+      "title": "Power to Summon Material Witness",
+      "description": "Any court may summon any person as a witness or examine any person in attendance at any stage of an inquiry, trial, or other proceeding.",
+      "description_ur": "عدالت کسی بھی مرحلے پر کسی شخص کو گواہ کے طور پر طلب کر سکتی ہے۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "561-A",
+      "title": "Inherent Powers of High Court",
+      "description": "Nothing in this Code shall limit or affect the inherent power of the High Court to make such orders as may be necessary to give effect to any order or to prevent abuse of process.",
+      "description_ur": "اس ضابطے کا کوئی حصہ ہائی کورٹ کے موروثی اختیارات کو محدود نہیں کرے گا۔",
+      "statute_name": "Code of Criminal Procedure, 1898",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "1",
+      "title": "The Republic and Its Territories",
+      "description": "Pakistan shall be a Federal Republic to be known as the Islamic Republic of Pakistan, comprising territories as specified.",
+      "description_ur": "پاکستان ایک وفاقی جمہوریہ ہوگا جو اسلامی جمہوریہ پاکستان کہلائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "2",
+      "title": "Islam as State Religion",
+      "description": "Islam shall be the State religion of Pakistan.",
+      "description_ur": "اسلام پاکستان کا سرکاری مذہب ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "2-A",
+      "title": "Objectives Resolution",
+      "description": "The Objectives Resolution set out in the Annex is hereby made substantive part of the Constitution.",
+      "description_ur": "قرارداد مقاصد آئین کا ٹھوس حصہ بنائی جاتی ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "4",
+      "title": "Right to be Dealt with in Accordance with Law",
+      "description": "No action detrimental to the life, liberty, body, reputation, or property of any person shall be taken except in accordance with law.",
+      "description_ur": "قانون کے مطابق کے سوا کسی شخص کی جان، آزادی یا جائیداد کے خلاف کوئی کارروائی نہیں ہوگی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "5",
+      "title": "Loyalty to State",
+      "description": "Loyalty to the State is the basic duty of every citizen. Obedience to the Constitution and law is the obligation of every citizen.",
+      "description_ur": "ریاست سے وفاداری ہر شہری کا بنیادی فرض ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "8",
+      "title": "Laws Inconsistent with Fundamental Rights",
+      "description": "Any law inconsistent with or in derogation of fundamental rights shall be void to the extent of such inconsistency.",
+      "description_ur": "بنیادی حقوق سے متصادم قانون اس تضاد کی حد تک کالعدم ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "9",
+      "title": "Security of Person",
+      "description": "No person shall be deprived of life or liberty save in accordance with law.",
+      "description_ur": "قانون کے مطابق کے سوا کسی شخص کو جان یا آزادی سے محروم نہیں کیا جائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "10",
+      "title": "Safeguards as to Arrest",
+      "description": "No person who is arrested shall be detained in custody without being informed of the grounds for such arrest, nor shall he be denied the right to consult and be defended by a legal practitioner.",
+      "description_ur": "گرفتار شخص کو گرفتاری کی وجوہات بتائی جائیں گی اور وکیل سے مشورے کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "10-A",
+      "title": "Right to Fair Trial",
+      "description": "For the determination of his civil rights and obligations or in any criminal charge against him, a person shall be entitled to a fair trial and due process.",
+      "description_ur": "ہر شخص کو منصفانہ سماعت اور مناسب قانونی عمل کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "11",
+      "title": "Slavery, Forced Labour Prohibited",
+      "description": "Slavery is non-existent and forbidden and no law shall permit or facilitate its introduction. All forms of forced labour and trafficking are prohibited.",
+      "description_ur": "غلامی اور جبری مشقت ممنوع ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "13",
+      "title": "Protection Against Double Punishment and Self-Incrimination",
+      "description": "No person shall be prosecuted or punished for the same offence more than once, and no person shall be compelled to be a witness against himself.",
+      "description_ur": "کسی شخص پر ایک ہی جرم کے لیے دوبارہ مقدمہ نہیں چلایا جائے گا اور اپنے خلاف گواہی پر مجبور نہیں کیا جائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "14",
+      "title": "Inviolability of Dignity of Man",
+      "description": "The dignity of man and the privacy of home shall be inviolable. No person shall be subjected to torture.",
+      "description_ur": "انسان کی عزت اور گھر کی رازداری ناقابل تسخیر ہے۔ کسی پر تشدد نہیں کیا جائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "15",
+      "title": "Freedom of Movement",
+      "description": "Every citizen shall have the right to remain in and to move freely throughout Pakistan and to reside and settle in any part thereof.",
+      "description_ur": "ہر شہری کو پاکستان میں رہنے اور آزادانہ نقل و حرکت کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "16",
+      "title": "Freedom of Assembly",
+      "description": "Every citizen shall have the right to assemble peacefully and without arms, subject to any reasonable restrictions imposed by law.",
+      "description_ur": "ہر شہری کو پرامن اجتماع کا حق ہوگا قانون کی معقول پابندیوں کے تابع۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "17",
+      "title": "Freedom of Association",
+      "description": "Every citizen shall have the right to form associations or unions, subject to any reasonable restrictions imposed by law.",
+      "description_ur": "ہر شہری کو انجمنیں یا یونینیں بنانے کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "18",
+      "title": "Freedom of Trade, Business, or Profession",
+      "description": "Subject to qualifications prescribed by law, every citizen shall have the right to enter upon any lawful profession or occupation.",
+      "description_ur": "قانون کی مقررہ اہلیت کے تابع ہر شہری کو کوئی بھی جائز پیشہ اختیار کرنے کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "19",
+      "title": "Freedom of Speech",
+      "description": "Every citizen shall have the right to freedom of speech and expression, and there shall be freedom of the press, subject to reasonable restrictions in the interest of Islam, integrity, security, and public order.",
+      "description_ur": "ہر شہری کو آزادی اظہار رائے کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "19-A",
+      "title": "Right to Information",
+      "description": "Every citizen shall have the right to have access to information in all matters of public importance subject to regulation and reasonable restrictions imposed by law.",
+      "description_ur": "ہر شہری کو عوامی اہمیت کے معاملات میں معلومات تک رسائی کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "20",
+      "title": "Freedom to Profess Religion",
+      "description": "Every citizen shall have the right to profess, practice, and propagate his religion, subject to law, public order, and morality.",
+      "description_ur": "ہر شہری کو اپنے مذہب کی تبلیغ، عمل اور اشاعت کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "22",
+      "title": "Safeguards Against Taxation for Religious Purposes",
+      "description": "No person shall be compelled to pay any special tax the proceeds of which are to be spent on the propagation of any religion other than his own.",
+      "description_ur": "کسی شخص کو اپنے مذہب کے علاوہ کسی مذہب کی تبلیغ کے لیے ٹیکس ادا کرنے پر مجبور نہیں کیا جائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "23",
+      "title": "Provision as to Property",
+      "description": "Every citizen shall have the right to acquire, hold, and dispose of property in any part of Pakistan, subject to the Constitution and reasonable restrictions imposed by law.",
+      "description_ur": "ہر شہری کو پاکستان میں کہیں بھی جائیداد حاصل کرنے کا حق ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "25",
+      "title": "Equality of Citizens",
+      "description": "All citizens are equal before law and are entitled to equal protection of law. There shall be no discrimination on the basis of sex alone.",
+      "description_ur": "تمام شہری قانون کی نظر میں برابر ہیں اور قانون کے مساوی تحفظ کے حقدار ہیں۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "25-A",
+      "title": "Right to Education",
+      "description": "The State shall provide free and compulsory education to all children of the age of five to sixteen years.",
+      "description_ur": "ریاست پانچ سے سولہ سال کے تمام بچوں کو مفت اور لازمی تعلیم فراہم کرے گی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "27",
+      "title": "No Discrimination in Services",
+      "description": "No citizen otherwise qualified for appointment in the service of Pakistan shall be discriminated against on the ground of race, religion, caste, sex, residence, or place of birth.",
+      "description_ur": "پاکستان کی ملازمت میں تقرری کے اہل شہری کے خلاف نسل، مذہب، ذات یا جنس کی بنیاد پر امتیاز نہیں ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "41",
+      "title": "The President",
+      "description": "There shall be a President of Pakistan who shall be the Head of State and represent the unity of the Republic.",
+      "description_ur": "پاکستان کا ایک صدر ہوگا جو سربراہ مملکت ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "48",
+      "title": "President to Act on Advice",
+      "description": "The President shall act on and in accordance with the advice of the Prime Minister.",
+      "description_ur": "صدر وزیر اعظم کے مشورے پر اور اس کے مطابق عمل کرے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "50",
+      "title": "Majlis-e-Shoora (Parliament)",
+      "description": "There shall be a Majlis-e-Shoora (Parliament) consisting of the President and two Houses — the National Assembly and the Senate.",
+      "description_ur": "مجلس شوریٰ (پارلیمنٹ) صدر اور دو ایوانوں — قومی اسمبلی اور سینیٹ پر مشتمل ہوگی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "58",
+      "title": "Dissolution of National Assembly",
+      "description": "The President shall dissolve the National Assembly if so advised by the Prime Minister.",
+      "description_ur": "صدر وزیر اعظم کے مشورے پر قومی اسمبلی تحلیل کر دے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "62",
+      "title": "Qualifications for Membership",
+      "description": "A person shall not be qualified to be elected or chosen as a member of Majlis-e-Shoora (Parliament) unless he is a citizen of Pakistan and meets prescribed qualifications.",
+      "description_ur": "مجلس شوریٰ کی رکنیت کے لیے پاکستانی شہری ہونا اور مقررہ اہلیت پوری کرنا ضروری ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "63",
+      "title": "Disqualifications for Membership",
+      "description": "A person shall be disqualified from being elected or chosen as a member of Majlis-e-Shoora on certain grounds including conviction, insolvency, and moral turpitude.",
+      "description_ur": "بعض وجوہات بشمول سزا، دیوالیہ پن اور اخلاقی زوال پر مجلس شوریٰ کی رکنیت کے لیے نااہل ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "63-A",
+      "title": "Disqualification on Ground of Defection",
+      "description": "If a member of a Parliamentary Party votes or abstains against party policy, he may be declared as a defector.",
+      "description_ur": "اگر پارلیمانی پارٹی کا رکن پارٹی پالیسی کے خلاف ووٹ دے تو اسے لوٹا قرار دیا جا سکتا ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "90",
+      "title": "Federal Government",
+      "description": "The executive authority of the Federation shall vest in the President and shall be exercised by him on the advice of the Federal Government.",
+      "description_ur": "وفاق کا انتظامی اختیار صدر کو ہوگا اور وفاقی حکومت کے مشورے پر استعمال ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "91",
+      "title": "The Cabinet",
+      "description": "There shall be a Cabinet consisting of the Prime Minister and Federal Ministers.",
+      "description_ur": "وزیر اعظم اور وفاقی وزراء پر مشتمل کابینہ ہوگی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "175",
+      "title": "Establishment and Jurisdiction of Courts",
+      "description": "There shall be a Supreme Court of Pakistan, a High Court for each Province, and such other courts as may be established by law.",
+      "description_ur": "پاکستان کی سپریم کورٹ، ہر صوبے کے لیے ہائی کورٹ اور قانون کے تحت قائم دیگر عدالتیں ہوں گی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "184",
+      "title": "Original Jurisdiction of Supreme Court",
+      "description": "The Supreme Court shall have original jurisdiction in disputes between Federal and Provincial Governments. The SC may also take up matters of public importance involving fundamental rights.",
+      "description_ur": "سپریم کورٹ کو وفاقی اور صوبائی حکومتوں کے تنازعات میں اصل دائرہ اختیار حاصل ہوگا۔ بنیادی حقوق سے متعلق عوامی اہمیت کے معاملات بھی اٹھا سکتی ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "185",
+      "title": "Appellate Jurisdiction of Supreme Court",
+      "description": "The Supreme Court shall have appellate jurisdiction from judgments of High Courts in civil and criminal matters.",
+      "description_ur": "سپریم کورٹ کو ہائی کورٹس کے فیصلوں کے خلاف دیوانی اور فوجداری معاملات میں اپیلی دائرہ اختیار ہوگا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "186",
+      "title": "Advisory Jurisdiction",
+      "description": "If the President considers that a question of law is of public importance, he may refer it to the Supreme Court for opinion.",
+      "description_ur": "اگر صدر سمجھے کہ قانون کا کوئی سوال عوامی اہمیت کا ہے تو اسے سپریم کورٹ سے رائے کے لیے بھیج سکتا ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "199",
+      "title": "Jurisdiction of High Court",
+      "description": "Subject to the Constitution, a High Court may issue writs including habeas corpus, mandamus, prohibition, quo warranto, and certiorari.",
+      "description_ur": "آئین کے تابع ہائی کورٹ رٹ جاری کر سکتی ہے بشمول حبس بے جا، مینڈیمس اور دیگر۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "203-C",
+      "title": "Federal Shariat Court",
+      "description": "There shall be constituted a Federal Shariat Court with power to examine and decide whether or not any law is repugnant to the injunctions of Islam.",
+      "description_ur": "وفاقی شرعی عدالت قائم ہوگی جو فیصلہ کرے گی کہ آیا کوئی قانون اسلام کے احکام سے متصادم ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "227",
+      "title": "Provisions Relating to Holy Quran and Sunnah",
+      "description": "All existing laws shall be brought in conformity with the Injunctions of Islam as laid down in the Holy Quran and Sunnah.",
+      "description_ur": "تمام موجودہ قوانین کو قرآن و سنت کے احکام کے مطابق بنایا جائے گا۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "239",
+      "title": "Amendment of Constitution",
+      "description": "The Constitution may be amended by act of Majlis-e-Shoora with the votes of not less than two-thirds of the total membership.",
+      "description_ur": "آئین میں ترمیم مجلس شوریٰ کی کل رکنیت کے دو تہائی ووٹوں سے ہو سکتی ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "245",
+      "title": "Functions of Armed Forces",
+      "description": "The Armed Forces shall defend Pakistan against external aggression or threat of war and, subject to law, act in aid of civil power when called upon.",
+      "description_ur": "مسلح افواج پاکستان کا بیرونی جارحیت سے دفاع کریں گی۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "270-AA",
+      "title": "18th Amendment Validation",
+      "description": "The Constitution (Eighteenth Amendment) Act, 2010 is hereby validated and shall not be called in question.",
+      "description_ur": "اٹھارویں آئینی ترمیم ایکٹ 2010 کی توثیق کی جاتی ہے۔",
+      "statute_name": "Constitution of the Islamic Republic of Pakistan, 1973",
+      "category": "CONSTITUTIONAL"
+    },
+    {
+      "section_number": "2",
+      "title": "Definitions",
+      "description": "Defines key terms including 'court', 'evidence', 'fact', 'relevant', 'proved', 'disproved', and 'not proved'.",
+      "description_ur": "اہم اصطلاحات کی تعریف بشمول عدالت، شہادت، حقیقت، متعلقہ، ثابت اور غیر ثابت۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "3",
+      "title": "Evidence May Be Given of Facts in Issue",
+      "description": "Evidence may be given in any suit or proceeding of the existence or non-existence of every fact in issue.",
+      "description_ur": "کسی بھی مقدمے میں زیر بحث حقائق کے وجود یا عدم وجود کی شہادت دی جا سکتی ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "17",
+      "title": "Competence and Number of Witnesses",
+      "description": "The competence of a person to testify and the number of witnesses required shall be determined according to the injunctions of Islam as laid down in the Holy Quran and Sunnah.",
+      "description_ur": "گواہی دینے کی اہلیت اور گواہوں کی تعداد قرآن و سنت کے مطابق مقرر ہوگی۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "27",
+      "title": "Admissions",
+      "description": "An admission is a statement, oral or documentary, which suggests any inference as to any fact in issue or relevant fact.",
+      "description_ur": "اعتراف ایک بیان ہے جو زیر بحث حقائق کے بارے میں کسی نتیجے کی تجویز کرے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "37",
+      "title": "Dying Declaration",
+      "description": "A statement made by a person who is dead is relevant when the statement is made by a person as to the cause of his death.",
+      "description_ur": "مرنے والے شخص کا اپنی موت کی وجہ کے بارے میں بیان متعلقہ ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "38",
+      "title": "Relevancy of Certain Evidence for Proving Subsequent Conduct",
+      "description": "Previous convictions are relevant to prove character or tendency.",
+      "description_ur": "پچھلی سزائیں کردار یا رجحان ثابت کرنے کے لیے متعلقہ ہیں۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "39",
+      "title": "Facts Showing Existence of State of Mind",
+      "description": "Facts showing the existence of any state of mind, such as intention, knowledge, or good faith, are relevant.",
+      "description_ur": "ارادے، علم یا نیک نیتی جیسی ذہنی حالت ظاہر کرنے والے حقائق متعلقہ ہیں۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "46",
+      "title": "Cases in Which Statement of Relevant Fact by Person Who is Dead",
+      "description": "Statements of relevant facts by persons who are dead or cannot be found are admissible under certain conditions.",
+      "description_ur": "مردہ یا ناقابل دستیاب اشخاص کے بیانات بعض شرائط کے تحت قابل قبول ہیں۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "59",
+      "title": "Proof of Facts by Oral Evidence",
+      "description": "All facts except the contents of documents may be proved by oral evidence.",
+      "description_ur": "دستاویزات کے مشمولات کے سوا تمام حقائق زبانی شہادت سے ثابت ہو سکتے ہیں۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "70",
+      "title": "Proof of Execution of Document Required by Law to be Attested",
+      "description": "If a document is required by law to be attested, it must be proved by at least one attesting witness.",
+      "description_ur": "قانون کے مطابق تصدیق شدہ دستاویز کم از کم ایک تصدیق کنندہ گواہ سے ثابت ہونی چاہیے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "73",
+      "title": "Comparison of Signature or Handwriting",
+      "description": "In order to ascertain whether a signature or handwriting is that of the person by whom it purports to have been written, the court may compare them.",
+      "description_ur": "عدالت دستخط یا ہاتھ لکھائی کا موازنہ کر سکتی ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "76",
+      "title": "Presumption as to Genuineness of Certified Copies",
+      "description": "The court shall presume every document purporting to be a copy of any record of any court of justice to be genuine.",
+      "description_ur": "عدالت ہر دستاویز کو اصل مانے گی جو عدالت کے ریکارڈ کی نقل ہونے کا دعویٰ کرے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "117",
+      "title": "Burden of Proof",
+      "description": "The burden of proof lies on the person who would fail if no evidence at all were given on either side.",
+      "description_ur": "ثبوت کا بوجھ اس شخص پر ہے جو ناکام ہو جائے اگر کسی طرف سے کوئی شہادت نہ دی جائے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "118",
+      "title": "Burden of Proof in Particular Cases",
+      "description": "In criminal cases, the burden of proving the guilt of the accused lies on the prosecution.",
+      "description_ur": "فوجداری مقدمات میں ملزم کا جرم ثابت کرنے کا بوجھ استغاثے پر ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "129",
+      "title": "Court May Presume Existence of Certain Facts",
+      "description": "The court may presume the existence of any fact which it thinks likely to have happened.",
+      "description_ur": "عدالت کسی بھی حقیقت کے وجود کا قیاس کر سکتی ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "132",
+      "title": "Examination-in-Chief",
+      "description": "The examination of a witness by the party who calls him shall be called his examination-in-chief.",
+      "description_ur": "گواہ کا اس فریق کے ذریعے امتحان جو اسے پیش کرے، امتحان بالمقابل کہلاتا ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "133",
+      "title": "Cross-Examination",
+      "description": "The examination of a witness by the adverse party shall be called his cross-examination.",
+      "description_ur": "مخالف فریق کے ذریعے گواہ کا جرح کہلاتا ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "140",
+      "title": "Leading Questions",
+      "description": "Any question suggesting the answer which the person putting it wishes or expects to receive is called a leading question.",
+      "description_ur": "کوئی بھی سوال جو جواب تجویز کرے جو پوچھنے والا چاہتا ہے، رہنمائی سوال کہلاتا ہے۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "153",
+      "title": "Estoppel",
+      "description": "When one person has by his declaration, act, or omission caused another person to believe a thing to be true and to act upon such belief, he shall not be allowed to deny the truth.",
+      "description_ur": "جب کسی نے اپنے اعلان یا فعل سے دوسرے کو کچھ سچ ماننے پر مجبور کیا ہو تو اسے انکار کی اجازت نہیں ہوگی۔",
+      "statute_name": "Qanun-e-Shahadat Order, 1984",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "9",
+      "title": "Courts to Try All Civil Suits",
+      "description": "The courts shall have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred.",
+      "description_ur": "عدالتوں کو تمام دیوانی نوعیت کے مقدمات کی سماعت کا اختیار ہوگا سوائے ان کے جن کی دائرہ اختیار ممنوع ہو۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "10",
+      "title": "Stay of Suit",
+      "description": "No court shall proceed with the trial of any suit in which the matter in issue is also directly and substantially in issue in a previously instituted suit.",
+      "description_ur": "کوئی عدالت اس دعوے کی سماعت جاری نہیں رکھے گی جس کا معاملہ پہلے سے دائر دعوے میں زیر بحث ہو۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "11",
+      "title": "Res Judicata",
+      "description": "No court shall try any suit or issue in which the matter directly and substantially in issue has been directly and substantially in issue in a former suit between the same parties.",
+      "description_ur": "کوئی عدالت ایسا دعویٰ نہیں سنے گی جو انہی فریقین کے درمیان پہلے فیصل ہو چکا ہو۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "12",
+      "title": "Bar to Further Suit",
+      "description": "Where a plaintiff is precluded by rules from instituting a further suit in respect of any particular cause of action, he shall not be entitled to institute a suit in respect of such cause.",
+      "description_ur": "جہاں مدعی کو مزید دعویٰ دائر کرنے سے روکا گیا ہو وہ ایسا دعویٰ دائر نہیں کر سکتا۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "14",
+      "title": "Presumption as to Foreign Judgments",
+      "description": "The court shall presume, upon the production of any document purporting to be a certified copy of a foreign judgment, that such judgment was pronounced by a court of competent jurisdiction.",
+      "description_ur": "عدالت غیر ملکی فیصلے کو مجاز عدالت کا فیصلہ تسلیم کرے گی۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "20",
+      "title": "Suits to be Instituted Where Defendants Reside",
+      "description": "Subject to the limitations aforesaid, every suit shall be instituted in a court within the local limits of whose jurisdiction the defendant resides, carries on business, or where the cause of action arises.",
+      "description_ur": "دعویٰ اس عدالت میں دائر ہوگا جس کے دائرہ اختیار میں مدعا علیہ رہتا ہے یا وجہ دعویٰ پیدا ہوئی۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "26",
+      "title": "Institution of Suits",
+      "description": "Every suit shall be instituted by the presentation of a plaint.",
+      "description_ur": "ہر دعویٰ عرض داشت پیش کرنے سے شروع ہوگا۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "33",
+      "title": "Judgment and Decree",
+      "description": "The court, after the case has been heard, shall pronounce judgment and on such judgment a decree shall follow.",
+      "description_ur": "مقدمے کی سماعت کے بعد عدالت فیصلہ سنائے گی اور اس فیصلے پر ڈگری صادر ہوگی۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "35",
+      "title": "Costs",
+      "description": "Subject to such conditions and limitations as may be prescribed, the costs of and incident to all suits shall be in the discretion of the court.",
+      "description_ur": "تمام مقدمات کے اخراجات عدالت کی صوابدید پر ہوں گے۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "47",
+      "title": "Questions to be Determined by Court Executing Decree",
+      "description": "All questions arising between the parties to the suit relating to the execution, discharge, or satisfaction of the decree shall be determined by the court executing the decree.",
+      "description_ur": "ڈگری پر عملدرآمد سے متعلق فریقین کے تمام سوالات ڈگری نافذ کرنے والی عدالت طے کرے گی۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "96",
+      "title": "Appeal from Original Decree",
+      "description": "An appeal shall lie from every decree passed by any court exercising original jurisdiction to the court authorized to hear appeals.",
+      "description_ur": "اصل دائرہ اختیار رکھنے والی ہر عدالت کے ڈگری سے اپیل کی جا سکتی ہے۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "100",
+      "title": "Second Appeal",
+      "description": "An appeal shall lie to the High Court from every decree passed in appeal by any court subordinate to the High Court on any of the grounds mentioned in this section.",
+      "description_ur": "ہائی کورٹ میں دوسری اپیل کی جا سکتی ہے۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "104",
+      "title": "Orders from Which Appeal Lies",
+      "description": "An appeal shall lie from specified orders including those granting or refusing to transfer a case.",
+      "description_ur": "مخصوص احکامات سے اپیل کی جا سکتی ہے۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "115",
+      "title": "Revision",
+      "description": "The High Court may call for the record of any case decided by any court subordinate to it and may make such order as it thinks fit.",
+      "description_ur": "ہائی کورٹ اپنے ماتحت عدالت کے فیصلے کا ریکارڈ منگوا سکتی ہے۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "151",
+      "title": "Saving of Inherent Powers of Court",
+      "description": "Nothing in this Code shall be deemed to limit or otherwise affect the inherent power of the Court to make such orders as may be necessary for the ends of justice.",
+      "description_ur": "اس ضابطے میں کوئی بات عدالت کے موروثی اختیارات کو محدود نہیں کرے گی۔",
+      "statute_name": "Code of Civil Procedure, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "2",
+      "title": "Definitions",
+      "description": "Defines essential terms: proposal/offer, promise, agreement, contract, void agreement, voidable contract, and related concepts.",
+      "description_ur": "بنیادی اصطلاحات: تجویز، وعدہ، معاہدہ، عقد، باطل معاہدہ اور متعلقہ تصورات کی تعریف۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "3",
+      "title": "Communication of Proposals",
+      "description": "The communication of proposals, acceptances, and revocations is complete as defined in this section.",
+      "description_ur": "تجویزات، قبولیت اور تنسیخ کی ترسیل مکمل ہونے کی تعریف۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "10",
+      "title": "Agreement is Contract",
+      "description": "All agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration and with a lawful object.",
+      "description_ur": "تمام معاہدے عقد ہیں اگر آزاد رضامندی سے، اہل فریقین کے درمیان، جائز عوض اور جائز مقصد کے لیے ہوں۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "11",
+      "title": "Who Are Competent to Contract",
+      "description": "Every person is competent to contract who is of the age of majority, of sound mind, and is not disqualified from contracting by any law.",
+      "description_ur": "ہر وہ شخص عقد کا اہل ہے جو بالغ ہو، عقلمند ہو اور قانون سے نااہل نہ ہو۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "14",
+      "title": "Free Consent",
+      "description": "Consent is said to be free when it is not caused by coercion, undue influence, fraud, misrepresentation, or mistake.",
+      "description_ur": "رضامندی آزاد ہے جب یہ جبر، ناجائز اثر، فراڈ، غلط بیانی یا غلطی سے نہ ہو۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "15",
+      "title": "Coercion",
+      "description": "Coercion is the committing or threatening to commit any act forbidden by the Pakistan Penal Code, or the unlawful detaining of any property.",
+      "description_ur": "جبر وہ ہے جو تعزیرات پاکستان میں ممنوع فعل کرنا یا دھمکانا یا جائیداد غیر قانونی طور پر روکنا۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "16",
+      "title": "Undue Influence",
+      "description": "A contract is said to be induced by undue influence where the relations subsisting between the parties enable one to dominate the will of the other.",
+      "description_ur": "ناجائز اثر وہ ہے جہاں فریقین کے تعلقات ایک کو دوسرے کی مرضی پر غلبہ دیں۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "17",
+      "title": "Fraud",
+      "description": "Fraud means and includes acts committed by a party to a contract with intent to deceive another party.",
+      "description_ur": "فراڈ سے مراد وہ افعال ہیں جو کسی فریق نے دوسرے فریق کو دھوکہ دینے کی نیت سے کیے ہوں۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "23",
+      "title": "Unlawful Consideration and Object",
+      "description": "The consideration or object of an agreement is unlawful if it is forbidden by law, would defeat any law, is fraudulent, involves injury, or is immoral.",
+      "description_ur": "معاہدے کا عوض یا مقصد ناجائز ہے اگر قانون سے ممنوع، فریب، نقصان دہ یا غیر اخلاقی ہو۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "25",
+      "title": "Agreement Without Consideration Void",
+      "description": "An agreement made without consideration is void, unless it is expressed in writing and registered, or is a promise to compensate, or is a promise to pay a time-barred debt.",
+      "description_ur": "بغیر عوض کا معاہدہ باطل ہے سوائے بعض استثنائی صورتوں کے۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "27",
+      "title": "Agreement in Restraint of Trade",
+      "description": "Every agreement by which anyone is restrained from exercising a lawful profession, trade, or business is to that extent void.",
+      "description_ur": "ہر معاہدہ جو کسی کو جائز پیشے، تجارت سے روکے باطل ہے۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "56",
+      "title": "Agreement to Do Impossible Act",
+      "description": "An agreement to do an act impossible in itself is void. If an act becomes impossible or unlawful after contract, the contract becomes void.",
+      "description_ur": "ناممکن فعل کا معاہدہ باطل ہے۔ اگر عقد کے بعد فعل ناممکن ہو جائے تو عقد باطل ہوگا۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "73",
+      "title": "Compensation for Breach",
+      "description": "When a contract has been broken, the party who suffers by such breach is entitled to receive compensation for any loss or damage caused.",
+      "description_ur": "جب عقد کی خلاف ورزی ہو تو متاثرہ فریق نقصان کے معاوضے کا حقدار ہے۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "124",
+      "title": "Contract of Indemnity",
+      "description": "A contract by which one party promises to save the other from loss caused to him by the conduct of the promisor himself or any other person.",
+      "description_ur": "ضمانت نقصان کا عقد وہ ہے جس میں ایک فریق دوسرے کو نقصان سے بچانے کا وعدہ کرے۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "126",
+      "title": "Contract of Guarantee",
+      "description": "A contract of guarantee is a contract to perform the promise or discharge the liability of a third person in case of his default.",
+      "description_ur": "ضمانت کا عقد وہ ہے جو تیسرے شخص کے ڈیفالٹ پر اس کا وعدہ پورا کرنے کا عقد ہو۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "148",
+      "title": "Contract of Bailment",
+      "description": "A bailment is the delivery of goods by one person to another for some purpose, upon a contract that they shall be returned or otherwise disposed of.",
+      "description_ur": "امانت وہ ہے جب ایک شخص دوسرے کو سامان کسی مقصد کے لیے حوالے کرے اس شرط پر کہ واپس کرے۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "182",
+      "title": "Agent",
+      "description": "An agent is a person employed to do any act for another or to represent another in dealings with third persons.",
+      "description_ur": "ایجنٹ وہ شخص ہے جو دوسرے کی طرف سے کوئی فعل کرنے یا تیسرے فریقوں سے معاملات میں نمائندگی کے لیے ملازم رکھا گیا ہو۔",
+      "statute_name": "Contract Act, 1872",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "5",
+      "title": "Transfer of Property",
+      "description": "Transfer of property means an act by which a living person conveys property to one or more other living persons.",
+      "description_ur": "منتقلی جائیداد وہ فعل ہے جس سے ایک زندہ شخص جائیداد دوسرے زندہ شخص کو منتقل کرے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "6",
+      "title": "What May Be Transferred",
+      "description": "Property of any kind may be transferred, except as otherwise provided by this Act or by any other law for the time being in force.",
+      "description_ur": "کسی بھی قسم کی جائیداد منتقل کی جا سکتی ہے سوائے اس ایکٹ یا دیگر قانون کی استثنائی صورتوں کے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "54",
+      "title": "Sale",
+      "description": "Sale is a transfer of ownership in exchange for a price paid or promised or part-paid and part-promised.",
+      "description_ur": "فروخت ادا شدہ یا وعدہ کردہ قیمت کے بدلے ملکیت کی منتقلی ہے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "58",
+      "title": "Mortgage",
+      "description": "A mortgage is the transfer of an interest in specific immovable property for the purpose of securing the payment of money advanced or to be advanced.",
+      "description_ur": "رہن مخصوص غیر منقولہ جائیداد میں مفاد کی منتقلی ہے رقم کی واپسی کی ضمانت کے لیے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "105",
+      "title": "Lease",
+      "description": "A lease of immovable property is a transfer of a right to enjoy such property for a certain time in consideration of rent.",
+      "description_ur": "اجارہ غیر منقولہ جائیداد سے فائدہ اٹھانے کے حق کی منتقلی ہے مقررہ مدت کے لیے کرائے کے بدلے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "122",
+      "title": "Gift",
+      "description": "Gift is the transfer of certain existing moveable or immovable property made voluntarily and without consideration by one person to another.",
+      "description_ur": "تحفہ موجودہ منقولہ یا غیر منقولہ جائیداد کی رضاکارانہ بلا عوض منتقلی ہے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "123",
+      "title": "How Gifts Are Made",
+      "description": "For immovable property, the gift must be registered. For movable property, delivery is sufficient.",
+      "description_ur": "غیر منقولہ جائیداد کا تحفہ رجسٹرڈ ہونا چاہیے۔ منقولہ جائیداد کی ترسیل کافی ہے۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "130",
+      "title": "Transfer of Actionable Claim",
+      "description": "The transfer of an actionable claim shall be effected only by the execution of an instrument in writing signed by the transferor.",
+      "description_ur": "قابل دعویٰ کی منتقلی صرف منتقل کنندہ کے دستخط شدہ تحریری دستاویز سے ہوگی۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "52",
+      "title": "Transfer of Property Pending Suit (Lis Pendens)",
+      "description": "During the pendency of a suit, any property which is the subject-matter of the suit cannot be transferred to defeat the rights of any party.",
+      "description_ur": "دعوے کی زیر التوا مدت میں زیر دعویٰ جائیداد کسی فریق کے حقوق کو نقصان پہنچانے کے لیے منتقل نہیں ہو سکتی۔",
+      "statute_name": "Transfer of Property Act, 1882",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "4",
+      "title": "Succession",
+      "description": "In the event of the death of any son or daughter of the propositus before the opening of succession, the children of such son or daughter shall per stirpes receive a share.",
+      "description_ur": "اگر وارث مورث سے پہلے فوت ہو جائے تو اس کی اولاد حصہ پائے گی۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "5",
+      "title": "Registration of Marriages",
+      "description": "Every marriage solemnized under Muslim Law shall be registered in accordance with the provisions of this Ordinance.",
+      "description_ur": "مسلم قانون کے تحت منعقد ہر نکاح اس آرڈیننس کی دفعات کے مطابق رجسٹرڈ ہوگا۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "6",
+      "title": "Polygamy",
+      "description": "No man shall contract another marriage during the subsistence of an existing marriage except with the previous permission of the Arbitration Council.",
+      "description_ur": "کوئی مرد موجودہ شادی کے دوران ثالثی کونسل کی اجازت کے بغیر دوسری شادی نہیں کر سکتا۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "7",
+      "title": "Talaq",
+      "description": "Any man who wishes to divorce his wife shall pronounce talaq in any form and give notice to the Chairman and a copy to the wife. Talaq does not become effective for 90 days.",
+      "description_ur": "جو مرد اپنی بیوی کو طلاق دینا چاہے وہ چیئرمین کو نوٹس دے اور بیوی کو نقل دے۔ طلاق 90 دن تک مؤثر نہیں ہوگی۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "8",
+      "title": "Dissolution of Marriage Otherwise Than by Talaq",
+      "description": "Where the right to divorce has been duly delegated to the wife, she may exercise that right as provided in the instrument of delegation.",
+      "description_ur": "جب طلاق کا حق بیوی کو تفویض کیا گیا ہو تو وہ تفویض کے دستاویز کے مطابق اس حق کا استعمال کر سکتی ہے۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "9",
+      "title": "Maintenance",
+      "description": "If any husband fails to maintain his wife adequately, the wife may apply to the Chairman who shall constitute an Arbitration Council to determine the matter.",
+      "description_ur": "اگر شوہر بیوی کا نفقہ مناسب طور پر ادا نہ کرے تو بیوی چیئرمین سے درخواست کر سکتی ہے۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "10",
+      "title": "Dower (Mahr)",
+      "description": "Where no details about the mode of payment of dower are specified, the entire amount shall be presumed to be payable on demand.",
+      "description_ur": "جب مہر کی ادائیگی کی تفصیلات مقرر نہ ہوں تو پوری رقم فوری طلب پر ادائیگی تصور ہوگی۔",
+      "statute_name": "Muslim Family Laws Ordinance, 1961",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "3",
+      "title": "Unauthorized Access to Information System",
+      "description": "Whoever gains unauthorized access to any information system or data shall be punished with imprisonment up to three months or fine up to fifty thousand rupees or both.",
+      "description_ur": "جو کوئی کسی انفارمیشن سسٹم تک غیر مجاز رسائی حاصل کرے، تین ماہ قید یا پچاس ہزار جرمانہ۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "4",
+      "title": "Unauthorized Copying of Data",
+      "description": "Whoever copies or otherwise provides data without authorization shall be punished with imprisonment up to six months or fine up to one hundred thousand rupees or both.",
+      "description_ur": "جو بغیر اجازت ڈیٹا کاپی کرے، چھ ماہ قید یا ایک لاکھ جرمانہ۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "5",
+      "title": "Interference with Information System",
+      "description": "Whoever interferes with or damages any information system, data or electronic communication shall be punished.",
+      "description_ur": "جو کوئی انفارمیشن سسٹم میں مداخلت کرے یا نقصان پہنچائے اسے سزا ہوگی۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "6",
+      "title": "Unauthorized Interception",
+      "description": "Whoever intercepts any electronic communication without lawful authority shall be punished with imprisonment up to two years.",
+      "description_ur": "جو بغیر قانونی اجازت الیکٹرانک مواصلات روکے، دو سال تک قید۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "10",
+      "title": "Cyber Terrorism",
+      "description": "Whoever commits or threatens to commit cyber terrorism shall be punished with imprisonment up to fourteen years or fine up to fifty million rupees or both.",
+      "description_ur": "جو سائبر دہشت گردی کا ارتکاب کرے، چودہ سال قید یا پانچ کروڑ جرمانہ۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "13",
+      "title": "Electronic Forgery",
+      "description": "Whoever interferes with or uses any information system, device, or data to forge or generate a false electronic document shall be punished.",
+      "description_ur": "جو جعلی الیکٹرانک دستاویز بنائے اسے سزا ہوگی۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "14",
+      "title": "Electronic Fraud",
+      "description": "Whoever with dishonest intention gains unauthorized access to any information system or electronic device to acquire any valuable thing shall be punished.",
+      "description_ur": "جو بے ایمانی سے غیر مجاز رسائی سے قیمتی چیز حاصل کرے اسے سزا ہوگی۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "16",
+      "title": "Offences Against Dignity of a Natural Person",
+      "description": "Whoever intentionally and publicly exhibits or displays or transmits any information which harms the reputation or privacy of a natural person.",
+      "description_ur": "جو کوئی جان بوجھ کر عوامی طور پر ایسی معلومات ظاہر کرے جو کسی شخص کی ساکھ یا رازداری کو نقصان پہنچائے۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "18",
+      "title": "Offences Against Modesty of a Natural Person",
+      "description": "Whoever intentionally and publicly transmits sexually explicit images of another person without consent.",
+      "description_ur": "جو کوئی بغیر رضامندی جنسی تصاویر شائع کرے۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "20",
+      "title": "Offences Against Minor",
+      "description": "Whoever commits an offence as provided in this Act against a minor shall be punished with imprisonment which may extend to seven years or fine up to five million rupees.",
+      "description_ur": "جو نابالغ کے خلاف سائبر جرم کرے، سات سال قید یا پچاس لاکھ جرمانہ۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "21",
+      "title": "Child Pornography",
+      "description": "Whoever produces, offers, distributes, procures, or possesses child pornography commits an offence.",
+      "description_ur": "جو بچوں کی فحش مواد تیار، تقسیم یا رکھے وہ جرم ہے۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "24",
+      "title": "Spamming",
+      "description": "Whoever transmits harmful, fraudulent, misleading, illegal, or unsolicited information to any person without permission.",
+      "description_ur": "جو بغیر اجازت نقصان دہ، فریب دہ یا غیر مطلوب معلومات بھیجے۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "29",
+      "title": "Investigation and Prosecution",
+      "description": "Investigation of offences shall be carried out by an investigation agency designated by the Federal Government.",
+      "description_ur": "جرائم کی تحقیقات وفاقی حکومت کی مقررہ تحقیقاتی ایجنسی کرے گی۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "34",
+      "title": "Designated Courts",
+      "description": "The Federal Government shall designate special courts for trial of offences under this Act.",
+      "description_ur": "وفاقی حکومت اس ایکٹ کے تحت جرائم کی سماعت کے لیے خصوصی عدالتیں مقرر کرے گی۔",
+      "statute_name": "Prevention of Electronic Crimes Act, 2016",
+      "category": "CYBER"
+    },
+    {
+      "section_number": "8",
+      "title": "Recovery of Possession of Immovable Property",
+      "description": "A person entitled to the possession of specific immovable property may recover it in the manner provided by the Code of Civil Procedure.",
+      "description_ur": "مخصوص غیر منقولہ جائیداد کے قبضے کا حقدار شخص ضابطہ دیوانی کے مطابق اسے بحال کر سکتا ہے۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "9",
+      "title": "Suit by Person Dispossessed of Immovable Property",
+      "description": "If any person is dispossessed without his consent of immovable property otherwise than in due course of law, he or any person through whom he has been in possession, may recover possession.",
+      "description_ur": "اگر کسی شخص کو قانون کے بغیر جائیداد سے بے دخل کیا جائے تو وہ قبضہ واپس حاصل کر سکتا ہے۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "12",
+      "title": "Specific Performance of Contracts",
+      "description": "The specific performance of any contract may be obtained by any party or representative of a party to the contract.",
+      "description_ur": "کسی بھی معاہدے کی مخصوص تعمیل معاہدے کے فریق سے حاصل کی جا سکتی ہے۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "21",
+      "title": "Contract Not Specifically Enforceable",
+      "description": "Certain contracts cannot be specifically enforced including those where monetary compensation is adequate or personal service contracts.",
+      "description_ur": "بعض معاہدوں کی مخصوص تعمیل نافذ نہیں ہو سکتی جہاں مالی معاوضہ کافی ہو۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "42",
+      "title": "Discretion of Court",
+      "description": "The jurisdiction to grant specific performance is discretionary. The court is not bound to grant such relief merely because it is lawful.",
+      "description_ur": "مخصوص تعمیل کا اختیار صوابدیدی ہے۔ عدالت محض جائز ہونے کی وجہ سے ریلیف دینے کی پابند نہیں۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "54",
+      "title": "Preventive Relief (Injunction)",
+      "description": "Preventive relief is granted at the discretion of the court by injunction, temporary or perpetual.",
+      "description_ur": "انسدادی ریلیف عدالت کی صوابدید پر حکم امتناعی، عارضی یا مستقل، کے ذریعے دیا جاتا ہے۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "56",
+      "title": "Perpetual Injunction",
+      "description": "A perpetual injunction can only be granted by the decree made at the hearing and upon the merits of the suit.",
+      "description_ur": "مستقل حکم امتناعی صرف سماعت اور دعوے کی خوبیوں کی بنیاد پر ڈگری سے دیا جا سکتا ہے۔",
+      "statute_name": "Specific Relief Act, 1877",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "3",
+      "title": "Bar of Limitation",
+      "description": "Every suit instituted, appeal preferred, and application made after the prescribed period shall be dismissed.",
+      "description_ur": "مقررہ مدت کے بعد دائر ہر دعویٰ، اپیل اور درخواست خارج کی جائے گی۔",
+      "statute_name": "Limitation Act, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "4",
+      "title": "Expiry on Holiday",
+      "description": "Where the prescribed period expires on a day when the court is closed, the suit may be instituted on the day when the court reopens.",
+      "description_ur": "جب مقررہ مدت عدالت بند ہونے کے دن ختم ہو تو عدالت کھلنے کے دن دعویٰ دائر کیا جا سکتا ہے۔",
+      "statute_name": "Limitation Act, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "5",
+      "title": "Extension of Prescribed Period",
+      "description": "Any appeal or application for revision may be admitted after the prescribed period if sufficient cause is shown.",
+      "description_ur": "کافی وجہ دکھانے پر مقررہ مدت کے بعد بھی اپیل یا نظرثانی کی درخواست قبول کی جا سکتی ہے۔",
+      "statute_name": "Limitation Act, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "12",
+      "title": "Exclusion of Time in Computing Limitation",
+      "description": "In computing the period of limitation, the day from which such period is to be reckoned shall be excluded.",
+      "description_ur": "مدت کی گنتی میں وہ دن شامل نہیں ہوگا جس سے مدت شروع ہوتی ہے۔",
+      "statute_name": "Limitation Act, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "14",
+      "title": "Exclusion of Time of Proceeding Bona Fide in Court Without Jurisdiction",
+      "description": "Time spent in prosecuting proceedings bona fide in a court without jurisdiction shall be excluded.",
+      "description_ur": "بغیر دائرہ اختیار عدالت میں نیک نیتی سے کارروائی میں صرف وقت خارج ہوگا۔",
+      "statute_name": "Limitation Act, 1908",
+      "category": "CIVIL"
+    },
+    {
+      "section_number": "2",
+      "title": "Definitions",
+      "description": "Defines key terms including assessable income, person, tax year, taxable income, and total income.",
+      "description_ur": "اہم اصطلاحات کی تعریف بشمول قابل تشخیص آمدنی، شخص، ٹیکس سال اور کل آمدنی۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "4",
+      "title": "Charge of Tax",
+      "description": "Income tax shall be charged for each tax year on every person who has taxable income for that year.",
+      "description_ur": "ہر ٹیکس سال ہر اس شخص سے انکم ٹیکس وصول کیا جائے گا جس کی قابل ٹیکس آمدنی ہو۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "11",
+      "title": "Salary",
+      "description": "Any salary received by or accruing or arising to any person shall be chargeable to tax under the head 'Salary'.",
+      "description_ur": "کسی شخص کو ملنے والی تنخواہ 'تنخواہ' کی مد میں ٹیکس کے قابل ہوگی۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "15",
+      "title": "Income from Property",
+      "description": "The rent received or receivable by a person for a tax year shall be chargeable to tax under the head 'Income from Property'.",
+      "description_ur": "ٹیکس سال کے لیے وصول شدہ کرایہ 'جائیداد سے آمدنی' کی مد میں ٹیکس کے قابل ہوگا۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "21",
+      "title": "Deductions in Computing Income from Business",
+      "description": "Expenditure incurred by a person in the tax year wholly and exclusively for the purposes of business shall be allowed as a deduction.",
+      "description_ur": "کاروبار کے لیے مکمل طور پر کیے گئے اخراجات کٹوتی کے طور پر منظور ہوں گے۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "37",
+      "title": "Capital Gains",
+      "description": "Capital gains arising on disposal of a capital asset shall be chargeable to tax.",
+      "description_ur": "سرمایہ جاتی اثاثے کے تصرف پر پیدا ہونے والا سرمایہ فائدہ ٹیکس کے قابل ہوگا۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "114",
+      "title": "Return of Income",
+      "description": "Every person whose taxable income exceeds the taxable limit shall furnish a return of income.",
+      "description_ur": "ہر وہ شخص جس کی قابل ٹیکس آمدنی حد سے زیادہ ہو، آمدنی کا گوشوارہ جمع کرائے گا۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "120",
+      "title": "Best Judgment Assessment",
+      "description": "Where a person fails to furnish a return, the Commissioner may make an assessment of taxable income to the best of his judgment.",
+      "description_ur": "جب کوئی شخص گوشوارہ جمع نہ کرائے تو کمشنر اپنے بہترین فیصلے کے مطابق تشخیص کر سکتا ہے۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "122",
+      "title": "Amendment of Assessments",
+      "description": "The Commissioner may amend an assessment within five years from the end of the financial year.",
+      "description_ur": "کمشنر مالی سال کے اختتام سے پانچ سال کے اندر تشخیص میں ترمیم کر سکتا ہے۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "127",
+      "title": "Appeal to Commissioner (Appeals)",
+      "description": "Any person dissatisfied with any order passed by the Commissioner may prefer an appeal to the Commissioner (Appeals).",
+      "description_ur": "کمشنر کے حکم سے مطمئن نہ ہونے والا شخص کمشنر (اپیلز) کو اپیل کر سکتا ہے۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "131",
+      "title": "Appeal to Appellate Tribunal",
+      "description": "Any person or Commissioner dissatisfied with an order of the Commissioner (Appeals) may prefer an appeal to the Appellate Tribunal.",
+      "description_ur": "کمشنر (اپیلز) کے حکم سے مطمئن نہ ہونے والا اپیلیٹ ٹربیونل میں اپیل کر سکتا ہے۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "148",
+      "title": "Tax Collection on Imports",
+      "description": "The Commissioner of Customs shall collect advance tax from every importer at the time of clearing goods.",
+      "description_ur": "کمشنر کسٹمز ہر درآمد کنندہ سے سامان کی کلیئرنس کے وقت ایڈوانس ٹیکس وصول کرے گا۔",
+      "statute_name": "Income Tax Ordinance, 2001",
+      "category": "TAXATION"
+    },
+    {
+      "section_number": "2",
+      "title": "Definitions",
+      "description": "Defines company, director, officer, member, share, debenture, financial year, and other key corporate terms.",
+      "description_ur": "کمپنی، ڈائریکٹر، افسر، رکن، حصص اور دیگر اہم کارپوریٹ اصطلاحات کی تعریف۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "10",
+      "title": "Incorporation of Company",
+      "description": "For the incorporation of a company, certain documents including memorandum and articles of association shall be filed with the registrar.",
+      "description_ur": "کمپنی کی رجسٹریشن کے لیے یادداشت اور آرٹیکلز آف ایسوسی ایشن رجسٹرار کے پاس دائر ہوں گے۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "16",
+      "title": "Certificate of Incorporation",
+      "description": "On registration, the registrar shall issue a certificate of incorporation.",
+      "description_ur": "رجسٹریشن پر رجسٹرار رجسٹریشن کا سرٹیفکیٹ جاری کرے گا۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "85",
+      "title": "Annual General Meeting",
+      "description": "Every company shall hold an annual general meeting in each year.",
+      "description_ur": "ہر کمپنی ہر سال سالانہ عام اجلاس منعقد کرے گی۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "150",
+      "title": "Number of Directors",
+      "description": "Every public company shall have at least seven directors and every private company shall have at least two directors.",
+      "description_ur": "ہر پبلک کمپنی میں کم از کم سات ڈائریکٹرز اور ہر پرائیویٹ کمپنی میں کم از کم دو ہوں گے۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "166",
+      "title": "Duties of Directors",
+      "description": "Every director of a company shall act in good faith in order to promote the objects of the company for the benefit of its members as a whole.",
+      "description_ur": "کمپنی کا ہر ڈائریکٹر نیک نیتی سے کمپنی کے مقاصد کو فروغ دینے کے لیے کام کرے گا۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "204",
+      "title": "Books of Account",
+      "description": "Every company shall cause to be kept proper books of account at its registered office.",
+      "description_ur": "ہر کمپنی اپنے رجسٹرڈ دفتر میں حسابات کی مناسب کتابیں رکھے گی۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "223",
+      "title": "Audit of Accounts",
+      "description": "Every company shall appoint an auditor to audit the accounts of the company.",
+      "description_ur": "ہر کمپنی حسابات کے آڈٹ کے لیے آڈیٹر مقرر کرے گی۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "290",
+      "title": "Modes of Winding Up",
+      "description": "The winding up of a company may be either by the court or voluntary.",
+      "description_ur": "کمپنی کی تحلیل عدالت کے ذریعے یا رضاکارانہ ہو سکتی ہے۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "301",
+      "title": "Circumstances for Winding Up by Court",
+      "description": "A company may be wound up by the court if it is unable to pay its debts or the court is of opinion that it is just and equitable.",
+      "description_ur": "کمپنی کی عدالت کے ذریعے تحلیل ہو سکتی ہے اگر وہ قرضے ادا کرنے سے قاصر ہو۔",
+      "statute_name": "Companies Act, 2017",
+      "category": "CORPORATE"
+    },
+    {
+      "section_number": "3",
+      "title": "Freedom of Association",
+      "description": "Workers and employers shall have the right to establish and join organizations of their own choosing.",
+      "description_ur": "مزدوروں اور آجروں کو اپنی پسند کی تنظیمیں قائم کرنے اور ان میں شامل ہونے کا حق ہوگا۔",
+      "statute_name": "Industrial Relations Act, 2012",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "20",
+      "title": "Collective Bargaining Agent",
+      "description": "The trade union which has been certified as the collective bargaining agent shall be the sole agent for collective bargaining.",
+      "description_ur": "سرٹیفائیڈ ٹریڈ یونین اجتماعی سودے بازی کا واحد ایجنٹ ہوگی۔",
+      "statute_name": "Industrial Relations Act, 2012",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "32",
+      "title": "Unfair Labour Practices by Employer",
+      "description": "It shall be unfair labour practice for an employer to interfere with the formation of a trade union or to discriminate against workers.",
+      "description_ur": "آجر کا ٹریڈ یونین کی تشکیل میں مداخلت یا مزدوروں کے خلاف امتیاز ناجائز مشقتی طرز عمل ہے۔",
+      "statute_name": "Industrial Relations Act, 2012",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "43",
+      "title": "Settlement of Industrial Disputes",
+      "description": "Industrial disputes shall be settled through conciliation, arbitration, or adjudication by Labour Court.",
+      "description_ur": "صنعتی تنازعات مصالحت، ثالثی یا لیبر کورٹ کے ذریعے حل کیے جائیں گے۔",
+      "statute_name": "Industrial Relations Act, 2012",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "3",
+      "title": "Responsibility for Payment of Wages",
+      "description": "Every employer shall be responsible for the payment of wages to persons employed by him.",
+      "description_ur": "ہر آجر اپنے ملازمین کو اجرت کی ادائیگی کا ذمہ دار ہوگا۔",
+      "statute_name": "Payment of Wages Act, 1936",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "5",
+      "title": "Time of Payment of Wages",
+      "description": "Wages of every employed person shall be paid before the expiry of the seventh day after the last day of the wage period.",
+      "description_ur": "ہر ملازم کی اجرت اجرت کی مدت کے آخری دن کے بعد ساتویں دن سے پہلے ادا ہوگی۔",
+      "statute_name": "Payment of Wages Act, 1936",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "7",
+      "title": "Deductions Which May Be Made from Wages",
+      "description": "Deductions from wages of an employed person shall be made only in accordance with the provisions of this Act.",
+      "description_ur": "ملازم کی اجرت سے کٹوتی صرف اس ایکٹ کی دفعات کے مطابق کی جائے گی۔",
+      "statute_name": "Payment of Wages Act, 1936",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "13",
+      "title": "Cleanliness",
+      "description": "Every factory shall be kept clean and free from effluvia arising from any drain, privy, or other nuisance.",
+      "description_ur": "ہر فیکٹری صاف ستھری رکھی جائے گی اور بدبو سے پاک ہوگی۔",
+      "statute_name": "Factories Act, 1934",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "14",
+      "title": "Ventilation and Temperature",
+      "description": "Effective and suitable provision shall be made in every factory for adequate ventilation.",
+      "description_ur": "ہر فیکٹری میں مناسب ہوا کی آمد و رفت کا مؤثر انتظام ہوگا۔",
+      "statute_name": "Factories Act, 1934",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "34",
+      "title": "Weekly Holidays",
+      "description": "No adult worker shall be allowed or required to work in a factory on a Sunday.",
+      "description_ur": "کسی بالغ مزدور کو اتوار کو فیکٹری میں کام کرنے کی اجازت یا ضرورت نہیں ہوگی۔",
+      "statute_name": "Factories Act, 1934",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "36",
+      "title": "Daily Hours of Work",
+      "description": "No adult worker shall be required or allowed to work in a factory for more than nine hours in any day.",
+      "description_ur": "کسی بالغ مزدور سے ایک دن میں نو گھنٹے سے زیادہ کام نہیں لیا جائے گا۔",
+      "statute_name": "Factories Act, 1934",
+      "category": "LABOR"
+    },
+    {
+      "section_number": "4",
+      "title": "National Accountability Bureau",
+      "description": "There shall be a National Accountability Bureau for the eradication of corruption through awareness, prevention, and enforcement.",
+      "description_ur": "بدعنوانی کے خاتمے کے لیے قومی احتساب بیورو قائم ہوگا۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "6",
+      "title": "Chairman NAB",
+      "description": "There shall be a Chairman NAB appointed by the President in consultation with the Leader of the Opposition.",
+      "description_ur": "چیئرمین نیب کو صدر حزب اختلاف کے رہنما سے مشاورت کے بعد مقرر کرے گا۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "9",
+      "title": "Offences",
+      "description": "A holder of a public office or any other person is said to commit corruption if he receives gratification other than legal remuneration, misappropriates property, or possesses pecuniary resources disproportionate to known sources.",
+      "description_ur": "عوامی عہدیدار بدعنوانی کا مرتکب ہے اگر وہ قانونی معاوضے کے علاوہ انعام وصول کرے یا معلوم ذرائع سے زائد اثاثے رکھے۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "10",
+      "title": "Penalty for Corruption",
+      "description": "A person found guilty of corruption shall be punishable with imprisonment for a term which may extend to fourteen years and with fine.",
+      "description_ur": "بدعنوانی کا مجرم پایا جانے والا شخص چودہ سال تک قید اور جرمانے کا مستوجب ہوگا۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "14",
+      "title": "Freezing of Property",
+      "description": "NAB may freeze the property of an accused during investigation.",
+      "description_ur": "نیب تحقیقات کے دوران ملزم کی جائیداد منجمد کر سکتا ہے۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "15",
+      "title": "Voluntary Return",
+      "description": "If an accused voluntarily returns assets acquired through corruption, the matter may be concluded.",
+      "description_ur": "اگر ملزم رضاکارانہ طور پر بدعنوانی سے حاصل اثاثے واپس کرے تو معاملہ نمٹایا جا سکتا ہے۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "24",
+      "title": "Plea Bargain",
+      "description": "An accused may apply for plea bargain and return the assets or gains acquired by him through corruption.",
+      "description_ur": "ملزم پلی بارگین کی درخواست دے سکتا ہے اور بدعنوانی سے حاصل اثاثے واپس کر سکتا ہے۔",
+      "statute_name": "National Accountability Ordinance, 1999",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "6",
+      "title": "Terrorism Defined",
+      "description": "In this Act, terrorism means the use or threat of action involving violence, damage, or disruption designed to intimidate a section of the public.",
+      "description_ur": "اس ایکٹ میں دہشت گردی سے مراد تشدد، نقصان یا خلل ڈالنے والے عمل کا استعمال یا دھمکی ہے۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "7",
+      "title": "Punishment for Acts of Terrorism",
+      "description": "Whoever commits an act of terrorism shall be punished with death, imprisonment for life, or imprisonment which may extend to imprisonment for life.",
+      "description_ur": "جو دہشت گردی کا ارتکاب کرے اسے سزائے موت، عمر قید یا عمر قید تک توسیع پذیر قید ہوگی۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "11-A",
+      "title": "Action by Armed Forces",
+      "description": "The Federal Government may call upon the armed forces to act in aid of civil power.",
+      "description_ur": "وفاقی حکومت مسلح افواج کو سول طاقت کی مدد کے لیے بلا سکتی ہے۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "13",
+      "title": "Proscription of Organizations",
+      "description": "The Federal Government may proscribe any organization concerned in terrorism.",
+      "description_ur": "وفاقی حکومت دہشت گردی میں ملوث کسی تنظیم پر پابندی لگا سکتی ہے۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "19",
+      "title": "Anti-Terrorism Courts",
+      "description": "The Government shall establish Anti-Terrorism Courts for the trial of scheduled offences.",
+      "description_ur": "حکومت مقررہ جرائم کی سماعت کے لیے انسداد دہشت گردی عدالتیں قائم کرے گی۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "21-H",
+      "title": "Witness Protection",
+      "description": "The Government shall provide protection and security to witnesses and their families.",
+      "description_ur": "حکومت گواہوں اور ان کے خاندانوں کو تحفظ اور سلامتی فراہم کرے گی۔",
+      "statute_name": "Anti-Terrorism Act, 1997",
+      "category": "CRIMINAL"
+    },
+    {
+      "section_number": "17",
+      "title": "Documents of Which Registration is Compulsory",
+      "description": "The following documents shall be registered: instruments of gift of immovable property, non-testamentary instruments transferring immovable property of value exceeding one hundred rupees.",
+      "description_ur": "درج ذیل دستاویزات کی رجسٹریشن لازمی ہے: غیر منقولہ جائیداد کا ہبہ نامہ، سو روپے سے زائد کی جائیداد کی منتقلی۔",
+      "statute_name": "Registration Act, 1908",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "23",
+      "title": "Time for Presenting Documents",
+      "description": "Documents shall be presented for registration within four months from the date of execution.",
+      "description_ur": "دستاویزات عمل کی تاریخ سے چار ماہ کے اندر رجسٹریشن کے لیے پیش کی جائیں۔",
+      "statute_name": "Registration Act, 1908",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "49",
+      "title": "Effect of Non-Registration",
+      "description": "No document required to be registered shall affect any immovable property or be received as evidence of any transaction unless it has been registered.",
+      "description_ur": "رجسٹریشن کی ضرورت والی دستاویز رجسٹرڈ نہ ہونے کی صورت میں غیر منقولہ جائیداد پر اثر نہیں ڈالے گی۔",
+      "statute_name": "Registration Act, 1908",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "4",
+      "title": "Welfare of Minor",
+      "description": "In appointing a guardian of the person of a minor, the court shall be guided by the welfare of the minor.",
+      "description_ur": "نابالغ کے سرپرست کی تقرری میں عدالت نابالغ کی فلاح و بہبود سے رہنمائی لے گی۔",
+      "statute_name": "Guardians and Wards Act, 1890",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "7",
+      "title": "Power to Make Order",
+      "description": "The court may make an order appointing a guardian of the person or property of the minor.",
+      "description_ur": "عدالت نابالغ کی ذات یا جائیداد کے سرپرست کی تقرری کا حکم دے سکتی ہے۔",
+      "statute_name": "Guardians and Wards Act, 1890",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "17",
+      "title": "Matters to be Considered by Court",
+      "description": "In appointing a guardian, the court shall consider the age, sex, and religion of the minor, the character and capacity of the proposed guardian.",
+      "description_ur": "سرپرست کی تقرری میں عدالت نابالغ کی عمر، جنس، مذہب اور مجوزہ سرپرست کے کردار پر غور کرے گی۔",
+      "statute_name": "Guardians and Wards Act, 1890",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "25",
+      "title": "Title of Guardian Not to Be Questioned",
+      "description": "The title of any person appointed as guardian shall not be questioned in any proceeding unless the appointment was obtained by fraud.",
+      "description_ur": "سرپرست مقرر شخص کے عنوان پر سوال نہیں اٹھایا جائے گا سوائے فراڈ سے حاصل تقرری کے۔",
+      "statute_name": "Guardians and Wards Act, 1890",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "2",
+      "title": "Grounds for Dissolution",
+      "description": "A woman married under Muslim law shall be entitled to obtain a decree for dissolution of marriage on the following grounds: whereabouts of husband unknown for four years, failure to maintain for two years, sentenced to imprisonment for seven years, failure to perform marital obligations, impotency, insanity, cruelty.",
+      "description_ur": "مسلم قانون کے تحت شادی شدہ عورت درج ذیل بنیادوں پر فسخ نکاح کی ڈگری حاصل کر سکتی ہے: شوہر کا چار سال سے پتہ نامعلوم، دو سال نفقہ نہ دینا، سات سال قید، ازدواجی فرائض ادا نہ کرنا، نامردی، پاگل پن، ظلم۔",
+      "statute_name": "Dissolution of Muslim Marriages Act, 1939",
+      "category": "FAMILY"
+    },
+    {
+      "section_number": "4",
+      "title": "Publication of Preliminary Notification",
+      "description": "Whenever it appears to the Government that land is needed for a public purpose, a notification shall be published.",
+      "description_ur": "جب حکومت کو عوامی مقصد کے لیے زمین کی ضرورت ہو تو اطلاع شائع کی جائے گی۔",
+      "statute_name": "Land Acquisition Act, 1894",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "5-A",
+      "title": "Hearing of Objections",
+      "description": "Any person interested in the land may file objections within thirty days.",
+      "description_ur": "زمین میں دلچسپی رکھنے والا کوئی شخص تیس دنوں کے اندر اعتراضات دائر کر سکتا ہے۔",
+      "statute_name": "Land Acquisition Act, 1894",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "6",
+      "title": "Declaration That Land is Required",
+      "description": "When the Government is satisfied that any particular land is needed, a declaration shall be made.",
+      "description_ur": "جب حکومت مطمئن ہو کہ کسی خاص زمین کی ضرورت ہے تو اعلان کیا جائے گا۔",
+      "statute_name": "Land Acquisition Act, 1894",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "11",
+      "title": "Enquiry and Award",
+      "description": "The Collector shall enquire into the objections and make an award of compensation.",
+      "description_ur": "کلکٹر اعتراضات کی تحقیقات کرے گا اور معاوضے کا فیصلہ کرے گا۔",
+      "statute_name": "Land Acquisition Act, 1894",
+      "category": "PROPERTY"
+    },
+    {
+      "section_number": "23",
+      "title": "Matters to be Considered in Determining Compensation",
+      "description": "The court shall take into account the market value of the land at the date of publication, damage by severance, and other relevant factors.",
+      "description_ur": "عدالت اعلان کی تاریخ پر زمین کی مارکیٹ قیمت اور دیگر متعلقہ عوامل پر غور کرے گی۔",
+      "statute_name": "Land Acquisition Act, 1894",
+      "category": "PROPERTY"
+    }
+  ]
+}

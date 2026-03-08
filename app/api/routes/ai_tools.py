@@ -81,16 +81,35 @@ class CitationFinderResponse(BaseModel):
 # ---------------------------------------------------------------------------
 
 async def _call_ollama(prompt: str) -> str:
-    """Call Ollama and return the response text."""
+    """Call Ollama and return the response text. Uses streaming internally to avoid timeouts."""
     try:
-        async with httpx.AsyncClient(timeout=120.0) as client:
-            resp = await client.post(
+        full_response = []
+        async with httpx.AsyncClient(timeout=180.0) as client:
+            async with client.stream(
+                "POST",
                 f"{settings.OLLAMA_BASE_URL}/api/generate",
-                json={"model": settings.OLLAMA_MODEL, "prompt": prompt, "stream": False},
-            )
-        if resp.status_code == 200:
-            return resp.json().get("response", "")
-        return ""
+                json={
+                    "model": settings.OLLAMA_MODEL,
+                    "prompt": prompt,
+                    "stream": True,
+                    "options": {
+                        "temperature": 0.3,
+                        "num_predict": 2048,
+                    },
+                },
+            ) as resp:
+                async for line in resp.aiter_lines():
+                    if line.strip():
+                        try:
+                            data = json.loads(line)
+                            text = data.get("response", "")
+                            if text:
+                                full_response.append(text)
+                            if data.get("done", False):
+                                break
+                        except json.JSONDecodeError:
+                            continue
+        return "".join(full_response)
     except httpx.ConnectError:
         raise HTTPException(status_code=503, detail="AI model server (Ollama) is not running. Please start it with 'ollama serve'.")
     except Exception as e:

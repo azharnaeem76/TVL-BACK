@@ -118,7 +118,7 @@ DEFAULT_FEATURES = [
     {"key": "document_analysis", "name": "Document Upload & Analysis", "description": "Upload legal documents for AI extraction of key info", "category": "ai", "enabled": True, "applicable_roles": ["lawyer", "judge", "admin"]},
     {"key": "bookmarks", "name": "Bookmarks", "description": "Save and manage bookmarked case laws", "category": "core", "enabled": True, "applicable_roles": ALL_ROLES},
     {"key": "messaging", "name": "Internal Messaging", "description": "Secure lawyer-client messaging", "category": "collaboration", "enabled": False, "applicable_roles": ["lawyer", "client", "judge", "admin"]},
-    {"key": "team_workspaces", "name": "Team Workspaces", "description": "Law firm team collaboration", "category": "collaboration", "enabled": False, "applicable_roles": ["lawyer", "admin"]},
+    {"key": "team_workspaces", "name": "Team Workspaces", "description": "Law firm team collaboration", "category": "collaboration", "enabled": True, "applicable_roles": ALL_ROLES},
 
     # Business
     {"key": "consultation_booking", "name": "Consultation Booking", "description": "Book and manage legal consultations", "category": "business", "enabled": False, "applicable_roles": ["lawyer", "client"]},

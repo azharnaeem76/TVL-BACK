@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
     # Ollama (local LLM - free, no API key needed)
     OLLAMA_BASE_URL: str = "http://localhost:11434"
-    OLLAMA_MODEL: str = "llama3"
+    OLLAMA_MODEL: str = "qwen2.5:7b"
 
     # Embedding model (runs locally, free)
     EMBEDDING_MODEL: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"

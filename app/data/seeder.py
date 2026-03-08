@@ -153,37 +153,43 @@ def _seed_sections(session: Session, statute_map: dict):
 
 
 def _seed_case_laws(session: Session):
-    """Seed case laws with vector embeddings."""
-    print("Seeding case laws...")
+    """Seed case laws in batches (supports 4900+ records)."""
+    print(f"Seeding {len(SAMPLE_CASE_LAWS)} case laws...")
 
-    generate_batch = _try_load_embedding_service()
-    embeddings = None
-    if generate_batch:
-        texts = [
-            f"{cl['title']} {cl['summary_en']} {cl['headnotes']} {cl.get('relevant_statutes', '')}"
-            for cl in SAMPLE_CASE_LAWS
-        ]
-        embeddings = generate_batch(texts)
+    seeded = 0
+    skipped = 0
+    batch_size = 100
 
     for i, cl in enumerate(SAMPLE_CASE_LAWS):
-        emb = _serialize_embedding(embeddings[i]) if embeddings else None
-        case_law = CaseLaw(
-            citation=cl["citation"],
-            title=cl["title"],
-            court=cl["court"],
-            category=cl["category"],
-            year=cl["year"],
-            judge_name=cl.get("judge_name"),
-            summary_en=cl.get("summary_en"),
-            summary_ur=cl.get("summary_ur"),
-            headnotes=cl.get("headnotes"),
-            relevant_statutes=cl.get("relevant_statutes"),
-            sections_applied=cl.get("sections_applied"),
-            embedding=emb,
-        )
-        session.add(case_law)
+        try:
+            case_law = CaseLaw(
+                citation=cl["citation"],
+                title=cl["title"],
+                court=cl["court"],
+                category=cl["category"],
+                year=cl.get("year"),
+                judge_name=cl.get("judge_name"),
+                summary_en=cl.get("summary_en"),
+                summary_ur=cl.get("summary_ur"),
+                full_text=cl.get("full_text"),
+                headnotes=cl.get("headnotes"),
+                relevant_statutes=cl.get("relevant_statutes"),
+                sections_applied=cl.get("sections_applied"),
+            )
+            session.add(case_law)
+            seeded += 1
 
-    print(f"  Seeded {len(SAMPLE_CASE_LAWS)} case laws.")
+            # Flush in batches to avoid memory issues
+            if seeded % batch_size == 0:
+                session.flush()
+                print(f"  ... {seeded}/{len(SAMPLE_CASE_LAWS)} case laws seeded")
+        except Exception as e:
+            skipped += 1
+            if skipped <= 5:
+                print(f"  Skipped {cl.get('citation', 'unknown')}: {e}")
+
+    session.flush()
+    print(f"  Seeded {seeded} case laws ({skipped} skipped).")
 
 
 if __name__ == "__main__":

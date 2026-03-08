@@ -6,7 +6,7 @@ Pipeline:
 2. Detect language
 3. Normalize to English for embedding search
 4. Generate query embedding
-5. Cosine similarity search on stored embeddings
+5. Try vector similarity search; fallback to text search if no embeddings
 6. Filter by category/court/year if specified
 7. Generate AI analysis with citations
 8. Return results in user's preferred language
@@ -15,7 +15,7 @@ Pipeline:
 import json
 import numpy as np
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, and_
+from sqlalchemy import select, and_, or_, func
 from app.models.legal import CaseLaw, Statute, Section, SearchHistory, LawCategory, Court
 from app.services.language_service import detect_language, normalize_to_english
 from app.services.embedding_service import generate_embedding
@@ -36,6 +36,27 @@ def _cosine_similarity(a: list[float], b: list[float]) -> float:
     return float(np.dot(a_arr, b_arr) / norm)
 
 
+def _extract_keywords(text: str) -> list[str]:
+    """Extract meaningful keywords from a query for text-based search."""
+    # Common legal stop words to ignore
+    stop_words = {
+        'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+        'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+        'should', 'may', 'might', 'shall', 'can', 'in', 'on', 'at', 'to',
+        'for', 'of', 'with', 'by', 'from', 'as', 'into', 'about', 'between',
+        'through', 'during', 'before', 'after', 'above', 'below', 'and', 'or',
+        'but', 'not', 'no', 'if', 'then', 'than', 'that', 'this', 'what',
+        'which', 'who', 'whom', 'how', 'when', 'where', 'why', 'i', 'me',
+        'my', 'he', 'she', 'it', 'we', 'they', 'them', 'his', 'her', 'its',
+        'our', 'their', 'wants', 'want', 'does', 'without', 'any', 'also',
+        'been', 'living', 'years', 'year',
+    }
+    words = text.lower().split()
+    # Keep words longer than 2 chars that aren't stop words
+    keywords = [w.strip('.,?!;:()[]"\'') for w in words if len(w) > 2 and w.lower().strip('.,?!;:()[]"\'') not in stop_words]
+    return keywords[:10]  # Max 10 keywords
+
+
 async def scenario_search(
     request: ScenarioSearchRequest,
     db: AsyncSession,
@@ -50,26 +71,53 @@ async def scenario_search(
     normalized = normalize_to_english(request.query, language)
 
     # Step 3: Generate embedding
-    query_embedding = generate_embedding(normalized)
+    try:
+        query_embedding = generate_embedding(normalized)
+    except Exception:
+        query_embedding = None
 
     # Step 4: Vector similarity search for case laws
-    case_laws = await _vector_search_cases(
-        db=db,
-        embedding=query_embedding,
-        category=request.category,
-        court=request.court,
-        year_from=request.year_from,
-        year_to=request.year_to,
-        limit=request.max_results,
-    )
+    case_laws = []
+    if query_embedding:
+        case_laws = await _vector_search_cases(
+            db=db,
+            embedding=query_embedding,
+            category=request.category,
+            court=request.court,
+            year_from=request.year_from,
+            year_to=request.year_to,
+            limit=request.max_results,
+        )
+
+    # Step 4b: Fallback to text search if vector search returns nothing
+    if not case_laws:
+        case_laws = await _text_search_cases(
+            db=db,
+            query=normalized,
+            category=request.category,
+            court=request.court,
+            year_from=request.year_from,
+            year_to=request.year_to,
+            limit=request.max_results,
+        )
 
     # Step 5: Also search relevant statutes
-    statutes = await _vector_search_statutes(
-        db=db,
-        embedding=query_embedding,
-        category=request.category,
-        limit=5,
-    )
+    statutes = []
+    if query_embedding:
+        statutes = await _vector_search_statutes(
+            db=db,
+            embedding=query_embedding,
+            category=request.category,
+            limit=5,
+        )
+
+    if not statutes:
+        statutes = await _text_search_statutes(
+            db=db,
+            query=normalized,
+            category=request.category,
+            limit=5,
+        )
 
     # Step 6: Generate AI analysis
     case_law_dicts = [
@@ -94,12 +142,18 @@ async def scenario_search(
         for st in statutes
     ]
 
-    ai_analysis = await generate_scenario_analysis(
-        scenario=request.query,
-        case_laws=case_law_dicts,
-        statutes=statute_dicts,
-        language=language,
-    )
+    try:
+        ai_analysis = await generate_scenario_analysis(
+            scenario=request.query,
+            case_laws=case_law_dicts,
+            statutes=statute_dicts,
+            language=language,
+        )
+    except Exception:
+        ai_analysis = (
+            "AI analysis is temporarily unavailable. "
+            "Below are the matching legal references from the database."
+        )
 
     # Step 7: Save search history
     history = SearchHistory(
@@ -151,7 +205,6 @@ async def _vector_search_cases(
     limit: int = 10,
 ) -> list[CaseLaw]:
     """Perform cosine similarity search on case laws."""
-    # Build filters
     conditions = [CaseLaw.embedding.isnot(None)]
     if category:
         conditions.append(CaseLaw.category == category)
@@ -166,7 +219,6 @@ async def _vector_search_cases(
     result = await db.execute(stmt)
     rows = result.scalars().all()
 
-    # Compute similarity in Python
     scored = []
     for cl in rows:
         try:
@@ -178,9 +230,54 @@ async def _vector_search_cases(
         except (json.JSONDecodeError, TypeError):
             continue
 
-    # Sort by similarity descending, take top N
     scored.sort(key=lambda x: x[0], reverse=True)
     return [cl for _, cl in scored[:limit]]
+
+
+async def _text_search_cases(
+    db: AsyncSession,
+    query: str,
+    category: LawCategory = None,
+    court: Court = None,
+    year_from: int = None,
+    year_to: int = None,
+    limit: int = 10,
+) -> list[CaseLaw]:
+    """Fallback text-based search using ILIKE on title, summary, headnotes, and sections."""
+    keywords = _extract_keywords(query)
+    if not keywords:
+        return []
+
+    conditions = []
+    if category:
+        conditions.append(CaseLaw.category == category)
+    if court:
+        conditions.append(CaseLaw.court == court)
+    if year_from:
+        conditions.append(CaseLaw.year >= year_from)
+    if year_to:
+        conditions.append(CaseLaw.year <= year_to)
+
+    # Build keyword match conditions - match any keyword in key fields
+    keyword_conditions = []
+    for kw in keywords:
+        pattern = f"%{kw}%"
+        keyword_conditions.append(
+            or_(
+                CaseLaw.title.ilike(pattern),
+                CaseLaw.summary_en.ilike(pattern),
+                CaseLaw.headnotes.ilike(pattern),
+                CaseLaw.sections_applied.ilike(pattern),
+                CaseLaw.relevant_statutes.ilike(pattern),
+            )
+        )
+
+    if keyword_conditions:
+        conditions.append(or_(*keyword_conditions))
+
+    stmt = select(CaseLaw).where(and_(*conditions)).order_by(CaseLaw.year.desc()).limit(limit)
+    result = await db.execute(stmt)
+    return list(result.scalars().all())
 
 
 async def _vector_search_statutes(
@@ -209,3 +306,36 @@ async def _vector_search_statutes(
 
     scored.sort(key=lambda x: x[0], reverse=True)
     return [st for _, st in scored[:limit]]
+
+
+async def _text_search_statutes(
+    db: AsyncSession,
+    query: str,
+    category: LawCategory = None,
+    limit: int = 5,
+) -> list[Statute]:
+    """Fallback text-based search for statutes."""
+    keywords = _extract_keywords(query)
+    if not keywords:
+        return []
+
+    conditions = []
+    if category:
+        conditions.append(Statute.category == category)
+
+    keyword_conditions = []
+    for kw in keywords:
+        pattern = f"%{kw}%"
+        keyword_conditions.append(
+            or_(
+                Statute.title.ilike(pattern),
+                Statute.summary_en.ilike(pattern),
+            )
+        )
+
+    if keyword_conditions:
+        conditions.append(or_(*keyword_conditions))
+
+    stmt = select(Statute).where(and_(*conditions)).order_by(Statute.year.desc()).limit(limit)
+    result = await db.execute(stmt)
+    return list(result.scalars().all())
