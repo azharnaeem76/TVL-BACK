@@ -152,8 +152,23 @@ Return JSON:
 # Exam Preparation
 # ---------------------------------------------------------------------------
 
+EXAM_TYPES = {
+    "llb": {"name": "LLB (Bachelor of Laws)", "description": "5-year law degree examination"},
+    "bar": {"name": "Bar Council Exam", "description": "Pakistan Bar Council licensing exam"},
+    "lat": {"name": "LAT (Law Admission Test)", "description": "HEC Law Admission Test for entry into LLB programs"},
+    "gat_general": {"name": "GAT General", "description": "NTS Graduate Assessment Test (General) for post-graduate admissions"},
+    "gat_law": {"name": "GAT Subject (Law)", "description": "NTS Graduate Assessment Test - Law subject for LLM/PhD admissions"},
+    "css_law": {"name": "CSS (Law & Constitutional)", "description": "Central Superior Services - Law, Constitutional Law & Jurisprudence papers"},
+    "pms_law": {"name": "PMS (Law Papers)", "description": "Provincial Management Services - Law elective papers"},
+    "judiciary": {"name": "Judiciary Exam", "description": "Civil Judge / Additional Sessions Judge competitive exam"},
+    "nts_law": {"name": "NTS Law Lecturer", "description": "NTS test for Law Lecturer positions"},
+    "llm": {"name": "LLM Entrance", "description": "Master of Laws entrance exam for universities"},
+}
+
+
 class ExamPrepRequest(BaseModel):
     subject: str = Field(..., min_length=2, max_length=200)
+    exam_type: str = Field("llb", description="Type of exam: llb, bar, lat, gat_general, gat_law, css_law, pms_law, judiciary, nts_law, llm")
     topic: Optional[str] = Field(None, max_length=500)
     num_questions: int = Field(5, ge=1, le=20)
 
@@ -180,14 +195,20 @@ class ExamAnswerFeedback(BaseModel):
     explanation: str
 
 
+@router.get("/exam-types", summary="List available exam types")
+async def list_exam_types(current_user: User = Depends(get_current_user)):
+    return [{"key": k, "name": v["name"], "description": v["description"]} for k, v in EXAM_TYPES.items()]
+
+
 @router.post("/exam-prep/generate", response_model=ExamPrepResponse, summary="Generate exam questions")
 async def generate_exam_questions(
     request: ExamPrepRequest,
     current_user: User = Depends(get_current_user),
 ):
+    exam_info = EXAM_TYPES.get(request.exam_type, EXAM_TYPES["llb"])
     topic_str = f" on topic: {request.topic}" if request.topic else ""
     prompt = f"""You are a Pakistani law examiner. Generate {request.num_questions} multiple-choice questions for {request.subject}{topic_str}.
-These should be LLB/Bar exam level questions based on Pakistani law.
+These should be {exam_info['name']} level questions based on Pakistani law. Exam context: {exam_info['description']}.
 
 Return JSON:
 {{

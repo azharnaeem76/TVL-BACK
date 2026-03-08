@@ -4,7 +4,7 @@ import httpx
 import logging
 from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
+from sqlalchemy import select, func
 from pydantic import BaseModel
 from typing import Optional
 from app.core.database import get_db
@@ -112,6 +112,20 @@ async def login(credentials: UserLogin, db: AsyncSession = Depends(get_db)):
     if getattr(user, 'is_suspended', False):
         reason = getattr(user, 'suspension_reason', None) or "Contact support for details"
         raise HTTPException(status_code=403, detail=f"Account is suspended: {reason}")
+
+    # Ensure user has at least a welcome notification (backfill for existing users)
+    notif_count = (await db.execute(
+        select(func.count(Notification.id)).where(Notification.user_id == user.id)
+    )).scalar() or 0
+    if notif_count == 0:
+        db.add(Notification(
+            user_id=user.id,
+            type=NotificationType.WELCOME,
+            title="Welcome to TVL!",
+            message=f"Welcome {user.full_name}! Explore the platform and start your legal research.",
+            link="/dashboard",
+        ))
+        await db.flush()
 
     token = create_access_token({"sub": user.id})
     return TokenResponse(

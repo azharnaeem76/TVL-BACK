@@ -129,7 +129,7 @@ DEFAULT_FEATURES = [
     {"key": "quiz", "name": "Legal Quiz", "description": "Test legal knowledge with quizzes", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
     {"key": "learn", "name": "Learning Center", "description": "Legal study topics and tutorials", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
     {"key": "moot_court", "name": "Moot Court Simulator", "description": "Practice arguing cases with AI", "category": "student", "enabled": False, "applicable_roles": ["law_student"]},
-    {"key": "exam_prep", "name": "Exam Preparation", "description": "LLB/Bar exam past papers and model answers", "category": "student", "enabled": False, "applicable_roles": ["law_student"]},
+    {"key": "exam_prep", "name": "Exam Preparation", "description": "LLB, Bar, LAT, GAT, CSS, PMS, Judiciary exam preparation with AI", "category": "student", "enabled": False, "applicable_roles": ["law_student"]},
 
     # Notifications
     {"key": "email_notifications", "name": "Email Notifications", "description": "Send email alerts for hearings, updates", "category": "notifications", "enabled": True, "applicable_roles": ALL_ROLES},

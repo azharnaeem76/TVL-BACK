@@ -134,15 +134,18 @@ async def create_and_emit_notification(
         session.add(notif)
         await session.flush()
         await session.refresh(notif)
-
-        await emit_notification(user_id, {
-            "id": notif.id,
-            "type": notif.type.value if hasattr(notif.type, 'value') else str(notif.type),
-            "title": notif.title,
-            "message": notif.message,
-            "is_read": False,
-            "link": notif.link,
-            "created_at": str(notif.created_at),
-        })
-
         await session.commit()
+
+        # Emit via Socket.IO (non-blocking, won't prevent DB save)
+        try:
+            await emit_notification(user_id, {
+                "id": notif.id,
+                "type": notif.type.value if hasattr(notif.type, 'value') else str(notif.type),
+                "title": notif.title,
+                "message": notif.message,
+                "is_read": False,
+                "link": notif.link,
+                "created_at": str(notif.created_at),
+            })
+        except Exception:
+            pass  # Socket emit failure shouldn't prevent notification creation
