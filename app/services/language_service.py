@@ -91,6 +91,11 @@ ROMAN_URDU_LEGAL_TERMS = {
     "kab": "when",
     "kahan": "where",
     "mujhe": "I/me",
+    "mera": "my",
+    "meri": "my",
+    "mere": "my",
+    "maine": "I did",
+    "mainy": "I did",
     "batao": "tell",
     "bataiye": "please tell",
     "madad": "help",
@@ -98,9 +103,71 @@ ROMAN_URDU_LEGAL_TERMS = {
     "kar sakta": "can do",
     "hoga": "will happen",
     "hai": "is",
+    "hain": "are",
+    "tha": "was",
+    "thi": "was",
     "karna": "to do",
+    "karo": "do",
+    "kia": "did",
     "ho sakta": "possible",
     "nahi": "no/not",
+    "ko": "to",
+    "ka": "of",
+    "ki": "of",
+    "ke": "of",
+    "ne": "did",
+    "se": "from",
+    "mein": "in",
+    "par": "on",
+    "aur": "and",
+    "ya": "or",
+    "wala": "one who",
+    "waly": "those who",
+    "wali": "one who",
+    "ab": "now",
+    "phir": "then",
+    "bhi": "also",
+    "toh": "then",
+    "lekin": "but",
+    "agar": "if",
+    "jab": "when",
+    "yeh": "this",
+    "woh": "that",
+    "kaun": "who",
+    "kuch": "some",
+    "sab": "all",
+    "bohot": "very",
+    "bahut": "very",
+    "zyada": "more",
+    "kam": "less",
+    "acha": "good",
+    "bura": "bad",
+    "theek": "okay",
+    "pehle": "before",
+    "baad": "after",
+    "upar": "above",
+    "neeche": "below",
+    "sakta": "can",
+    "sakti": "can",
+    "hota": "happens",
+    "hoti": "happens",
+    "diya": "gave",
+    "liya": "took",
+    "gaya": "went",
+    "gayi": "went",
+    "aaya": "came",
+    "aayi": "came",
+    "raha": "is doing",
+    "rahi": "is doing",
+    "dena": "to give",
+    "lena": "to take",
+    "jana": "to go",
+    "aana": "to come",
+    "mar": "hit",
+    "maarna": "to hit",
+    "pakra": "caught",
+    "pakarna": "to catch",
+    "chori": "theft",
 }
 
 # Urdu script legal terms
@@ -146,9 +213,20 @@ def detect_language(text: str) -> str:
     # Check for Roman Urdu by looking for common Roman Urdu words
     text_lower = text.lower()
     words = text_lower.split()
-    roman_urdu_count = sum(1 for word in words if word in ROMAN_URDU_LEGAL_TERMS)
+    # Only count distinctly Urdu words (exclude short words that overlap with English)
+    english_overlap = {"ha", "hi", "ko", "ka", "ki", "ke", "ne", "se", "par", "ya", "ab", "kam", "mar"}
+    roman_urdu_count = sum(
+        1 for word in words
+        if word in ROMAN_URDU_LEGAL_TERMS and word not in english_overlap
+    )
+    # Also count the ambiguous words but only if we already have strong signals
+    ambiguous_count = sum(1 for word in words if word in english_overlap and word in ROMAN_URDU_LEGAL_TERMS)
 
+    # Need strong Roman Urdu signal: at least 2 distinct RU words, or 1 distinct + short message
     if roman_urdu_count >= 2 or (roman_urdu_count >= 1 and len(words) <= 5):
+        return "roman_urdu"
+    # If many ambiguous words with at least 1 strong signal
+    if roman_urdu_count >= 1 and ambiguous_count >= 2:
         return "roman_urdu"
 
     # Fall back to langdetect
@@ -211,7 +289,7 @@ def _normalize_urdu(text: str) -> str:
 def get_response_language_instruction(language: str) -> str:
     """Get instruction for LLM to respond in the appropriate language."""
     if language == "urdu":
-        return "Respond in Urdu script (اردو). Use legal terminology in Urdu."
+        return "The user's message appears to be in Urdu script. You MUST respond in Urdu script (اردو)."
     elif language == "roman_urdu":
-        return "Respond in Roman Urdu (the way Pakistanis text in Urdu using English letters). Use legal terms in both Roman Urdu and English."
+        return "The user's message appears to be in Roman Urdu. You MUST respond in Roman Urdu (Urdu written in English letters, jaise Pakistani log likhte hain). Do NOT respond in English."
     return "Respond in English."

@@ -6,6 +6,7 @@ The system maintains context and provides follow-up citations.
 """
 
 import json
+import re
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -20,6 +21,28 @@ from app.services.embedding_service import generate_embedding
 from app.services.llm_service import generate_response, generate_response_stream
 from app.services.search_service import _vector_search_cases
 from app.core.config import get_settings
+
+
+def _is_casual_message(message: str) -> bool:
+    """Detect if a message is a greeting or casual chat that doesn't need legal DB context."""
+    msg = message.strip().lower()
+    # Remove punctuation for matching
+    msg_clean = re.sub(r'[^\w\s]', '', msg)
+    casual_patterns = [
+        'hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening',
+        'assalam', 'salam', 'walaikum', 'aoa', 'slm', 'how are you',
+        'thank', 'thanks', 'shukriya', 'meherbani', 'okay', 'ok', 'bye',
+        'goodbye', 'khuda hafiz', 'allah hafiz', 'take care',
+        'who are you', 'what is your name', 'what can you do', 'help me',
+        'kya kar sakte', 'tum kaun', 'aap kaun', 'kya hai ye',
+        'theek hai', 'acha', 'ji', 'haan', 'nahi',
+    ]
+    # Check if the message is short and matches a casual pattern
+    if len(msg_clean.split()) <= 6:
+        for pattern in casual_patterns:
+            if pattern in msg_clean:
+                return True
+    return False
 
 settings = get_settings()
 router = APIRouter(prefix="/chat", tags=["Interactive Chat"])
@@ -84,21 +107,26 @@ async def send_message(
     history_rows = history_result.scalars().all()
     chat_history = [{"role": msg.role, "content": msg.content} for msg in history_rows[-10:]]
 
-    # Search for relevant case laws
-    normalized = normalize_to_english(request.message, language)
-    query_embedding = generate_embedding(normalized)
-    relevant_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
-
-    # Build context from case laws
-    context_parts = []
+    # Search for relevant case laws (skip for greetings/casual messages)
+    relevant_cases = []
+    context = ""
     cited_ids = []
-    for cl in relevant_cases:
-        cited_ids.append(cl.id)
-        context_parts.append(
-            f"- {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
-            f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
-        )
-    context = "\n".join(context_parts) if context_parts else ""
+    if not _is_casual_message(request.message):
+        normalized = normalize_to_english(request.message, language)
+        query_embedding = generate_embedding(normalized)
+        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
+        # Only keep cases with high relevance (>= 0.65) for chat context
+        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= 0.65]
+
+        context_parts = []
+        for cl in relevant_cases:
+            cited_ids.append(cl.id)
+            score = getattr(cl, '_similarity', 0)
+            context_parts.append(
+                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
+                f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
+            )
+        context = "\n".join(context_parts) if context_parts else ""
 
     # Generate AI response
     ai_response = await generate_response(
@@ -205,35 +233,38 @@ async def send_message_stream(
     history_rows = history_result.scalars().all()
     chat_history = [{"role": msg.role, "content": msg.content} for msg in history_rows[-10:]]
 
-    # Search for relevant case laws
-    normalized = normalize_to_english(request.message, language)
-    query_embedding = generate_embedding(normalized)
-    relevant_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
-
-    # Build context from case laws
+    # Search for relevant case laws (skip for greetings/casual messages)
     context_parts = []
     cited_ids = []
     cited_cases_data = []
-    for cl in relevant_cases:
-        cited_ids.append(cl.id)
-        context_parts.append(
-            f"- {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
-            f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
-        )
-        cited_cases_data.append({
-            "id": cl.id,
-            "citation": cl.citation,
-            "title": cl.title,
-            "court": cl.court.value if cl.court else None,
-            "category": cl.category.value if cl.category else None,
-            "year": cl.year,
-            "judge_name": cl.judge_name,
-            "summary_en": cl.summary_en,
-            "summary_ur": cl.summary_ur,
-            "headnotes": cl.headnotes,
-            "relevant_statutes": cl.relevant_statutes,
-            "sections_applied": cl.sections_applied,
-        })
+    if not _is_casual_message(request.message):
+        normalized = normalize_to_english(request.message, language)
+        query_embedding = generate_embedding(normalized)
+        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
+        # Only keep cases with high relevance (>= 0.65) for chat context
+        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= 0.65]
+
+        for cl in relevant_cases:
+            cited_ids.append(cl.id)
+            score = getattr(cl, '_similarity', 0)
+            context_parts.append(
+                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
+                f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
+            )
+            cited_cases_data.append({
+                "id": cl.id,
+                "citation": cl.citation,
+                "title": cl.title,
+                "court": cl.court.value if cl.court else None,
+                "category": cl.category.value if cl.category else None,
+                "year": cl.year,
+                "judge_name": cl.judge_name,
+                "summary_en": cl.summary_en,
+                "summary_ur": cl.summary_ur,
+                "headnotes": cl.headnotes,
+                "relevant_statutes": cl.relevant_statutes,
+                "sections_applied": cl.sections_applied,
+            })
     context = "\n".join(context_parts) if context_parts else ""
 
     # Capture variables needed for the generator closure

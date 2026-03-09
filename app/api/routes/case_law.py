@@ -72,7 +72,7 @@ async def list_statutes(
     category: Optional[LawCategory] = Query(None, description="Filter by law category"),
     search: Optional[str] = Query(None, description="Search in statute title"),
     skip: int = Query(0, ge=0, description="Pagination offset"),
-    limit: int = Query(20, ge=1, le=100, description="Results per page (max 100)"),
+    limit: int = Query(100, ge=1, le=500, description="Results per page (max 500)"),
     db: AsyncSession = Depends(get_db),
 ):
     query = select(Statute)

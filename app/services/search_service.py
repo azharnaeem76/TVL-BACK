@@ -155,17 +155,7 @@ async def scenario_search(
             "Below are the matching legal references from the database."
         )
 
-    # Step 7: Save search history
-    history = SearchHistory(
-        user_id=user_id,
-        query_text=request.query,
-        detected_language=language,
-        normalized_query=normalized,
-        results_count=len(case_laws),
-    )
-    db.add(history)
-
-    # Step 8: Build response
+    # Step 7: Build response BEFORE commit (commit can expire ORM objects)
     results = [
         CaseLawResponse(
             id=cl.id,
@@ -185,7 +175,7 @@ async def scenario_search(
         for cl in case_laws
     ]
 
-    return SearchResponse(
+    response = SearchResponse(
         query=request.query,
         detected_language=language,
         normalized_query=normalized,
@@ -193,6 +183,19 @@ async def scenario_search(
         ai_analysis=ai_analysis,
         total_results=len(results),
     )
+
+    # Step 8: Save search history (after building response)
+    history = SearchHistory(
+        user_id=user_id,
+        query_text=request.query,
+        detected_language=language,
+        normalized_query=normalized,
+        results_count=len(case_laws),
+    )
+    db.add(history)
+    await db.commit()
+
+    return response
 
 
 async def _vector_search_cases(

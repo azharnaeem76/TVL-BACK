@@ -51,19 +51,20 @@ async def lifespan(app: FastAPI):
                 if "profile_picture" not in cols:
                     sync_conn.execute(text("ALTER TABLE users ADD COLUMN profile_picture VARCHAR(500)"))
         await conn.run_sync(_check_and_add_columns)
-    # Seed feature flags and study content
-    try:
-        async with async_session() as session:
-            await seed_features(session)
-            await seed_study_content(session)
-            await seed_case_laws(session)
-            await seed_statutes(session)
-            await seed_sections(session)
-            await seed_study_content_from_json(session)
-            await seed_pakistan_law_statutes(session)
-            await session.commit()
-    except Exception as e:
-        print(f"Seeding skipped: {e}")
+    # Data seeding disabled - using existing DB data only
+    # To re-seed, uncomment the block below and restart:
+    # try:
+    #     async with async_session() as session:
+    #         await seed_features(session)
+    #         await seed_study_content(session)
+    #         await seed_case_laws(session)
+    #         await seed_statutes(session)
+    #         await seed_sections(session)
+    #         await seed_study_content_from_json(session)
+    #         await seed_pakistan_law_statutes(session)
+    #         await session.commit()
+    # except Exception as e:
+    #     print(f"Seeding skipped: {e}")
     yield
 
 

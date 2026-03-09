@@ -11,33 +11,37 @@ import json
 import asyncio
 from typing import AsyncGenerator
 from app.core.config import get_settings
-from app.services.language_service import get_response_language_instruction
-
 settings = get_settings()
 
-SYSTEM_PROMPT = """You are TVL (The Virtual Lawyer), an AI legal assistant specializing exclusively in Pakistani law.
-You help lawyers, judges, law students, and clients understand Pakistani legal matters.
+SYSTEM_PROMPT = """You are TVL (The Value of Law), a professional AI legal advisor specializing in Pakistani law.
+You are an experienced Pakistani advocate helping lawyers, judges, law students, and clients.
 
-CRITICAL: You are a Pakistani law specialist. ALL your responses MUST be grounded in Pakistani law - Pakistan Penal Code (PPC), Code of Criminal Procedure (CrPC), Civil Procedure Code (CPC), Constitution of Pakistan 1973, Muslim Family Laws Ordinance, PECA, NAB Ordinance, Anti-Terrorism Act, Contract Act 1872, Transfer of Property Act, Qanun-e-Shahadat Order, and other Pakistani statutes.
+ABSOLUTE RULE — LANGUAGE:
+- You MUST ONLY respond in English, Roman Urdu, or Urdu script. NEVER respond in Chinese, Arabic, Hindi, or any other language.
+- If the user writes in English → respond ONLY in English.
+- If the user writes in Roman Urdu (Urdu in English letters like "mujhe batao", "kya hoga") → respond in Roman Urdu.
+- If the user writes in Urdu script → respond in Urdu script.
+- When in doubt, respond in English.
 
-Your capabilities:
-- Explain Pakistani laws, statutes, and legal procedures
-- Analyze legal scenarios citing relevant Pakistani case law and statutes
-- Explain court judgments in simple language
-- Guide users on legal rights and procedures under Pakistani law
-- Support queries in English, Urdu, and Roman Urdu
+RULES:
+1. ANSWER THE ACTUAL QUESTION the user asked. Do NOT give unrelated information. If database data provided is not relevant, IGNORE it and answer from your own knowledge of Pakistani law.
+2. Be human — greet back for greetings, ask follow-ups like a real lawyer would. Do NOT dump data for casual messages.
+3. Keep responses focused and professional. Be concise but thorough on legal matters.
+4. NEVER fabricate case citations. Only cite cases from provided database data.
+5. You may use English legal terms in any language naturally.
 
-Response rules:
-- ALWAYS cite specific Pakistani case laws (with citation, court, year), statutes, and sections
-- Reference actual sections of Pakistani law (e.g., "Section 302 PPC", "Section 497 CrPC", "Article 199 Constitution")
-- Clearly state when something is legal advice vs general information
-- Be accurate about Pakistani court hierarchy: Supreme Court > High Courts > District/Session Courts > Magistrate Courts
-- If database references are provided, use them as PRIMARY source - cite the exact case law citations, courts, and years from the data
-- Format responses with clear headings, bullet points, and section references
-- When provided with legal data from our database, BASE YOUR RESPONSE PRIMARILY ON THAT DATA and cite the specific case laws and statutes provided
-- If the provided data is insufficient, supplement with your knowledge of Pakistani law but clearly indicate: "Based on our database: [X]. Additionally from general Pakistani legal knowledge: [Y]"
-- NEVER make up case citations. If you don't have a specific citation, say "relevant case law exists on this point" rather than fabricating one
+LEGAL KNOWLEDGE: PPC, CrPC, CPC, Constitution of Pakistan 1973, MFLO, PECA, NAB Ordinance, Anti-Terrorism Act, Contract Act 1872, Transfer of Property Act, Qanun-e-Shahadat Order, and all Pakistani statutes.
+Court hierarchy: Supreme Court > High Courts > District Courts > Magistrate Courts.
 """
+
+
+def _lang_instruction(language: str) -> str:
+    """Get a short language instruction for the LLM."""
+    if language == "roman_urdu":
+        return "\n\nIMPORTANT: Respond in Roman Urdu (Urdu written in English letters). Do NOT use Urdu script or Chinese."
+    if language == "urdu":
+        return "\n\nIMPORTANT: Respond in Urdu script."
+    return "\n\nIMPORTANT: Respond in English only. Do NOT use Urdu script or Chinese."
 
 
 async def generate_response(
@@ -47,26 +51,25 @@ async def generate_response(
     chat_history: list[dict] = None,
 ) -> str:
     """Generate a response using Ollama (local LLM)."""
-    lang_instruction = get_response_language_instruction(language)
-
-    messages = [{"role": "system", "content": SYSTEM_PROMPT + "\n\n" + lang_instruction}]
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
 
     if chat_history:
         messages.extend(chat_history[-10:])  # Keep last 10 messages for context
 
+    lang_hint = _lang_instruction(language)
+
     if context:
-        user_content = f"""Based on the following relevant legal data from our database:
+        user_content = f"""User's question: {user_message}
+
+Here is some legal data from our database that MAY be relevant (use ONLY if directly related to the question, otherwise ignore):
 
 ---
 {context}
 ---
 
-User's question: {user_message}
-
-Please provide a comprehensive answer citing the relevant case laws and statutes from the data above.
-If the data doesn't fully answer the question, supplement with your knowledge of Pakistani law but clearly indicate which parts come from the database and which from general knowledge."""
+IMPORTANT: Answer the user's ACTUAL question directly using your knowledge of Pakistani law. Only cite the database cases above if they are genuinely relevant to what the user asked. If the database data is not related to the question, ignore it completely and answer from your own legal knowledge.{lang_hint}"""
     else:
-        user_content = user_message
+        user_content = user_message + lang_hint
 
     messages.append({"role": "user", "content": user_content})
 
@@ -106,26 +109,25 @@ async def generate_response_stream(
     chat_history: list[dict] = None,
 ) -> AsyncGenerator[str, None]:
     """Generate a streaming response using Ollama (local LLM). Yields chunks of text."""
-    lang_instruction = get_response_language_instruction(language)
-
-    messages = [{"role": "system", "content": SYSTEM_PROMPT + "\n\n" + lang_instruction}]
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
 
     if chat_history:
         messages.extend(chat_history[-10:])
 
+    lang_hint = _lang_instruction(language)
+
     if context:
-        user_content = f"""Based on the following relevant legal data from our database:
+        user_content = f"""User's question: {user_message}
+
+Here is some legal data from our database that MAY be relevant (use ONLY if directly related to the question, otherwise ignore):
 
 ---
 {context}
 ---
 
-User's question: {user_message}
-
-Please provide a comprehensive answer citing the relevant case laws and statutes from the data above.
-If the data doesn't fully answer the question, supplement with your knowledge of Pakistani law but clearly indicate which parts come from the database and which from general knowledge."""
+IMPORTANT: Answer the user's ACTUAL question directly using your knowledge of Pakistani law. Only cite the database cases above if they are genuinely relevant to what the user asked. If the database data is not related to the question, ignore it completely and answer from your own legal knowledge.{lang_hint}"""
     else:
-        user_content = user_message
+        user_content = user_message + lang_hint
 
     messages.append({"role": "user", "content": user_content})
 
