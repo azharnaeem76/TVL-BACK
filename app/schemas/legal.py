@@ -69,6 +69,7 @@ class StatuteResponse(BaseModel):
     act_number: Optional[str] = None
     year: Optional[int] = None
     category: LawCategory
+    full_text: Optional[str] = None
     summary_en: Optional[str] = None
     summary_ur: Optional[str] = None
 

@@ -184,16 +184,19 @@ async def scenario_search(
         total_results=len(results),
     )
 
-    # Step 8: Save search history (after building response)
-    history = SearchHistory(
-        user_id=user_id,
-        query_text=request.query,
-        detected_language=language,
-        normalized_query=normalized,
-        results_count=len(case_laws),
-    )
-    db.add(history)
-    await db.commit()
+    # Step 8: Save search history (after building response, non-blocking)
+    try:
+        history = SearchHistory(
+            user_id=user_id,
+            query_text=request.query,
+            detected_language=language,
+            normalized_query=normalized,
+            results_count=len(case_laws),
+        )
+        db.add(history)
+        await db.commit()
+    except Exception:
+        pass  # Don't fail the response if history save fails
 
     return response
 
