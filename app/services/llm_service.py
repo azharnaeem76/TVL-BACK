@@ -87,6 +87,8 @@ If the data doesn't fully answer the question, supplement with your knowledge of
 
             if response.status_code == 200:
                 data = response.json()
+                if "error" in data:
+                    return _fallback_response(user_message, context, language)
                 return data.get("message", {}).get("content", "I apologize, I could not generate a response.")
             else:
                 return _fallback_response(user_message, context, language)

@@ -193,6 +193,8 @@ async def send_message_stream(
         language=language,
     )
     db.add(user_msg)
+    await db.flush()
+    await db.commit()
 
     # Get chat history
     history_result = await db.execute(
@@ -262,6 +264,7 @@ async def send_message_stream(
         )
         db.add(assistant_msg)
         await db.flush()
+        await db.commit()
 
         yield f"data: {json.dumps({'type': 'done', 'session_id': session_id, 'message_id': assistant_msg.id})}\n\n"
 

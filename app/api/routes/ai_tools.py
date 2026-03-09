@@ -7,9 +7,13 @@ import httpx
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from pydantic import BaseModel, Field
 from typing import Optional
+from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.security import get_current_user
 from app.core.config import get_settings
+from app.core.database import get_db
 from app.models.user import User
+from app.services.embedding_service import generate_embedding
+from app.services.search_service import _vector_search_cases
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -98,10 +102,20 @@ async def _call_ollama(prompt: str) -> str:
                     },
                 },
             ) as resp:
+                if resp.status_code != 200:
+                    body = await resp.aread()
+                    try:
+                        err = json.loads(body).get("error", "Unknown error")
+                    except Exception:
+                        err = body.decode("utf-8", errors="replace")[:200]
+                    raise HTTPException(status_code=503, detail=f"AI model error: {err}")
+
                 async for line in resp.aiter_lines():
                     if line.strip():
                         try:
                             data = json.loads(line)
+                            if "error" in data:
+                                raise HTTPException(status_code=503, detail=f"AI model error: {data['error']}")
                             text = data.get("response", "")
                             if text:
                                 full_response.append(text)
@@ -109,12 +123,17 @@ async def _call_ollama(prompt: str) -> str:
                                 break
                         except json.JSONDecodeError:
                             continue
-        return "".join(full_response)
+        result = "".join(full_response)
+        if not result.strip():
+            raise HTTPException(status_code=503, detail="AI model returned empty response. It may be loading — please try again.")
+        return result
+    except HTTPException:
+        raise
     except httpx.ConnectError:
         raise HTTPException(status_code=503, detail="AI model server (Ollama) is not running. Please start it with 'ollama serve'.")
     except Exception as e:
         logger.error(f"Ollama error: {e}")
-        raise HTTPException(status_code=500, detail="AI processing failed")
+        raise HTTPException(status_code=500, detail=f"AI processing failed: {str(e)}")
 
 
 def _parse_json(text: str) -> dict:
@@ -129,6 +148,22 @@ def _parse_json(text: str) -> dict:
     return {}
 
 
+async def _get_db_context(db: AsyncSession, query: str, limit: int = 5) -> str:
+    """Search database for relevant case laws to ground AI responses."""
+    context_parts = []
+    try:
+        embedding = generate_embedding(query)
+        cases = await _vector_search_cases(db=db, embedding=embedding, limit=limit)
+        for cl in cases:
+            context_parts.append(
+                f"- {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
+                f"Year: {cl.year}\n  Summary: {cl.summary_en or ''}\n  Sections: {cl.sections_applied or ''}"
+            )
+    except Exception as e:
+        logger.warning(f"Vector search failed for AI tools context: {e}")
+    return "\n".join(context_parts)
+
+
 # ---------------------------------------------------------------------------
 # AI Case Summarizer
 # ---------------------------------------------------------------------------
@@ -136,6 +171,7 @@ def _parse_json(text: str) -> dict:
 @router.post("/summarize", response_model=AISummarizerResponse, summary="Summarize a legal judgment")
 async def ai_summarize(
     request: AISummarizerRequest,
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
     prompt = f"""You are a Pakistani law expert. Summarize this legal judgment/document.
@@ -168,18 +204,25 @@ Text to summarize:
 @router.post("/opinion", response_model=AIOpinionResponse, summary="Generate preliminary legal opinion")
 async def ai_opinion(
     request: AIOpinionRequest,
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    db_context = await _get_db_context(db, f"{request.area_of_law} {request.facts[:200]}")
+
     prompt = f"""You are a senior Pakistani lawyer. Based on the facts provided, generate a preliminary legal opinion.
 Area of law: {request.area_of_law}
 
+CRITICAL: Your opinion MUST be grounded in actual Pakistani law. Cite real sections and case precedents only.
+
+{f"Relevant Pakistani case laws from our database:{chr(10)}{db_context}" if db_context else ""}
+
 Return your response as JSON:
 {{
-  "opinion": "detailed legal opinion (3-5 paragraphs)",
+  "opinion": "detailed legal opinion (3-5 paragraphs) citing specific Pakistani law",
   "applicable_laws": ["Pakistan Penal Code Section 302", "CrPC Section 154"],
   "strengths": ["strength 1", "strength 2"],
   "weaknesses": ["weakness 1", "weakness 2"],
-  "recommendation": "recommended course of action"
+  "recommendation": "recommended course of action under Pakistani law"
 }}
 
 Facts:
@@ -204,18 +247,25 @@ Facts:
 @router.post("/predict", response_model=AIPredictorResponse, summary="Predict case outcome")
 async def ai_predict(
     request: AIPredictorRequest,
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    db_context = await _get_db_context(db, f"{request.area_of_law} {request.case_description[:200]}")
+
     prompt = f"""You are a Pakistani legal analyst. Based on this case description and Pakistani legal precedents, predict the likely outcome.
 Area of law: {request.area_of_law}
 
+CRITICAL: Use ONLY actual Pakistani case precedents. Do NOT fabricate case citations.
+
+{f"Relevant Pakistani case laws from our database:{chr(10)}{db_context}" if db_context else ""}
+
 Return your response as JSON:
 {{
-  "prediction": "likely outcome analysis (2-3 paragraphs)",
+  "prediction": "likely outcome analysis (2-3 paragraphs) based on Pakistani precedents",
   "confidence": "High/Medium/Low",
   "factors_for": ["factor favoring success 1", "factor 2"],
   "factors_against": ["factor against 1", "factor 2"],
-  "similar_cases": ["PLD 2020 SC 1 - brief description", "2019 SCMR 123 - brief description"]
+  "similar_cases": ["cite actual cases from the data above"]
 }}
 
 Case description:
@@ -381,10 +431,17 @@ Contract text:
 @router.post("/find-citations", response_model=CitationFinderResponse, summary="Find citations for legal principle")
 async def ai_find_citations(
     request: CitationFinderRequest,
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    db_context = await _get_db_context(db, f"{request.area_of_law} {request.legal_principle[:200]}", limit=8)
+
     prompt = f"""You are a Pakistani legal researcher. Find relevant case citations and statutes for this legal principle.
 Area of law: {request.area_of_law}
+
+CRITICAL: ONLY cite cases that exist in the database below. Do NOT fabricate citations.
+
+{f"Pakistani case laws from our database:{chr(10)}{db_context}" if db_context else ""}
 
 Return your response as JSON:
 {{
