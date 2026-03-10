@@ -84,6 +84,13 @@ class CitationFinderResponse(BaseModel):
 # Helper
 # ---------------------------------------------------------------------------
 
+AI_TOOLS_SYSTEM = (
+    "You are a Pakistani law expert. Respond ONLY in English. "
+    "NEVER respond in Chinese, Arabic, Hindi, or any other language. "
+    "Always return valid JSON when asked for JSON output."
+)
+
+
 async def _call_ollama(prompt: str) -> str:
     """Call Ollama and return the response text. Uses streaming internally to avoid timeouts."""
     try:
@@ -91,10 +98,13 @@ async def _call_ollama(prompt: str) -> str:
         async with httpx.AsyncClient(timeout=180.0) as client:
             async with client.stream(
                 "POST",
-                f"{settings.OLLAMA_BASE_URL}/api/generate",
+                f"{settings.OLLAMA_BASE_URL}/api/chat",
                 json={
                     "model": settings.OLLAMA_MODEL,
-                    "prompt": prompt,
+                    "messages": [
+                        {"role": "system", "content": AI_TOOLS_SYSTEM},
+                        {"role": "user", "content": prompt},
+                    ],
                     "stream": True,
                     "options": {
                         "temperature": 0.3,
@@ -116,7 +126,7 @@ async def _call_ollama(prompt: str) -> str:
                             data = json.loads(line)
                             if "error" in data:
                                 raise HTTPException(status_code=503, detail=f"AI model error: {data['error']}")
-                            text = data.get("response", "")
+                            text = data.get("message", {}).get("content", "")
                             if text:
                                 full_response.append(text)
                             if data.get("done", False):

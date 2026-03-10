@@ -147,7 +147,7 @@ async def send_message(
     db.add(assistant_msg)
     await db.flush()
 
-    # Build cited cases response
+    # Build response BEFORE commit (commit can expire ORM objects)
     cited_cases = [
         CaseLawResponse(
             id=cl.id,
@@ -166,11 +166,16 @@ async def send_message(
         for cl in relevant_cases
     ]
 
-    return ChatResponse(
+    response = ChatResponse(
         session_id=session.id,
         message=ChatMessageResponse.model_validate(assistant_msg),
         cited_cases=cited_cases,
     )
+
+    # Commit after building response so ORM objects aren't expired
+    await db.commit()
+
+    return response
 
 
 @router.post(
@@ -386,5 +391,5 @@ async def delete_session(
         sql_delete(ChatMessage).where(ChatMessage.session_id == session_id)
     )
     await db.delete(session)
-    await db.flush()
+    await db.commit()
     return {"detail": "Session deleted"}
