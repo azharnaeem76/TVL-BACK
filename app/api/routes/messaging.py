@@ -348,7 +348,7 @@ async def get_messages(
     )).scalars().all()
     for m in unread_msgs:
         m.is_read = True
-        m.status = MessageStatus.SEEN
+        m.status = "seen"
     if unread_msgs:
         await db.commit()
 

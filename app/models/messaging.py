@@ -10,6 +10,14 @@ class MessageStatus(str, enum.Enum):
     DELIVERED = "delivered"
     SEEN = "seen"
 
+    @classmethod
+    def _missing_(cls, value):
+        """Handle case-insensitive lookup."""
+        for member in cls:
+            if member.value == value.lower():
+                return member
+        return None
+
 
 class Conversation(Base):
     __tablename__ = "conversations"
@@ -34,5 +42,5 @@ class Message(Base):
     file_size = Column(Integer, nullable=True)
     duration = Column(Integer, nullable=True)  # voice/video duration in seconds
     is_read = Column(Boolean, default=False)
-    status = Column(Enum(MessageStatus), default=MessageStatus.SENT, nullable=False, server_default="sent")
+    status = Column(String(20), default="sent", nullable=False, server_default="sent")
     created_at = Column(DateTime, default=datetime.utcnow)
