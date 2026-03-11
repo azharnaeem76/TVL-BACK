@@ -19,8 +19,18 @@ from app.schemas.legal import ChatRequest, ChatResponse, ChatMessageResponse, Ca
 from app.services.language_service import detect_language, normalize_to_english
 from app.services.embedding_service import generate_embedding
 from app.services.llm_service import generate_response, generate_response_stream
-from app.services.search_service import _vector_search_cases
+from app.services.search_service import _vector_search_cases, _vector_search_statutes, _text_search_statutes
 from app.core.config import get_settings
+
+
+def _clean_summary(en: str | None, ur: str | None, max_len: int = 800) -> str:
+    """Return the best available summary, treating placeholder values like '.' as empty."""
+    placeholders = {'.', '()', '', '-', 'N/A', 'n/a'}
+    if en and en.strip() not in placeholders:
+        return en[:max_len]
+    if ur and ur.strip() not in placeholders:
+        return ur[:max_len]
+    return 'N/A'
 
 
 def _is_casual_message(message: str) -> bool:
@@ -107,25 +117,45 @@ async def send_message(
     history_rows = history_result.scalars().all()
     chat_history = [{"role": msg.role, "content": msg.content} for msg in history_rows[-10:]]
 
-    # Search for relevant case laws (skip for greetings/casual messages)
+    # Search for relevant case laws AND statutes (skip for greetings/casual messages)
     relevant_cases = []
     context = ""
     cited_ids = []
     if not _is_casual_message(request.message):
         normalized = normalize_to_english(request.message, language)
         query_embedding = generate_embedding(normalized)
-        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
-        # Only keep cases with high relevance (>= 0.65) for chat context
-        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= 0.65]
+        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=8)
+        # Keep cases above the configured similarity threshold
+        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= settings.SIMILARITY_THRESHOLD]
 
         context_parts = []
         for cl in relevant_cases:
             cited_ids.append(cl.id)
             score = getattr(cl, '_similarity', 0)
+            summary = _clean_summary(cl.summary_en, cl.summary_ur)
+            headnotes = (cl.headnotes or 'N/A')[:800]
+            sections = cl.sections_applied or 'N/A'
+            statutes = cl.relevant_statutes or 'N/A'
+            judge = cl.judge_name or 'N/A'
             context_parts.append(
-                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
-                f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
+                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title[:150]} | Court: {cl.court.value if cl.court else 'N/A'} | "
+                f"Year: {cl.year} | Judge: {judge}\n"
+                f"  Summary (Outcome/Facts/Relief): {summary}\n"
+                f"  Headnotes (Disposition/Observations/Principles): {headnotes}\n"
+                f"  Sections/Articles/Orders/Rules: {sections}\n"
+                f"  Acts/Ordinances/Statutes: {statutes}"
             )
+
+        # Also search statutes
+        statutes_found = await _vector_search_statutes(db=db, embedding=query_embedding, limit=5)
+        if not statutes_found:
+            statutes_found = await _text_search_statutes(db=db, query=normalized, limit=5)
+        for st in statutes_found:
+            st_summary = _clean_summary(st.summary_en, getattr(st, 'summary_ur', None))
+            context_parts.append(
+                f"- [STATUTE] {st.title} | Act No: {st.act_number or 'N/A'} | Year: {st.year or 'N/A'}\n  Summary: {st_summary}"
+            )
+
         context = "\n".join(context_parts) if context_parts else ""
 
     # Generate AI response
@@ -238,23 +268,32 @@ async def send_message_stream(
     history_rows = history_result.scalars().all()
     chat_history = [{"role": msg.role, "content": msg.content} for msg in history_rows[-10:]]
 
-    # Search for relevant case laws (skip for greetings/casual messages)
+    # Search for relevant case laws AND statutes (skip for greetings/casual messages)
     context_parts = []
     cited_ids = []
     cited_cases_data = []
     if not _is_casual_message(request.message):
         normalized = normalize_to_english(request.message, language)
         query_embedding = generate_embedding(normalized)
-        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=5)
-        # Only keep cases with high relevance (>= 0.65) for chat context
-        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= 0.65]
+        all_cases = await _vector_search_cases(db=db, embedding=query_embedding, limit=8)
+        # Keep cases above the configured similarity threshold
+        relevant_cases = [cl for cl in all_cases if getattr(cl, '_similarity', 0) >= settings.SIMILARITY_THRESHOLD]
 
         for cl in relevant_cases:
             cited_ids.append(cl.id)
             score = getattr(cl, '_similarity', 0)
+            summary = _clean_summary(cl.summary_en, cl.summary_ur)
+            headnotes = (cl.headnotes or 'N/A')[:800]
+            sections = cl.sections_applied or 'N/A'
+            statutes = cl.relevant_statutes or 'N/A'
+            judge = cl.judge_name or 'N/A'
             context_parts.append(
-                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title} | Court: {cl.court.value if cl.court else 'N/A'} | "
-                f"Year: {cl.year}\n  Summary: {cl.summary_en}\n  Headnotes: {cl.headnotes}"
+                f"- [Relevance: {score:.0%}] {cl.citation} | {cl.title[:150]} | Court: {cl.court.value if cl.court else 'N/A'} | "
+                f"Year: {cl.year} | Judge: {judge}\n"
+                f"  Summary (Outcome/Facts/Relief): {summary}\n"
+                f"  Headnotes (Disposition/Observations/Principles): {headnotes}\n"
+                f"  Sections/Articles/Orders/Rules: {sections}\n"
+                f"  Acts/Ordinances/Statutes: {statutes}"
             )
             cited_cases_data.append({
                 "id": cl.id,
@@ -270,6 +309,17 @@ async def send_message_stream(
                 "relevant_statutes": cl.relevant_statutes,
                 "sections_applied": cl.sections_applied,
             })
+
+        # Also search statutes
+        statutes_found = await _vector_search_statutes(db=db, embedding=query_embedding, limit=5)
+        if not statutes_found:
+            statutes_found = await _text_search_statutes(db=db, query=normalized, limit=5)
+        for st in statutes_found:
+            st_summary = _clean_summary(st.summary_en, getattr(st, 'summary_ur', None))
+            context_parts.append(
+                f"- [STATUTE] {st.title} | Act No: {st.act_number or 'N/A'} | Year: {st.year or 'N/A'}\n  Summary: {st_summary}"
+            )
+
     context = "\n".join(context_parts) if context_parts else ""
 
     # Capture variables needed for the generator closure

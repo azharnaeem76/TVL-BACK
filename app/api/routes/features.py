@@ -128,8 +128,8 @@ DEFAULT_FEATURES = [
     # Student
     {"key": "quiz", "name": "Legal Quiz", "description": "Test legal knowledge with quizzes", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
     {"key": "learn", "name": "Learning Center", "description": "Legal study topics and tutorials", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
-    {"key": "moot_court", "name": "Moot Court Simulator", "description": "Practice arguing cases with AI", "category": "student", "enabled": False, "applicable_roles": ["law_student"]},
-    {"key": "exam_prep", "name": "Exam Preparation", "description": "LLB, Bar, LAT, GAT, CSS, PMS, Judiciary exam preparation with AI", "category": "student", "enabled": False, "applicable_roles": ["law_student"]},
+    {"key": "moot_court", "name": "Moot Court Simulator", "description": "Practice arguing cases with AI", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
+    {"key": "exam_prep", "name": "Exam Preparation", "description": "LLB, Bar, LAT, GAT, CSS, PMS, Judiciary exam preparation with AI", "category": "student", "enabled": True, "applicable_roles": ["law_student"]},
 
     # Notifications
     {"key": "email_notifications", "name": "Email Notifications", "description": "Send email alerts for hearings, updates", "category": "notifications", "enabled": True, "applicable_roles": ALL_ROLES},
@@ -138,6 +138,12 @@ DEFAULT_FEATURES = [
 
     # Community
     {"key": "forum", "name": "Community Forum", "description": "Public discussion forum for legal topics", "category": "collaboration", "enabled": True, "applicable_roles": ALL_ROLES},
+
+    # New Features
+    {"key": "inheritance", "name": "Inheritance Calculator", "description": "Calculate inheritance shares per Islamic, Christian, Hindu, Sikh law", "category": "core", "enabled": True, "applicable_roles": ALL_ROLES},
+    {"key": "legal_research", "name": "AI Legal Research Agent", "description": "Deep AI research with case law citations and argument building", "category": "ai", "enabled": True, "applicable_roles": ["lawyer", "judge", "law_student", "admin"]},
+    {"key": "analytics_v2", "name": "Analytics Dashboard v2", "description": "Advanced analytics with heatmaps, win-rate, revenue tracking", "category": "business", "enabled": True, "applicable_roles": ["lawyer", "judge", "admin"]},
+    {"key": "marketplace", "name": "Lawyer Marketplace", "description": "Browse, hire, and review lawyers with service listings", "category": "business", "enabled": True, "applicable_roles": ALL_ROLES},
 
     # Granular Service Controls (use config JSON for limits)
     {"key": "case_law_downloads", "name": "Case Law Downloads", "description": "Allow users to download case law PDFs", "category": "core", "enabled": True, "config": {"daily_limit": 50, "roles": ["lawyer", "judge", "admin"]}, "applicable_roles": ["lawyer", "judge", "admin"]},

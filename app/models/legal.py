@@ -29,11 +29,15 @@ class Court(str, enum.Enum):
     PESHAWAR_HIGH_COURT = "peshawar_high_court"
     BALOCHISTAN_HIGH_COURT = "balochistan_high_court"
     ISLAMABAD_HIGH_COURT = "islamabad_high_court"
+    GILGIT_BALTISTAN_COURT = "gilgit_baltistan_court"
+    AJK_SUPREME_COURT = "ajk_supreme_court"
+    AJK_HIGH_COURT = "ajk_high_court"
     DISTRICT_COURT = "district_court"
     SESSION_COURT = "session_court"
     FAMILY_COURT = "family_court"
     BANKING_COURT = "banking_court"
     ANTI_TERRORISM_COURT = "anti_terrorism_court"
+    BOARD_OF_REVENUE = "board_of_revenue"
 
 
 class CaseLaw(Base):

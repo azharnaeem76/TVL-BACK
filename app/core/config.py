@@ -3,7 +3,7 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
-    APP_NAME: str = "TVL - The Virtual Lawyer"
+    APP_NAME: str = "TVL - The Value of Law"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 

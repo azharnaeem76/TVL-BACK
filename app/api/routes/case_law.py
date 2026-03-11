@@ -108,8 +108,13 @@ async def get_statute(statute_id: int, db: AsyncSession = Depends(get_db)):
     description="Get all sections of a specific statute (e.g., all sections of PPC), ordered by section number.",
 )
 async def get_statute_sections(statute_id: int, db: AsyncSession = Depends(get_db)):
+    from sqlalchemy import func, cast, Integer, case
+    # Numeric sort: extract leading digits, then sort alphabetically for suffix (e.g., 34A, 34B)
     result = await db.execute(
-        select(Section).where(Section.statute_id == statute_id).order_by(Section.section_number)
+        select(Section).where(Section.statute_id == statute_id).order_by(
+            cast(func.regexp_replace(Section.section_number, '[^0-9]', '', 'g'), Integer),
+            Section.section_number,
+        )
     )
     sections = result.scalars().all()
     return [SectionResponse.model_validate(s) for s in sections]

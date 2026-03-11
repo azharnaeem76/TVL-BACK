@@ -1,4 +1,4 @@
-# TVL - The Virtual Lawyer
+# TVL - The Value of Law
 ## Comprehensive System & Business Documentation
 
 **Business Owner:** Azhar Naeem
@@ -27,7 +27,7 @@
 
 ## 1. Executive Summary
 
-TVL (The Virtual Lawyer) is a comprehensive AI-powered legal technology platform designed specifically for Pakistani law. It serves lawyers, judges, law students, and clients by providing:
+TVL (The Value of Law) is a comprehensive AI-powered legal technology platform designed specifically for Pakistani law. It serves lawyers, judges, law students, and clients by providing:
 
 - **AI Legal Chat** - Ask legal questions in English, Urdu, or Roman Urdu and get answers grounded in Pakistani law with case law citations
 - **Scenario Search** - Describe a legal scenario and get relevant case laws, statutes, and AI analysis using semantic vector search
@@ -610,7 +610,7 @@ The system auto-seeds on startup via the FastAPI lifespan handler:
 ## Contact
 
 **Business Owner:** Azhar Naeem
-**Platform:** TVL - The Virtual Lawyer
+**Platform:** TVL - The Value of Law
 **Tagline:** *"According to Spirit of Law"*
 
 ---

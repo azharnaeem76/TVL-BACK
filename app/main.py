@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from contextlib import asynccontextmanager
-from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum, study_content, workspaces
+from app.api.routes import auth, search, chat, case_law, ingestion, admin, features, notifications, case_tracker, clients, directory, documents, ai_tools, messaging, consultation, audit, moot_court, subscriptions, support, forum, study_content, workspaces, inheritance, analytics, legal_research, marketplace
 from app.core.database import engine, Base, async_session
 from app.api.routes.features import seed_features
 from app.api.routes.study_content import seed_study_content
@@ -29,6 +29,7 @@ async def lifespan(app: FastAPI):
     import app.models.forum  # noqa
     import app.models.study_content  # noqa
     import app.models.workspace  # noqa
+    import app.api.routes.marketplace  # noqa – marketplace models
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
         # Add config column to feature_flags if missing (create_all doesn't ALTER existing tables)
@@ -73,7 +74,7 @@ app = FastAPI(
     title=settings.APP_NAME,
     version=settings.APP_VERSION,
     description="""
-## TVL - The Virtual Lawyer API
+## TVL - The Value of Law API
 
 AI-powered legal assistance platform for Pakistani law.
 
@@ -146,6 +147,10 @@ app.include_router(support.router, prefix="/api/v1")
 app.include_router(forum.router, prefix="/api/v1")
 app.include_router(study_content.router, prefix="/api/v1")
 app.include_router(workspaces.router, prefix="/api/v1")
+app.include_router(inheritance.router, prefix="/api/v1")
+app.include_router(analytics.router, prefix="/api/v1")
+app.include_router(legal_research.router, prefix="/api/v1")
+app.include_router(marketplace.router, prefix="/api/v1")
 
 
 @app.get("/")
