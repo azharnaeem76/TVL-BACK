@@ -34,24 +34,40 @@ def _clean_summary(en: str | None, ur: str | None, max_len: int = 800) -> str:
 
 
 def _is_casual_message(message: str) -> bool:
-    """Detect if a message is a greeting or casual chat that doesn't need legal DB context."""
+    """Detect if a message is a greeting, casual chat, or about-the-bot question that doesn't need legal search."""
     msg = message.strip().lower()
     # Remove punctuation for matching
     msg_clean = re.sub(r'[^\w\s]', '', msg)
+
+    # Short casual patterns (greetings, thanks, etc.) — match within 8 words
     casual_patterns = [
         'hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening',
         'assalam', 'salam', 'walaikum', 'aoa', 'slm', 'how are you',
         'thank', 'thanks', 'shukriya', 'meherbani', 'okay', 'ok', 'bye',
         'goodbye', 'khuda hafiz', 'allah hafiz', 'take care',
-        'who are you', 'what is your name', 'what can you do', 'help me',
-        'kya kar sakte', 'tum kaun', 'aap kaun', 'kya hai ye',
         'theek hai', 'acha', 'ji', 'haan', 'nahi',
     ]
-    # Check if the message is short and matches a casual pattern
-    if len(msg_clean.split()) <= 6:
+    if len(msg_clean.split()) <= 8:
         for pattern in casual_patterns:
             if pattern in msg_clean:
                 return True
+
+    # About-the-bot / identity questions — match regardless of length
+    identity_patterns = [
+        'who are you', 'what is your name', 'what can you do', 'help me',
+        'what are you', 'who made you', 'who created you', 'who built you',
+        'where did you get', 'how do you know', 'how do you work',
+        'what is tvl', 'what is this', 'what is this app', 'introduce yourself',
+        'apna taaruf', 'apna taruf', 'tum kaun', 'aap kaun', 'kya hai ye',
+        'kya kar sakte', 'kaun ho tum', 'kaun ho aap', 'ye kya hai',
+        'tumhara naam', 'aapka naam', 'kis ne banaya', 'kahan se aaya',
+        'knowledge kahan se', 'data kahan se', 'information kahan se',
+        'hoa re you', 'how r you', 'hw are you', 'ho are you',
+    ]
+    for pattern in identity_patterns:
+        if pattern in msg_clean:
+            return True
+
     return False
 
 settings = get_settings()
